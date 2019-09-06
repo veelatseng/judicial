@@ -26,12 +26,12 @@ div.function {
         padding: .2em 1em;
         background: $function_color;
         border-color: $function_color;
-        color: #FFF;
+        color: #000;
         border-radius: 4px;
         &:hover,
         &:focus {
-          background: darken($aHover, 0);
-          border-color: darken($aHover, 0);
+          background: $linkColor;
+          border-color: $linkColor;
         }
       }
       &.icon_back {
@@ -105,8 +105,9 @@ div.function {
           position: relative;
           &:hover,
           &:focus {
-            background: $aHover;
+            // background: $aHover;
             color: #FFF;
+            box-shadow: none;
             &:before {
               filter: invert(100%);
             }

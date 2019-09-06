@@ -137,3 +137,22 @@ $(function() {
         infinite: true,
     });
 });
+
+$(function(){
+    $('.left_block nav ul>li>a').each(function() {
+        $(".left_block nav ul ul").hide();
+        function leftnav(e) {
+            $(this).parent('li').siblings().children('a').removeClass('active');
+            $(this).toggleClass('active');
+            $(this).parent('li').siblings().children('ul').slideUp();
+            $(this).next('ul').slideToggle();
+            e.preventDefault();
+        }
+        $(this).click(leftnav);
+        $(this).keyup(leftnav);
+    });
+    $(".reform .check_reform").click(function(e) {
+        $(this).next(".reform_program").slideToggle();
+        e.preventDefault();
+    });
+})

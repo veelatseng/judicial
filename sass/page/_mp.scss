@@ -35,7 +35,7 @@
     width: 32px;
     height: 32px;
     display: inline-block;
-    background: url(../images/icon_logo.png) no-repeat right top;
+    background: url(../images/basic/icon_logo.png) no-repeat right top;
     background-size: contain;
     vertical-align: text-top;
     margin-right: 10px;
@@ -251,6 +251,7 @@
           overflow: hidden;
           position: relative;
           border:1px solid rgba(0,0,0,0);
+          transition: all 0.3s cubic-bezier(.25,.8,.25,1);
           &:hover,&:focus{
             border:1px solid $lightColor;
             box-shadow: 0 0px 0px 0 #cbac52 inset;
@@ -375,6 +376,7 @@
       }
       a{
         color: #fff;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         &:after{
           content: "";
           width: 13px;
@@ -545,6 +547,7 @@
       border-bottom: 2px solid #d5d5d5;
       position: relative;
       overflow: inherit;
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
       @include screen('mobile') {
         color: #fff;
         background: #767676;
@@ -564,6 +567,11 @@
           top: 20px;
           left: 60%;
         }
+      }
+      &:hover,&:focus{
+        box-shadow: none;
+        color: #917300;
+        border-bottom: 2px solid $lightColor;
       }
     }
     &.active{
@@ -593,7 +601,7 @@
       }
     }
     .leftimg{
-      width: 60%;
+      width: 59%;
       display: inline-block;
       @include screen('mobile') {
         width: 100%;
@@ -610,7 +618,7 @@
       }
     }
     .rightimg{
-      width: 39%;
+      width: 40%;
       display: inline-block;
       text-align: right;
       @include screen('mobile') {
@@ -627,7 +635,7 @@
       }
     }
     .more{
-      font-size: 0.875em;
+      font-size: 0.9375em;
       font-weight: bold;
       vertical-align: middle;
       padding: .5em;
@@ -719,6 +727,7 @@
         border-bottom: 0;
         &:hover,&:focus{
           background: $primaryColor;
+          box-shadow: 0 0 0 0 #000 inset;
         }
         @include screen('mobile') {
           text-align: center;
@@ -810,6 +819,7 @@
           letter-spacing: .05em;
           display: block;
           background: rgba(0,0,0,.8); 
+          transition: all 0.3s cubic-bezier(.25,.8,.25,1);
           @include screen('mobile') {
             line-height: 1.5em;
             padding: 0;
@@ -837,7 +847,7 @@
             }
           }
           &:hover,&:focus{
-            background: $primaryColor;
+            background: #917300;
           }
         }
       }
@@ -952,6 +962,7 @@
                 }
                 &:hover,&:focus {
                   color: $secondaryColor;
+                  box-shadow: 0 0 0 0 #000 inset;
                 }
               }
             }
@@ -990,6 +1001,7 @@
       position: relative;
       color: #fff;
       border:2px solid transparent;
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
       &:hover,&:focus{
         border:2px solid $lightColor;
       }
@@ -1118,6 +1130,7 @@
         text-align: center;
         border: 1px solid #b2b6ba;
         display: block;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         &:hover,&:focus{
           background: $lightColor;
           border: 1px solid $lightColor;

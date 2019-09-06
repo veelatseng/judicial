@@ -3,11 +3,11 @@ a.goCenter {
 	position: absolute;
 	top: -2.2em;
 	left: 50%;
-	margin-left: -480px;
+	margin-left: -400px;
 	padding: 0 .5em;
 	height: 2em;
 	line-height: 2em;
-	background: $secondaryColor;
+	background: $primaryColor;
 	color: #fff;
 	text-decoration: none;
 	z-index: 999999999999;
@@ -41,7 +41,7 @@ a.goCenter {
 		a{
 			color:$primaryColor;
 			&:hover,&:focus {
-			color:$aHover;	
+				color:$aHover;	
 			}
 		}
 	}

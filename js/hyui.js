@@ -88,51 +88,14 @@ $(function() {
     });
     _overlay.off("mouseenter");
     // 無障礙tab設定
-    liHasChild.keyup(function() {
-        // $(this).children('ul').fadeIn();
-        $('.megamenu .menu_2nd>ul').show();
-        $(this).children('.megamenu').fadeIn();
-        // $('.megamenu .menu_2nd>.menuSlider').show();
-        $('.menuSlider').slick('refresh');
-        $(this).siblings().focus(function() {
-          $(this).hide();
-        });
-        // $('.menuSlider').slick({
-        //   dots: false,
-        //   infinite: true,
-        //   speed: 300,
-        //   slidesToShow: 5,
-        //   slidesToScroll: 1,
-        //   autoplay: false,
-        //   arrow: true,
-        //   responsive: [{
-        //     breakpoint: 1024,
-        //     settings: {
-        //       slidesToShow: 4,
-        //       slidesToScroll: 4,
-        //       infinite: true,
-        //       dots: false,
-        //       arrows: true
-        //     }
-        //   }, {
-        //     breakpoint: 768,
-        //     settings: {
-        //       slidesToShow: 1,
-        //       slidesToScroll: 1,
-        //       arrows: true
-        //     }
-        //   }, {
-        //     breakpoint: 575, 
-        //     settings: {
-        //       slidesToShow: 1,
-        //       slidesToScroll: 1,
-        //       arrows: true
-        //     }
-        //   }]
-
-        // });
-        
+    liHasChild.children('a').keyup(function() {
+      $('.megamenu .menu_2nd>ul').show();
+      $(this).siblings('.megamenu').show();
+      $('.menuSlider').slick('refresh');
+      $(this).siblings().focus(function() {
+        $(this).hide();
       });
+    });
     _menu.find('li').keyup(function() {
         // $(this).siblings().children('ul').hide();
         $(this).siblings().children('.megamenu').hide();
@@ -239,6 +202,7 @@ $(function() {
               slidesToScroll: 1,
               autoplay: false,
               arrow: true,
+              accessibility: true,
               responsive: [{
                 breakpoint: 1024,
                 settings: {

@@ -27,14 +27,15 @@
                 background: #F1F1F1;
                 color: #333;
                 &:hover, &:focus {
-                    background: $aHover;
+                    background: $primaryColor;
                     color: #FFF;
                 }
                 &.active {
-                    background: #F1F1F1;
+                    background: $primaryColor;
+                    color: #FFF;
                     &:hover, &:focus {
                         background: $aHover;
-                        color: #FFF;
+                        
                     }
                 }
                 &.small {

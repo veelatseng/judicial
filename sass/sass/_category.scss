@@ -5,29 +5,62 @@
     ul {
         @include li-reset;
         li {
-            margin: 0px 3px 3px 0px;
-            display: block;
+            margin: 0px 0 3px 0px;
+            // display: block;
             float: left;
         }
     }
+    &.col3{
+        ul li{
+            @include make-xs-column(12);
+            @include make-sm-column(4);
+            @include make-md-column(4);
+            @include make-lg-column(4);
+        }
+    }
+    &.col4{
+        ul li{
+            @include make-xs-column(12);
+            @include make-sm-column(3);
+            @include make-md-column(3);
+            @include make-lg-column(3);
+        }
+    }
+    &.col6{
+        ul li{
+            @include make-xs-column(12);
+            @include make-sm-column(6);
+            @include make-md-column(6);
+            @include make-lg-column(6);
+        }
+    }
     a {
-        @include gradient(#FFF, #DDD, vertical);
-        border: 1px solid #CCC;
-        padding: .4em 1em;
+        padding: .4em .75em;
         display: block;
-        color: #333;
+        color: $primaryColor;
+        width: 100%;
         @include box-sizing();
-        border-radius:4px;
+        &:before{
+            content: "";
+            width: 14px;
+            height: 15px;
+            display: inline-block;
+            background: url(../images/basic/icon_category.png) no-repeat center center;
+            margin-right: .75em;
+        }
         &:hover,
         &:focus {
             color: #FFF;
-            @include gradient(darken($primaryColor, 0), darken($primaryColor, 15), vertical);
-            border: 1px solid darken($primaryColor, 15);
+            background: $primaryColor;
             box-shadow: none;
+            &:before{
+                content: "";
+                background: url(../images/basic/icon_category_.png) no-repeat center center;
+            }
         }
         &.active {
             color: #FFF;
-            @include gradient(darken($primaryColor, 0), darken($primaryColor, 15), vertical);
+            background: $primaryColor;
         }
         span {
             font-size: .813em;
