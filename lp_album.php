@@ -43,66 +43,72 @@
             <!-- category -->
             <?php require_once('include/category.html'); ?>
             <!-- 文字列表 -->
-            <div class="list">
+            <div class="album">
               <ul>
                 <li>
                   <a href="#">
-                    <span class="num">1</span> 颱風逼近軍民齊心加強防颱戒備 <span class="dept">(服務照顧處)</span>
-                    <time>2018-03-09</time>
+                    <div class="imgOuter">
+                      <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&amp;h=480&amp;fit=crop&amp;auto=format%2Cenhance&amp;usm=20" alt="">
+                    </div>
+                    <div class="caption">
+                      <time>2018-01-01</time>
+                      <h3>相簿標題</h3>
+                    </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="num">2</span> 東坑微電網示範將到期縣府盼由台電承接 <span class="dept"> (就養養護處)</span>
-                    <time>2018-03-09</time>
+                    <div class="imgOuter">
+                      <img src="https://assets.imgix.net/examples/lorie.png?w=800&amp;h=480&amp;fit=crop&amp;auto=format%2Cenhance&amp;usm=20" alt="">
+                    </div>
+                    <div class="caption">
+                      <time>2018-01-01</time>
+                      <h3>相簿標題</h3>
+                    </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="num">3</span> 公務員高普考10日登場縣府謹慎試務 <span class="dept"> (就學就業處)</span>
-                    <time>2018-03-09</time>
+                    <div class="imgOuter">
+                      <img src="https://assets.imgix.net/unsplash/transport.jpg?w=800&amp;h=480&amp;fit=crop&amp;auto=format%2Cenhance&amp;usm=20" alt="">
+                    </div>
+                    <div class="caption">
+                      <time>2018-01-01</time>
+                      <h3>相簿標題</h3>
+                    </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="num">4</span> 縣長﹕導引正向能量提升教育競爭力 <span class="dept">(就學就業處)</span>
-                    <time>2018-03-09</time>
+                    <div class="imgOuter">
+                      <img src="https://assets.imgix.net/unsplash/motorbike.jpg?w=800&amp;h=480&amp;fit=crop&amp;auto=format%2Cenhance&amp;usm=20" alt="">
+                    </div>
+                    <div class="caption">
+                      <time>2018-01-01</time>
+                      <h3>相簿標題</h3>
+                    </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="num">5</span> 颱風逼近軍民齊心加強防颱戒備 <span class="dept">(就學就業處)</span>
-                    <time>2018-03-09</time>
+                    <div class="imgOuter">
+                      <img src="https://assets.imgix.net/unsplash/coyote.jpg?w=800&amp;h=480&amp;fit=crop&amp;auto=format%2Cenhance&amp;usm=20" alt="">
+                    </div>
+                    <div class="caption">
+                      <time>2018-01-01</time>
+                      <h3>相簿標題</h3>
+                    </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="num">6</span>立法院三讀通過「國軍退除役官兵輔導條例」第3條之1、第33條、第34條修正案 <span class="dept">(就學就業處)</span>
-                    <time>2018-03-09</time>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="num">7</span> 國軍退除役官兵年終慰問金發放說明 <span class="dept">(就學就業處)</span>
-                    <time>2018-03-09</time>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="num">8</span> 因應募兵制推動輔導會就業處積極為榮民（眷）與退役官士兵就學、職訓、就業輔導服務升級 <span class="dept">(就學就業處)</span>
-                    <time>2018-03-09</time>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="num">9</span> 輔導會各榮院全力投入「二O六大地震」救災 <span class="dept">(就學就業處)</span>
-                    <time>2018-03-09</time>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="num">10</span> 退除役官兵申請就學獎助學金自二月一日起開始受理 <span class="dept">(就學就業處)</span>
-                    <time>2018-03-09</time>
+                    <div class="imgOuter">
+                      <img src="https://assets.imgix.net/examples/blueberries.jpg?w=800&amp;h=480&amp;fit=crop&amp;auto=format%2Cenhance&amp;usm=20" alt="">
+                    </div>
+                    <div class="caption">
+                      <time>2018-01-01</time>
+                      <h3>相簿標題</h3>
+                    </div>
                   </a>
                 </li>
               </ul>

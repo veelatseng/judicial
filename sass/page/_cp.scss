@@ -1,271 +1,279 @@
 @charset "utf-8";
 // 文章標題
 h1.title {
-    line-height: 1.25em;
-    margin: .4em 0;
+  line-height: 1.25em;
+  margin: .4em 0;
 }
 .cp {
-    &.small_size {
-        font-size: .938em;
+  margin-top: 1em;
+  &.small_size {
+    font-size: .938em;
+  }
+  &.large_size {
+    font-size: 1.125em;
+  }
+  table {
+    background: #FFF;
+  }
+  img {
+    &.float_left {
+      float: left;
+      margin: 0px 1em 1em 0;
+      width: auto;
+      max-width: 55%;
+      @include screen('mobile') {
+        float: none;
+        max-width: 100%;
+        margin: 0px auto;
+      }
     }
-    &.large_size {
-        font-size: 1.125em;
+    &.float_right {
+      float: right;
+      margin: 0px 0 1em 1em;
+      width: auto;
+      max-width: 55%;
+      @include screen('mobile') {
+        float: none;
+        max-width: 100%;
+        margin: 0px auto;
+      }
     }
-    table {
-        background: #FFF;
+  }
+  a {
+    @include aSetting;
+  }
+  .info {
+    font-size: 0.938em;
+    line-height: 1.5em;
+    list-style: none;
+    margin: 0 0 .7em 0;
+    border-left: solid 5px $primaryColor;
+    @include box-sizing;
+    padding: 0.8em 1.5em 0.8em;
+    background: #F2F2F2;
+    @extend %clearfix;
+    li {
+      width: 32%;
+      margin-bottom: .5em;
+      display: inline-block;
+      vertical-align: top;
+      @include screen('tablet') {
+        width: 48%;
+        margin-bottom: .2em;
+        font-size: 0.875em;
+      }
+      @include screen('mobile') {
+        width: 100%;
+        display: block;
+      }
     }
-    img {
-        &.float_left {
-            float: left;
-            margin: 0px 1em 1em 0;
-            width: auto;
-            max-width: 55%;
-            @include screen('mobile') {
-                float: none;
-                max-width: 100%;
-                margin: 0px auto;
-            }
-        }
-        &.float_right {
-            float: right;
-            margin: 0px 0 1em 1em;
-            width: auto;
-            max-width: 55%;
-            @include screen('mobile') {
-                float: none;
-                max-width: 100%;
-                margin: 0px auto;
-            }
-        }
-    }
-    a {
-        @include aSetting;
-    }
-    .info {
-        font-size: 0.938em;
-        line-height: 1.5em;
-        list-style: none;
-        margin: 0 0 .7em 0;
-        border-left: solid 5px $primaryColor;
-        @include box-sizing;
-        padding: 0.8em 1.5em 0.8em;
-        background: #F2F2F2;
-        @extend %clearfix;
-        li {
-            width: 32%;
-            margin-bottom: .5em;
-            display: inline-block;
-            vertical-align: top;
-            @include screen('tablet') {
-                width: 48%;
-                margin-bottom: .2em;
-                font-size: 0.875em;
-            }
-            @include screen('mobile') {
-                width: 100%;
-                display: block;
-            }
-        }
-    }
+  }
+}
+.block_title {
+  font-size: 1.25em;
+  color: $primaryColor;
+  padding-bottom: 6px;
+  border-bottom: 2px solid $primaryColor;
+  line-height: 1.5em;
+  &:before{
+    content: "";
+    width: 25px;
+    height: 27px;
+    display: inline-block;
+    background: url(../images/basic/icon_logo_blue.png) no-repeat 0 0;
+    vertical-align: text-bottom;
+    margin-right: 10px;
+  }
+  &:after{
+    content: "";
+    width: 14px;
+    height: 15px;
+    display: inline-block;
+    background: url(../images/basic/icon_category.png) no-repeat 0 0;
+    margin-left: 10px;
+  }
 }
 // 文章標籤
 div.tag {
-    @extend %clearfix;
-    padding: .5em 0;
-    margin-bottom: .5em;
-    &:before {
-        display: inline-block;
-        content: "";
-        width: 16px;
-        height: 16px;
-        position: relative;
-        top: .2em;
-        background: url(../images/basic/icon_tag.png) no-repeat center center;
-        background-size: 16px;
+  @extend %clearfix;
+  padding: .5em 0;
+  margin-bottom: .5em;
+  &:before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: .2em;
+    background: url(../images/basic/icon_tag.png) no-repeat center center;
+    background-size: 16px;
+  }
+  ul {
+    display: inline-block;
+    @include li-reset;
+    li {
+      display: inline-block;
+      margin: 0 .2em .2em 0;
+      a {
+        display: block;
+        font-size: .813em;
+        @include aSetting_nocolor;
+        border-radius: 4px;
+        border: 1px solid #DDD;
+        padding: .2em .5em;
+      }
     }
-    ul {
-        display: inline-block;
-        @include li-reset;
-        li {
-            display: inline-block;
-            margin: 0 .2em .2em 0;
-            a {
-                display: block;
-                font-size: .813em;
-                @include aSetting_nocolor;
-                border-radius: 4px;
-                border: 1px solid #DDD;
-                padding: .2em .5em;
-            }
-        }
-    }
+  }
 }
 // 檔案下載
 .file_download {
-    width: 100%;
-    margin: 0 auto;
-    @extend %clearfix;
-    h3 {
-        font-size: 1.5em;
-        padding: 12px 0px 15px 0px;
-        margin: 0.5em 0px 0.2em;
-        border-bottom: 1px solid $primaryColor;
+  width: 100%;
+  margin: 0 auto;
+  @include clearfix();
+  ul {
+    counter-reset: counter;
+    padding: 0;
+    margin-left: 0;
+  }
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 35px;
+    border-bottom: 1px solid #EEE;
+    clear: both;
+    overflow: hidden;
+    padding-bottom: .7em;
+    &:before{
+      position: absolute;
+      top: 3px;
+      left: 0px;
+      text-align: right;
+      width: 30px;
+      counter-increment: counter;
+      content: counters(counter,".") " . ";
     }
-    ul {
-        counter-reset: counter;
-        list-style-type: none;
-        padding: 0;
-        margin-left: 1em;
-        @media screen and (max-width: 767px) {
-            margin-left: 0;
-        }
+    .update,
+    .file_view {
+      font-size: .813em;
+      color: #AAA;
+      float: none;
+      margin-top: 5px;
+      @media screen and (max-width: 767px) {
+        display: inline-block;
+        float: none;
+        width: auto;
+        margin-top: 0;
+      }
+      @include screen('xs_mobile') {
+        display: none;
+      }
     }
-    li {
-        position: relative;
-        margin-bottom: 10px;
-        border-bottom: 1px solid #EEE;
-        .update,
-        .file_view {
-            font-size: .813em;
-            color: #AAA;
-            width: 100px;
-            float: right;
-            margin-top: 5px;
-            @media screen and (max-width: 767px) {
-                display: inline-block;
-                float: none;
-                width: auto;
-                margin-top: 0;
-            }
-            @include screen('xs_mobile') {
-                display: none;
-            }
-        }
-        .update {
-            width: 150px;
-            @media screen and (max-width: 767px) {
-                margin-left: 5px;
-            }
-        }
-        a {
-            padding: .2em 0px .2em 65px;
-            position: relative;
-            height: auto;
-            line-height: 1.45em;
-            display: inline-block;
-            width: 45%;
-            color: $color-word;
-            &:hover {
-                color: $aHover;
-            }
-            @include text-overflow;
-            &:before {
-                position: absolute; // outline: 1px solid red;
-                top: 5px;
-                left: 0px;
-                text-align: right;
-                width: 30px;
-                counter-increment: counter;
-                content: counters(counter, ".") " . ";
-            }
-            @include screen('mobile') {
-                margin-right: 0px; // display: block;
-                width: 85%;
-            }
-            .kb {
-                font-size: .75em;
-                color: #666;
-                display: inline-block;
-                margin: 0px .5em;
-            }
-            &:after {
-                content: "";
-                background: url(../images/basic/icon_other.jpg);
-                width: 21px;
-                height: 24px;
-                position: absolute;
-                top: 2px;
-                left: 35px;
-                text-align: right;
-            }
-            &[href$="doc"]:after {
-                background: url(../images/basic/icon_doc.jpg);
-            }
-            &[href$="odf"]:after {
-                background: url(../images/basic/icon_odf.jpg);
-            }
-            &[href$="pdf"]:after {
-                background: url(../images/basic/icon_pdf.jpg);
-            }
-            &[href$="xls"]:after {
-                background: url(../images/basic/icon_xls.jpg);
-            }
-            &[href$="ppt"]:after {
-                background: url(../images/basic/icon_ppt.jpg);
-            }
-            &[href$="jpg"]:after {
-                background: url(../images/basic/icon_jpg.jpg);
-            }
-            &[href$="mp3"]:after {
-                background: url(../images/basic/icon_mp3.jpg);
-            }
-            &[href$="mov"]:after {
-                background: url(../images/basic/icon_mov.jpg);
-            }
-            &[href$="txt"]:after {
-                background: url(../images/basic/icon_txt.jpg);
-            }
-            &[href$="dot"]:after {
-                background: url(../images/basic/icon_doc.jpg);
-            }
-            &[href$="zip"]:after {
-                background: url(../images/basic/icon_zip.jpg);
-            }
-        }
+    .update {
+      @media screen and (max-width: 767px) {
+        margin-left: 5px;
+      }
     }
+    span{
+      display: inline-block;
+      margin-right: 1em;
+      @include screen('mobile') {
+        display: block;
+        margin-bottom: .3em;
+      }
+    }
+    a {
+
+      &:hover,
+      &:focus {
+        // border: 2px solid #666;
+        // background: #666;
+        // color: #FFF !important;
+      }
+      .kb {
+        font-size: .75em;
+        color: #666;
+        display: inline-block;
+        margin: 0px .5em;
+      }
+      &.doc,&.odf,&.pdf,&.xls,&.ppt,&.ppt,&.jpg,&.mp3,&.mov,&.txt,&.dot,&.zip,&.other{
+        width: 21px;
+        height: 24px;
+        display: inline-block;
+        margin-right: 4px;
+        text-indent: -9999px;
+        vertical-align: text-bottom;
+      }
+      &.doc{
+        background: url(../images/basic/icon_doc.jpg);
+      }
+      &.odf{
+        background: url(../images/basic/icon_odf.jpg);
+      }
+      &.pdf{
+        background: url(../images/basic/icon_pdf.jpg);
+      }
+      &.xls{
+        background: url(../images/basic/icon_xls.jpg);
+      }
+      &.ppt{
+        background: url(../images/basic/icon_ppt.jpg);
+      }
+      &.jpg{
+        background: url(../images/basic/icon_jpg.jpg);
+      }
+      &.mp3{
+        background: url(../images/basic/icon_mp3.jpg);
+      }
+      &.mov{
+        background: url(../images/basic/icon_mov.jpg);
+      }
+      &.txt{
+        background: url(../images/basic/icon_txt.jpg);
+      }
+      &.dot{
+        background: url(../images/basic/icon_doc.jpg);
+      }
+      &.zip{
+        background: url(../images/basic/icon_zip.jpg);
+      }
+      &.other{
+        background: url(../images/basic/icon_other.jpg);
+      }
+    }
+  }
 }
 // 外部連結
 .web_link {
-    width: 100%;
-    margin: 0 auto;
-    @extend %clearfix;
-    h3 {
-        font-size: 1.5em;
-        padding: 12px 0px 15px 0px;
-        margin: 0.5em 0px 0.2em;
-        border-bottom: 1px solid $primaryColor;
+  width: 100%;
+  margin: 0 auto;
+  @extend %clearfix;
+  ol,
+  ul {
+    counter-reset: counter;
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #EEE;
+    a {
+      padding: .2em 0px .2em 35px;
+      position: relative;
+      height: auto;
+      line-height: 1.45em;
+      display: block;
+      @include aSetting_nocolor;
+      &:before {
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        text-align: right;
+        width: 30px;
+        counter-increment: counter;
+        content: counters(counter, ".") " . ";
+      }
     }
-    ol,
-    ul {
-        counter-reset: counter;
-        list-style-type: none;
-        padding: 0;
-        margin-left: 1em;
-        @media screen and (max-width: 767px) {
-            margin-left: 0;
-        }
-    }
-    li {
-        position: relative;
-        margin-bottom: 10px;
-        border-bottom: 1px solid #EEE;
-        a {
-            padding: .2em 0px .2em 35px;
-            position: relative;
-            height: auto;
-            line-height: 1.45em;
-            display: block;
-            @include aSetting_nocolor;
-            &:before {
-                position: absolute; // outline: 1px solid red;
-                top: 5px;
-                left: 0px;
-                text-align: right;
-                width: 30px;
-                counter-increment: counter;
-                content: counters(counter, ".") " . ";
-            }
-        }
-    }
+  }
 
 }

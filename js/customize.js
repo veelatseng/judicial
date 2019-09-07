@@ -110,7 +110,6 @@ $(function() {
         lazy: true
     });
     
-    
     // cp_photo
     // $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
     //     var i = (currentSlide ? currentSlide : 0) + 1;
@@ -137,7 +136,38 @@ $(function() {
         infinite: true,
     });
 });
-
+$(function(){
+    var weblang = $('html').attr('lang');
+    if (weblang.substring(0,2) == 'zh') {
+        // console.log("中文");
+        $('.slick-prev').attr('title', '前一則');
+        $('.slick-next').attr('title', '後一則');
+    } else if (weblang.substring(0,2) == 'en') {
+        // console.log("英文");
+        $('.slick-prev').attr('title', 'previous');
+        $('.slick-next').attr('title', 'next');
+    } else if (weblang.substring(0,2) == 'vi') {
+        // console.log("越南");
+        $('.slick-prev').attr('title', 'Trước');
+        $('.slick-next').attr('title', 'kế tiếp');
+    } else if (weblang.substring(0,2) == 'id') {
+        // console.log("印尼");
+        $('.slick-prev').attr('title', 'sebelumnya');
+        $('.slick-next').attr('title', 'berikutnya');
+    } else if (weblang.substring(0,2) == 'km') {
+        // console.log("柬埔寨");
+        $('.slick-prev').attr('title', 'មុន');
+        $('.slick-next').attr('title', 'បន្ទាប់');
+    } else if (weblang.substring(0,2) == 'th') {
+        // console.log("泰文");
+        $('.slick-prev').attr('title', 'ก่อน');
+        $('.slick-next').attr('title', 'ต่อไป');
+    } else{
+        // console.log("沒有判斷");
+        $('.slick-prev').attr('title', 'previous');
+        $('.slick-next').attr('title', 'next');
+    }
+});
 $(function(){
     $('.left_block nav ul>li>a').each(function() {
         $(".left_block nav ul ul").hide();
@@ -151,8 +181,10 @@ $(function(){
         $(this).click(leftnav);
         $(this).keyup(leftnav);
     });
+});
+$(function(){
     $(".reform .check_reform").click(function(e) {
         $(this).next(".reform_program").slideToggle();
         e.preventDefault();
     });
-})
+});

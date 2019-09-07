@@ -121,7 +121,7 @@
             </div>
 
             <div class="reform_method">
-              <h4 class="method_title">進行方式與具體作為</h4>
+              <h4 class="block_title">進行方式與具體作為</h4>
               <div class="reform_search">
                 <div class="label">進度查詢</div>
                 <form action="">
@@ -137,7 +137,7 @@
                   </div>
                 </form>  
               </div>
-              <!-- 類別 -->
+              <!-- 類別 多個別就重複這塊 -->
               <div class="method_block">
                 <div class="method"><span>1</span>民事訴訟</div>
                 <!-- 最新進度 -->
@@ -155,8 +155,11 @@
                   <div class="info">
                     <p>成立「行政訴訟制度研究修正委員會」，自106年8月起，就與金字塔訴訟制度有關的行政訴訟法部分條文修正草案，包含發揮終審行政法院的法律審功能，以及建構堅實第一審行政法院的相關配套措施，加以討論。</p>
                   </div>
+                  <!-- 年度 如果有更多年份就重複這塊-->
                   <ul class="year">
+                    <!-- 第一則預設為年份的圓框 -->
                     <li>108</li>
+                    <!-- 該年度裡的每一筆 -->
                     <li>
                       <div class="date">108/03/25</div>
                       <div class="title">行政訴訟法部分條文修正草案」評估報告（初稿）座談會</div>
@@ -172,6 +175,7 @@
                       </div>
                     </li>
                   </ul>
+                  <!-- 年度 -->
                   <ul class="year">
                     <li>107</li>
                     <li>
@@ -191,6 +195,7 @@
                       </div>
                     </li>
                   </ul>
+                  <!-- 按下去載入更多資料 -->
                   <div class="more_history"><a href="#">看更多歷程</a></div>
                 </div>
               </div>    
