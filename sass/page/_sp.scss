@@ -1,6 +1,6 @@
 .topTitle{
 	width: 650px;
-	min-height: 120px;
+	min-height: 124px;
 	background: $darkColor;
 	display: block;
 	position: absolute;
@@ -9,6 +9,10 @@
 	color:#fff;
 	padding: 1.8em;
 	box-sizing: border-box;
+	&.segment{
+		background: rgb(47,71,109);
+		background: linear-gradient(90deg, rgba(47,71,109,1) 0%, rgba(82,111,157,1) 100%);
+	}
 	@include screen('mobile') {
 		width: 100%;
 		position: relative;
@@ -533,7 +537,6 @@
 		line-height: 52px;
 		padding: 0 0 0 70px;
 		position: relative;
-
 		span{
 			font-size: 1.364em;
 			background: #1a3966;
@@ -541,11 +544,11 @@
 			display: block;
 			font-family: "Century Gothic";
 			font-weight: bold;
-			width: 52px;
 			text-align: center;
 			position: absolute;
 			left: 0;
 			top: 0;
+			width: 55px;
 		}
 	}
 	.latest{
