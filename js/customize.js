@@ -190,9 +190,11 @@ $(function(){
     });
     $(".reform .gohistory").click(function(e) {
         $(this).toggleClass('active');
-        $(".history_block").slideToggle();
+        //$(".history_block").slideToggle();
+		$(this).parent().parent().children(".history_block").slideToggle();
         e.preventDefault();
     });
+	/*
     $(".reform .more_history a").click(function(e) {
         $(this).toggleClass('active');
         if ($(".reform .more_history a").hasClass('active')) {
@@ -202,5 +204,6 @@ $(function(){
         };
         e.preventDefault();
     });
+	*/
 
 });
