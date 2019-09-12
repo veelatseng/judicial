@@ -32,13 +32,29 @@
         <div class="content_block">
           <!-- breadcrumb路徑 -->
           <?php require_once('include/breadcrumb.html'); ?>
-          
-          <!-- function_panel -->
-          <?php require_once('include/function_panel.html'); ?>
           <!-- QA Start -->
           <section class="qa">
             <!-- h2節點 -->
-            <h2 class="pageTitle">節點標題</h2>
+            <h2 class="qaTitle">問答集</h2>
+            <div class="qa_search"><a href="">資料查詢</a></div>
+            <div class="qa_search_block">
+              <form action="" class="form_inline">
+                <div class="form_grp">
+                  <label for="">標題</label>
+                  <input name="" id="" type="text" placeholder="請輸入標題">
+                  <label for="">資料類別</label>
+                  <select name="" id="">
+                    <option value="">請選擇</option>
+                  </select>
+                  <label for="">單位</label>
+                  <select name="" id="">
+                    <option value="">請選擇</option>
+                  </select>
+                  <input name="" type="submit" title="查詢" value="查詢" />
+                  <input name="" type="reset" title="清除" value="清除" />
+                </div>
+              </form>  
+            </div>
             <!-- category -->
             <div class="category col5">
               <ul>
@@ -225,8 +241,6 @@
             </div>
           </section>
           <!-- QA End -->
-          <!-- Pagination -->
-          <?php require_once('include/pagination.html'); ?>
         </div>
       </div>
       <!-- container -->

@@ -191,7 +191,7 @@ $(function(){
     $(".reform .gohistory").click(function(e) {
         $(this).toggleClass('active');
         //$(".history_block").slideToggle();
-		$(this).parent().parent().children(".history_block").slideToggle();
+        $(this).parent().parent().children(".history_block").slideToggle();
         e.preventDefault();
     });
 	/*
@@ -204,6 +204,26 @@ $(function(){
         };
         e.preventDefault();
     });
-	*/
-
+    */
+});
+$(function(){
+    $(".qa_search").click(function(e) {
+        $(this).next(".qa_search_block").slideToggle();
+        e.preventDefault();
+    });
+    $('.qa_list').each(function() {
+        $(this).find('.answer').hide();
+        var _qaItem = $(this).children('ul').children('li').children('.question').children('a');
+        _qaItem.each(function() {
+            function qa(e){
+                $(this).parent('.question').parent('li').siblings().children('.question').children('a').removeClass('active');
+                $(this).toggleClass('active');
+                $(this).parent('.question').parent('li').siblings().children('.answer').slideUp();
+                $(this).parent('.question').next('.answer').slideToggle();
+                e.preventDefault();
+            }
+            $(this).click(qa);
+            $(this).keyup(qa);
+        });
+    });
 });

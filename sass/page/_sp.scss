@@ -382,10 +382,10 @@
 	a{
 		line-height: 2.5em;
 		color: #fff;
-		padding:0 3em 0 1em;
+		padding:0 3.5em 0 1em;
 		letter-spacing: .05em;
 		display: block;
-		background: #222; 
+		background: #09283b; 
 		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 		&:after{
 			content: "";
@@ -779,16 +779,148 @@
 		padding: 1.5em 0;
 	}
 }
-
+.qa{
+	.qaTitle{
+		text-align: center;
+		font-size: 1.625em;
+		color: $darkColor;
+		margin: 0 0 24px 0;
+		clear: both;
+		@include screen('mobile') {
+			margin: 0 0 10px 0;
+			font-size: 1.375em;
+		}
+		&:before{
+			content: "";
+			width: 30px;
+			height: 32px;
+			background: url(../images/basic/icon_logo.png) no-repeat center center;
+			background-size: cover;
+			display: inline-block;
+			margin-right: .6em;
+			vertical-align: text-top;
+		}
+	}
+	.qa_search{
+		display: inline-block;
+		clear: both;
+		position: relative;
+		float: right;
+		margin: 0;
+		@include screen('mobile') {
+			width: 100%;
+			position: relative;
+			bottom:auto;
+			right: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-right: 0;
+			float: none;
+			display: block;
+		}
+		a{
+			line-height: 2.5em;
+			color: #fff;
+			padding:0 3.5em 0 1em;
+			letter-spacing: .05em;
+			display: block;
+			background: #09283b; 
+			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+			&:after{
+				content: "";
+				background: $lightColor url(../images/icon_more_.png) no-repeat center center;
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				width: 40px;
+				display: block;
+			}
+			&:hover,&:focus{
+				background: $linkColor;
+				box-shadow: none;
+			}
+		}
+	}
+	.qa_search_block{
+		display: block;
+		clear: both;
+		background: #09283b;
+		padding: 2.5em 1em;
+		box-sizing: border-box;
+		@include screen('mobile') {
+			padding: 1em;
+		}
+		.form_grp{
+			overflow: hidden;
+			margin: 0;
+			width: 100%;
+		}
+		label{
+			color: #fff;
+			margin:0 .5em;
+			vertical-align: baseline;
+			@include screen('mobile') {
+				display: block;
+				margin: 0 0 10px 0
+			}
+		}
+		select{
+			border-radius: 0;
+			border:0;
+			width: 20%;
+			// margin: 0 5px;
+			@include screen('mobile') {
+				width: 100%;
+			}
+		}
+		input[type="text"]{
+			border-radius: 0;
+			border:0;
+			// margin: 0 5px;
+			padding: 10px;
+			color: #444;
+			width: 20%;
+			@include screen('mobile') {
+				width: 100%;
+			}
+		}
+		input[type="button"],input[type="submit"],input[type="reset"]{
+			border-radius: 0;
+			border:0;
+			margin: 0 0 0 10px;
+			background: $linkColor;
+			color: #fff;
+			padding: 8px 16px 9px 16px;
+			vertical-align: top;
+			width: 10%;
+			@media (max-width:1150px){
+				width: auto;
+			}
+			@include screen('mobile') {
+				width: 48%;
+				margin: 1em 3% 0 0;
+				&:nth-child(2n){
+					margin: 1em 0 0 0;
+				}
+			}
+		}
+	}
+}
 .qa_list{
+
 	>ul{
 		@include li-reset;
 		>li{
-			margin-bottom: 2em;
+			margin-bottom: 10px;
+			&:nth-child(even){
+				.question a{
+					background: #F5F5F5;
+				}
+			}
 		}
 	}
 	.question{
-		margin-bottom: 25px;
 		padding: 0;
 		position: relative;
 		border:1px solid #c1c1c1;
@@ -809,6 +941,19 @@
 				position: absolute;
 				right: 20px;
 				top: 18px;
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+			}
+			&.active{
+				&:after{
+					transform: rotate(225deg);
+				}
+			}
+			&:focus{
+				box-shadow: none;
+				
+				.text{
+					color: $linkColor;
+				}
 			}
 		}
 		.num{
@@ -829,18 +974,40 @@
 		}
 	}
 	.answer{
+		margin: 10px 20px;
+		clear: both;
 		.share{
+			text-align: right;
+			margin: 0;
 			a{
-				display: block;
+				display: inline-block;
 				text-indent: -9999px;
-
+				width: 30px;
+				height: 30px;
+				background: #ccc url(../images/basic/icon_share.png) no-repeat center center !important;
+				background-size: 20px !important;
+				position: relative;
+				color: transparent;
+				margin: 0;
+				border-radius: 50%;
+				filter: invert(100%);
+				opacity: .5;
+				&:hover,&:focus{
+					filter: invert(0);
+					background: #ccc url(../images/basic/icon_share.png) no-repeat center center !important;
+					background-size: 20px !important;
+					opacity: 1;
+					box-shadow: none;
+				}
 			}
 		}
 		.text{
 			line-height: 160%;
 		}
 		.dep{
-
+			text-align: right;
+			color: #0059ab;
+			margin-bottom: 1em;
 		}
 	}
 }
