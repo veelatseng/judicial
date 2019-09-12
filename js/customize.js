@@ -171,6 +171,7 @@ $(function(){
 $(function(){
     $('.left_block nav ul>li>a').each(function() {
         $(".left_block nav ul ul").hide();
+        $(".left_block nav ul ul li a.active").parent('li').parent('ul').show();
         function leftnav(e) {
             $(this).parent('li').siblings().children('a').removeClass('active');
             $(this).toggleClass('active');
@@ -179,7 +180,7 @@ $(function(){
             e.preventDefault();
         }
         $(this).click(leftnav);
-        $(this).keyup(leftnav);
+        $(this).keyup(leftnav); 
     });
 });
 $(function(){
@@ -187,4 +188,19 @@ $(function(){
         $(this).next(".reform_program").slideToggle();
         e.preventDefault();
     });
+    $(".reform .gohistory").click(function(e) {
+        $(this).toggleClass('active');
+        $(".history_block").slideToggle();
+        e.preventDefault();
+    });
+    $(".reform .more_history a").click(function(e) {
+        $(this).toggleClass('active');
+        if ($(".reform .more_history a").hasClass('active')) {
+            $(".reform .more_history a").html("收合歷程");
+        } else {
+            $(".reform .more_history a").html("看更多歷程");
+        };
+        e.preventDefault();
+    });
+
 });

@@ -44,7 +44,7 @@
             <?php require_once('include/category.html'); ?>
             <!-- 表格列表 -->
             <div class="table_list">
-              <table summary="">
+              <table summary="" class="table_sprite table_hover">
                 <thead>
                   <tr>
                     <th>編號</th>

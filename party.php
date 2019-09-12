@@ -38,7 +38,29 @@
           <?php require_once('include/breadcrumb.html'); ?>
           <!-- PARTY Start -->
           <section class="party">
-
+            <div class="process">
+              <ul>
+                <li>
+                  <div class="step_title">
+                    <span>Step 1</span>
+                    起訴( 起訴狀 )
+                  </div>
+                  <ul>
+                    <li>法學資料檢索檢索檢索</li>
+                    <li>裁判書查詢</li>
+                    <li>量刑資訊系統</li>
+                    <li>庭期表查詢庭期表查詢</li>
+                    <li>訴訟須知</li>
+                    <li>書狀範例</li>
+                  </ul>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
           </section>
           <!-- PARTY End -->
         </div>

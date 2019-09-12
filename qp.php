@@ -36,6 +36,8 @@
           <?php require_once('include/breadcrumb.html'); ?>
           <!-- h2節點 -->
           <h2 class="pageTitle">意見信箱</h2>
+          <!-- function_panel -->
+          <?php require_once('include/function_panel.html'); ?>
           <!-- QP Start -->
           <section class="qp">
             <p>註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</p>

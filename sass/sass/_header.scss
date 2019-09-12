@@ -161,7 +161,7 @@
         text-decoration: none;
         @include aSetting_nocolor;
         &:hover,&:focus{
-          color: $lightColor;
+          color: #5a77a0; 
         }
       }
     }

@@ -34,6 +34,11 @@
             @include make-lg-column(6);
         }
     }
+    &.col5{
+        ul li {
+            width: 20%;
+        }
+    }
     a {
         padding: .4em .75em;
         display: block;
@@ -42,11 +47,11 @@
         @include box-sizing();
         &:before{
             content: "";
-            width: 14px;
-            height: 15px;
+            width: 13px;
+            height: 14px;
             display: inline-block;
             background: url(../images/basic/icon_category.png) no-repeat center center;
-            margin-right: .75em;
+            margin-right: .5em;
         }
         &:hover,
         &:focus {

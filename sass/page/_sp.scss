@@ -142,16 +142,16 @@
 				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 				.status{
 					&.pass~.no{
-						color: #004071;
+						color: #2f476b;
 					}
 					&.put~.no{
-						color: #016908;
+						color: #3b5f26;
 					}
 					&.propose~.no{
-						color: #008486;
+						color: #3979be;
 					}
 					&.planning~.no{
-						color: #45841F;
+						color: #638000;
 					}
 				}
 			}
@@ -179,27 +179,27 @@
 			margin-left: -8px;
 		}
 		&.pass{
-			background: #004071;
+			background: #2f476b;
 			&:after{
-				border-color: #004071 transparent transparent transparent;
+				border-color: #2f476b transparent transparent transparent;
 			}
 		}
 		&.put{
-			background: #016908;
+			background: #3b5f26;
 			&:after{
-				border-color: #016908 transparent transparent transparent;
+				border-color: #3b5f26 transparent transparent transparent;
 			}
 		}
 		&.propose{
-			background: #008486;
+			background: #3979be;
 			&:after{
-				border-color: #008486 transparent transparent transparent;
+				border-color: #3979be transparent transparent transparent;
 			}
 		}
 		&.planning{
-			background: #45841F;
+			background: #638000;
 			&:after{
-				border-color: #45841F transparent transparent transparent;
+				border-color: #638000 transparent transparent transparent;
 			}
 		}
 	}
@@ -365,6 +365,9 @@
 	margin-top: 30px;
 	margin-right: 100px;
 	margin-bottom: 20px;
+	@media (max-width:1200px){
+		margin-right: 30px;
+	}
 	@include screen('mobile') {
 		width: 100%;
 		position: relative;
@@ -395,7 +398,7 @@
 			display: block;
 		}
 		&:hover,&:focus{
-			background: #917300;
+			background: $linkColor;
 			box-shadow: none;
 		}
 	}
@@ -520,7 +523,7 @@
 		border-radius: 0;
 		border:0;
 		margin: 0 5px;
-		background: #917300;
+		background: $linkColor;
 		color: #fff;
 		padding: 9px 16px;
 		@include screen('mobile') {
@@ -529,6 +532,8 @@
 	}
 }
 .method_block{
+	clear: both;
+	margin-bottom: 25px;
 	.method{
 		font-size: 1.375em;
 		color: #fff;
@@ -561,7 +566,7 @@
 		.latest_title{
 			content: "最新進度";
 			color: #fff;
-			background: #917300;
+			background: $linkColor;
 			padding: 8px;
 			width: 56px;
 			height: 56px;
@@ -605,18 +610,6 @@
 			position: absolute;
 			right: 0;
 			bottom: 0;
-			&:after{
-				content: "";
-				width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 10px 8px 0 8px;
-				position: absolute;
-				left: 50%;
-				bottom: -10px;
-				margin-left: -8px;
-				border-color: #1a3966 transparent transparent transparent;
-			}
 			a{
 				line-height: 34px;
 				height: 34px;
@@ -625,6 +618,36 @@
 				background: #1a3966;
 				display: inline-block;
 				font-size: 0.9375em;
+				&:focus{
+					box-shadow: none;
+				}
+			}
+			&:hover{
+				a{
+					background: $linkColor;
+				}
+			}
+			&.active{
+				&:after{
+					content: "";
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 10px 8px 0 8px;
+					position: absolute;
+					left: 50%;
+					bottom: -10px;
+					margin-left: -8px;
+					border-color: #1a3966 transparent transparent transparent;
+				}
+				&:hover{
+					&:after{
+						border-color: $linkColor transparent transparent transparent;
+					}
+					a{
+						background: $linkColor;
+					}
+				}
 			}
 		}
 	}
@@ -633,6 +656,7 @@
 		padding: 1.5em 2em;
 		// font-size: 0.9375em;
 		letter-spacing: .04em;
+		display: none;
 		.info{
 			margin-bottom: 2em;
 			display: block;clear: both;
@@ -710,6 +734,7 @@
 			text-align: center;
 			a{
 				color: $primaryColor;
+				padding: .5em 1em;
 				&:after{
 					content: "";
 					width: 10px;
@@ -720,6 +745,20 @@
 					transform: rotate(225deg);
 					margin-left: 6px;
 					vertical-align: text-top;
+				}
+				&:hover,&:focus{
+					color: #fff;
+					background: $primaryColor;
+					&:after{
+						border-top: 2px solid #fff;
+						border-left: 2px solid #fff;
+					}
+				}
+				&.active{
+					&:after{
+						transform: rotate(45deg);
+						vertical-align: middle;
+					}
 				}
 			}
 		}
@@ -740,8 +779,124 @@
 		padding: 1.5em 0;
 	}
 }
-// .pt{
-// 	margin-top: 120px;
-// 	padding-bottom: 0;
-// 	display:inline-block
-// }
+
+.qa_list{
+	>ul{
+		@include li-reset;
+		>li{
+			margin-bottom: 2em;
+		}
+	}
+	.question{
+		margin-bottom: 25px;
+		padding: 0;
+		position: relative;
+		border:1px solid #c1c1c1;
+		display: table;
+		width: 100%;
+		box-sizing: border-box;
+		a{
+			width: 100%;
+			height: 100%;
+			display: block;
+			&:after{
+				content: "";
+				width: 20px;
+				height: 20px;
+				border-top: 2px solid #5b5b5b;
+				border-left: 2px solid #5b5b5b;
+				transform: rotate(135deg);
+				position: absolute;
+				right: 20px;
+				top: 18px;
+			}
+		}
+		.num{
+			font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+			background: $linkColor;
+			color: #fff;
+			font-size: 1.375em;
+			padding: .8em;
+			display: table-cell;
+			vertical-align: top;
+		}
+		.text{
+			font-size: 1.125em;
+			display: table-cell;
+			padding: 1em;
+			vertical-align: top;
+			color: #444;
+		}
+	}
+	.answer{
+		.share{
+			a{
+				display: block;
+				text-indent: -9999px;
+			}
+		}
+		.text{
+			line-height: 160%;
+		}
+		.dep{
+
+		}
+	}
+}
+
+.party{
+	.process{
+		width: 80%;
+		background: #ccc;
+		margin: 0 auto;
+		ul{
+			@include li-reset;
+			li{
+				width: 90%;
+				height: 145px;
+				border-radius: 0 80px 80px 0;
+				border:12px solid #3979be;
+				border-left: 0;
+				float: right;
+				margin-top: -12px;
+				padding: 20px 20%;
+				box-sizing: border-box;
+
+				&:nth-child(odd){
+					border-radius: 80px 0 0 80px;
+					border:12px solid #3979be;
+					border-right: 0;
+					float: left;
+				}
+				&:first-child{
+					margin-top: 0;
+				}
+				.step_title{
+					color: #2367b1;
+					float: left;
+					
+					span{
+						display: block;
+						font-family: century-gothic, sans-serif;
+						font-weight: bold;
+						font-size: 1.875em;
+					}
+				}
+				ul{
+					float: left;
+					li{
+						width: 50%;
+						height: auto;
+						border:0;
+						float: left;
+						margin: 0;
+						padding: 0;
+						&:nth-child(odd){
+							border:0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

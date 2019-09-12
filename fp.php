@@ -33,7 +33,9 @@
           <!-- breadcrumb路徑 -->
           <?php require_once('include/breadcrumb.html'); ?>
           <!-- h2節點 -->
-          <h2 class="pageTitle">網站導覽</h2>
+          <h2 class="pageTitle">轉寄友人</h2>
+          <!-- function_panel -->
+          <?php require_once('include/function_panel.html'); ?>
           <!-- FP Start -->
           <section class="fp">
             <p>註:<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr>為必填(選)欄位, 不能為空白。</p>

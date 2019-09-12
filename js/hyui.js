@@ -92,7 +92,7 @@ $(function() {
       $('.megamenu .menu_2nd>ul').show();
       $(this).siblings('.megamenu').show();
       $('.menuSlider').slick('refresh');
-      $(this).siblings().focus(function() {
+      $(this).parent("li").siblings().focus(function() {
         $(this).hide();
       });
     });

@@ -403,9 +403,8 @@
           }
         }
       }
-      &:hover {
-        >a {
-          // color: $aHover;
+      >a {
+        &:hover,&:focus{
           &:after {
             border: 2px solid $secondaryColor;
             border-bottom: none;
@@ -424,26 +423,32 @@
             }
           }
         }
-        &:last-child{
+      }
+      &:last-child{
+        >a:hover,>a:focus{
           background: rgb(228,202,51);
           background: linear-gradient(90deg, rgba(228,202,51,1) 0%, rgba(191,151,0,1) 100%);
-          a:before{
+          &:before{
             display: none;
           }
-          a:after {
+          &:after {
             border: 2px solid #fff;
             border-bottom: none;
             border-left: none;
           }
         }
-        &:nth-last-child(2),&:nth-last-child(3){
+        
+      }
+      &:nth-last-child(2),&:nth-last-child(3){
+        >a:hover,>a:focus{
           background: rgb(74,134,217);
           background: linear-gradient(90deg, rgba(74,134,217,1) 0%, rgba(30,72,178,1) 100%);
-          a:before{
+          &:before{
             display: none;
           }
         }
       }
+      
     }
     // ul {
     //   display: none;
