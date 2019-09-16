@@ -978,7 +978,6 @@
 	}
 }
 .qa_list{
-
 	>ul{
 		@include li-reset;
 		>li{
@@ -1019,8 +1018,7 @@
 				}
 			}
 			&:focus{
-				box-shadow: none;
-				
+				box-shadow: none;		
 				.text{
 					color: $linkColor;
 				}
@@ -1112,7 +1110,127 @@
 		}
 	}
 }
+.document{
+	.advanced_search_block{
+		display: block;
+		clear: both;
+		margin: 10px 0;
+		overflow: hidden;
+		.search_btn{
+			display: block;
+			clear: both;
+			position: relative;
+			float: left;
+			@include screen('mobile') {
+				width: 100%;
+				position: relative;
+				bottom:auto;
+				right: auto;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				margin-right: 0;
+				float: none;
+				display: block;
+			}
+			a{
+				line-height: 2.5em;
+				color: #fff;
+				padding:0 3.5em 0 1em;
+				letter-spacing: .05em;
+				display: block;
+				background: #09283b; 
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+				&:after{
+					content: "";
+					background: $lightColor url(../images/icon_more_.png) no-repeat center center;
+					position: absolute;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					width: 40px;
+					display: block;
+				}
+				&:hover,&:focus{
+					background: $linkColor;
+					box-shadow: none;
+				}
+			}
+		}
+		.advanced_search{
+			background: #09283b;
+			padding: 1em;
+			box-sizing: border-box;
+			color: #fff;
+			display: block;
+			clear: both;
+			.form_grp{
+				border-bottom: 0;
+			}
+		}
+	}
+	.table_list{
+		th{}
+		td{
+			&:nth-child(3){
+				text-align: center;
+			}
+			a{
+				
+				&.new,&.hot,&.pdf,&.odt{
+					text-indent: -9999px;
+					overflow: hidden;
+					display: inline-block;
+					margin: 0 5px;
+					&:before{
+						content: "";
+						display: block;
+					}
+					&:focus{
+						box-shadow: 0 0px 0px 1px #5a77a0;
+					}
+				}
+				&.new{
+					
+				}
+				&.hot{
+					&:before{
+						content: "";
 
+					}
+				}
+				&.pdf{
+					width: 21px;
+					height: 24px;
+					&:before{
+						width: 21px;
+						height: 24px;
+						background: url(../images/basic/icon_pdf.png) no-repeat 0 0 
+					}
+				}
+				&.odt{
+					width: 21px;
+					height: 24px;
+					&:before{
+						width: 21px;
+						height: 24px;
+						background: url(../images/basic/icon_odt.png) no-repeat 0 0 
+					}
+				}
+			}
+		}
+	}
+	.pdf_block{
+		display: block;
+		border:1px solid #ddd;
+		margin-bottom: 1.5em;
+		text-align: center;
+		overflow: hidden;
+		iframe{
+			width: 100%;
+			height: 600px;
+		}
+	}
+}
 .party{
 	.process{
 		width: 80%;
@@ -1122,13 +1240,13 @@
 			@include li-reset;
 			li{
 				width: 90%;
-				height: 145px;
+				height: 160px;
 				border-radius: 0 80px 80px 0;
 				border:12px solid #3979be;
 				border-left: 0;
 				float: right;
 				margin-top: -12px;
-				padding: 20px 20%;
+				padding: 20px 10% 20px 20%;
 				box-sizing: border-box;
 
 				&:nth-child(odd){
@@ -1143,7 +1261,9 @@
 				.step_title{
 					color: #2367b1;
 					float: left;
-					
+					display: inline-block;
+					width: 28%;
+					margin-right: 1.5%;
 					span{
 						display: block;
 						font-family: century-gothic, sans-serif;
@@ -1153,6 +1273,7 @@
 				}
 				ul{
 					float: left;
+					width: 70%;
 					li{
 						width: 50%;
 						height: auto;

@@ -1,9 +1,9 @@
 .lp {
   table {
-    th{
-      background: #5a77a0;
-      color: #fff;
-      font-weight: normal;
+    tr{
+      &:nth-child(even){
+        background: #F5F5F5;
+      }
     }
     td {
       text-align: left;
@@ -12,14 +12,14 @@
       }
       &.date {
         text-align: center;
-        color: #666;
+        // color: #666;
         @include screen('mobile') {
           text-align: left;
         }
       }
       &.num {
         text-align: center;
-        color: #666;
+        // color: #666;
         @include screen('mobile') {
           text-align: left;
         }

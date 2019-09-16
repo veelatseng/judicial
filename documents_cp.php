@@ -29,42 +29,49 @@
       <!-- 內頁新增一個classname-->
       <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
       <div class="container">
-        <!-- h2節點 -->
-        <div class="topTitle segment">
-          <h2>當事人</h2>
-        </div>
+        <!-- 左欄可自行刪除 -->
+        <?php require_once('include/left_block.html'); ?>
         <div class="content_block">
           <!-- breadcrumb路徑 -->
           <?php require_once('include/breadcrumb.html'); ?>
-          <!-- PARTY Start -->
-          <section class="party">
-            <div class="process">
-              <ul>
-                <li>
-                  <div class="step_title">
-                    <span>Step 1</span>
-                    起訴起訴起訴起訴
-                  </div>
-                  <ul>
-                    <li>法學資料檢索檢索檢索</li>
-                    <li>裁判書查詢</li>
-                    <li>量刑資訊系統</li>
-                    <li>庭期表查詢庭期表查詢</li>
-                    <li>訴訟須知</li>
-                    <li>書狀範例</li>
-                    <li>訴訟須知</li>
-                    <li>書狀範例</li>
-                  </ul>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
+          <!-- h2節點 -->
+          <h2 class="pageTitle">書狀參考範例</h2>
+          <!-- function_panel -->
+          <?php require_once('include/function_panel.html'); ?>
+          <!-- LP Start -->
+          <section class="cp document">
+            <!-- 表格列表 -->
+            <div class="pdf_block">
+              <a href="#"><img src="images/pdf.png"></a>
             </div>
+            <table summary="" class="table_sprite">
+              <tbody>
+                <tr>
+                  <th>書狀名稱</th>
+                  <td>民事聲請法官迴避狀（一）（依法應自行迴避而不自行迴避）</td>
+                </tr>
+                <tr>
+                  <th>相關條文</th>
+                  <td>
+                    <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0010001&amp;flno=33" target="_blank">民事訴訟法第33條第1項第1款</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th>使用說明</th>
+                  <td>法官有應該主動迴避不能辦理訴訟的情形而沒有迴避，請法院換1位法官審理。</td>
+                </tr>
+                <tr>
+                  <th>檔案下載</th>
+                  <td><a href="">民事聲請法官迴避狀（一）.odt</a><br/><a href="">民事聲請法官迴避狀（一）.pdf</a></td>
+                </tr>
+                <tr>
+                  <th>更新日期</th>
+                  <td>108-07-28</td>
+                </tr>
+              </tbody>
+            </table>
           </section>
-          <!-- PARTY End -->
+          <!-- LP End -->
         </div>
       </div>
       <!-- container -->

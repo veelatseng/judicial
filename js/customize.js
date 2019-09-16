@@ -227,3 +227,10 @@ $(function(){
         });
     });
 });
+$(function(){
+    $('.advanced_search_block .advanced_search').hide();
+    $('.search_btn').off().click(function(e) {
+        $('.advanced_search_block .advanced_search').stop().slideToggle();
+        e.preventDefault();
+    });
+});
