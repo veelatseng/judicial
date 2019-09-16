@@ -211,15 +211,31 @@ $(function(){
         $(this).next(".qa_search_block").slideToggle();
         e.preventDefault();
     });
+    // $('.qa_list').find('.answer').hide();
+    // var _qaItem = $(".qa_list ul li .question a");
+    // var _qaOffset= $(_qaItem).parent('.question').offset().top;
+    
+    // _qaItem.click(function(e) {
+    //     $(this).parent('.question').parent('li').siblings().children('.question').children('a').removeClass('active');
+    //     $(this).toggleClass('active');
+    //     $(this).parent('.question').parent('li').siblings().children('.answer').slideUp();
+    //     $(this).parent('.question').next('.answer').slideToggle();
+    //     e.preventDefault();
+    // });
+
     $('.qa_list').each(function() {
         $(this).find('.answer').hide();
         var _qaItem = $(this).children('ul').children('li').children('.question').children('a');
+        // var _qaOffset=$(this).children('ul').children('li').children('.question').offset().top;
         _qaItem.each(function() {
-            function qa(e){
+            function qa(e){   
+                $('html, body').stop(true, true).animate({ scrollTop: $(this).parent('.question').offset().top }, 800, 'easeOutExpo');
                 $(this).parent('.question').parent('li').siblings().children('.question').children('a').removeClass('active');
                 $(this).toggleClass('active');
                 $(this).parent('.question').parent('li').siblings().children('.answer').slideUp();
                 $(this).parent('.question').next('.answer').slideToggle();
+
+                console.log($(this).parent('.question').offset().top);
                 e.preventDefault();
             }
             $(this).click(qa);
@@ -234,3 +250,32 @@ $(function(){
         e.preventDefault();
     });
 });
+/*-----------------------------------*/
+////////////////unimenu////////////////
+/*-----------------------------------*/
+$('nav.units_block').hide();
+
+function closeuni(){
+    $('nav.units_block').fadeOut(400,function(){
+        $(this).css('top', '-2000px');
+    });
+    // $('.sectorUnits').show();
+}
+$('nav.units_block .close,nav.units_block .overlay').click(function(event) {
+    closeuni();
+});
+$('nav.units_block>ul>li:last-child>ul>li:last-child a').focusout(function() {
+    closeuni();
+});
+function openuni(){
+    $('nav.units_block').css('top', '0px');
+    $('nav.units_block').slideDown(600,'easeOutQuart');
+    $('body').addClass('noscroll');
+    $(this).hide();
+}
+
+$('.units').click(function(event) {
+ openuni();
+});
+
+

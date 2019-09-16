@@ -1047,7 +1047,13 @@
 		.share{
 			text-align: right;
 			margin: 0;
-			a {
+			display: block;
+			width: 100%;
+			ul{
+				right: -4px;
+				left: auto;
+			}
+			.shareButton {
 				display: inline-block;
 				@include box-sizing;
 				width: 36px;
@@ -1058,6 +1064,7 @@
 				background: #9b9b9b;
 				text-indent: -9999px;
 				position: relative;
+				float: right;
 				&:hover,
 				&:focus {
 					color: #FFF;

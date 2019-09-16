@@ -23,9 +23,9 @@ $(function() {
     /*-----------------------------------*/
     //////////// nav如果有兩個選單///////////
     /*-----------------------------------*/
-    var _navLength = $('.navigation ul').length;
+    var _navLength = $('.navigation>ul').length;
     if (_navLength > 1) {
-      $('.navigation ul:nth-child(1)').addClass('left_nav');
+      $('.navigation>ul:nth-child(1)').addClass('left_nav');
     }
     // $('.navigation').has('.language').addClass('have_language');
     /*-----------------------------------*/
@@ -681,8 +681,8 @@ $(function() {
     /*------------------------------------*/
     //////////分享按鈕 share dropdwon////////
     /*------------------------------------*/
-    $('.function_panel .share').children('ul').hide();
-    $('.function_panel .share').prepend('<a href="#" class="shareButton">share分享按鈕</a>');
+    $('.function_panel .share,.answer .share').children('ul').hide();
+    $('.function_panel .share,.answer .share').prepend('<a href="#" class="shareButton">share分享按鈕</a>');
     var _shareButton = $('.shareButton');
     _shareButton.off().click(function(e) {
       $(this).siblings('ul').stop(true, true).slideToggle();
@@ -691,14 +691,14 @@ $(function() {
     _shareButton.keyup(function(event) {
       $(this).siblings('ul').stop(true, true).slideDown();
     });
-    $('.function_panel .share').find('li:last>a').focusout(function(event) {
+    $('.function_panel .share,.answer .share').find('li:last>a').focusout(function(event) {
       $(this).parent().parent('ul').hide();
     });
     // 點外面關閉share
     $(document).on('touchend click', function(e) {
-      var container = $(".function_panel .share");
+      var container = $(".function_panel .share,.answer .share");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
-        $('.function_panel .share ul').hide();
+        $('.function_panel .share ul,.answer .share ul').hide();
       }
     });
     /*------------------------------------*/

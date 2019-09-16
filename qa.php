@@ -81,7 +81,14 @@
                     </a>
                   </div>
                   <div class="answer">
-                    <div class="share"><a href="">分享</a></div>
+                    <div class="share">
+                      <ul>
+                        <li><a href="#"><img src="images/basic/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_line.png" alt="line"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_plurk.png" alt="plurk"></a></li>
+                      </ul>
+                    </div>
                     <div class="text">
                       <h3>查看法拍屋之公告</h3>
                       <ol>
@@ -122,7 +129,14 @@
                     </a>
                   </div>
                   <div class="answer">
-                    <div class="share"><a href="">分享</a></div>
+                    <div class="share">
+                      <ul>
+                        <li><a href="#"><img src="images/basic/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_line.png" alt="line"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_plurk.png" alt="plurk"></a></li>
+                      </ul>
+                    </div>
                     <div class="text">
                       <h3>查看法拍屋之公告</h3>
                       <ol>
@@ -163,7 +177,14 @@
                     </a>
                   </div>
                   <div class="answer">
-                    <div class="share"><a href="">分享</a></div>
+                    <div class="share">
+                      <ul>
+                        <li><a href="#"><img src="images/basic/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_line.png" alt="line"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_plurk.png" alt="plurk"></a></li>
+                      </ul>
+                    </div>
                     <div class="text">
                       <h3>查看法拍屋之公告</h3>
                       <ol>
@@ -204,7 +225,14 @@
                     </a>
                   </div>
                   <div class="answer">
-                    <div class="share"><a href="">分享</a></div>
+                    <div class="share">
+                      <ul>
+                        <li><a href="#"><img src="images/basic/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_line.png" alt="line"></a></li>
+                        <li><a href="#"><img src="images/basic/icon_plurk.png" alt="plurk"></a></li>
+                      </ul>
+                    </div>
                     <div class="text">
                       <h3>查看法拍屋之公告</h3>
                       <ol>
