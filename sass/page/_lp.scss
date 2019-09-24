@@ -24,6 +24,10 @@
           text-align: left;
         }
       }
+      img{
+        vertical-align: text-bottom;
+        margin-left: 5px;
+      }
     }
   }
   .list {
@@ -68,9 +72,10 @@
           }
         }
         time {
-          display: block;
+          display: inline-block;
           color: #666;
           font-size: .938em;
+          margin-left: 1em;
         }
       }
     }

@@ -58,13 +58,13 @@
               <tbody>
                 <tr>
                   <td data-title="序號" class="num" class="num">1</td>
-                  <td data-title="書狀名稱"><a href="#">民事聲請法官迴避狀（一）（依法應自行迴避而不自行迴避）<span class="new">最新消息</span></a></td>
+                  <td data-title="書狀名稱"><a href="#">民事聲請法官迴避狀（一）（依法應自行迴避而不自行迴避）<img src="images/basic/icon_new.png" alt="new"></a></td>
                   <td data-title="檔案下載"><a href="#" class="pdf">pdf</a><a href="#" class="odt">odt</a></td>
                   <td data-title="更新日期" class="date" >108-07-28<br></td>
                 </tr>
                 <tr>
                   <td data-title="序號" class="num">2</td>
-                  <td data-title="書狀名稱"><a href="#">民事聲請法官迴避狀（二）（執行職務有偏頗之虞）<span class="hot">熱門消息</span></td>
+                  <td data-title="書狀名稱"><a href="#">民事聲請法官迴避狀（二）（執行職務有偏頗之虞）<img src="images/basic/icon_hot.png" alt="hot"></td>
                     <td data-title="檔案下載"><a href="#" class="pdf">pdf</a><a href="#" class="odt">odt</a></td>                                    
                     <td data-title="更新日期" class="date">107-11-08</td>
                   </tr>

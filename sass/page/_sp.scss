@@ -683,7 +683,7 @@
 				margin-left: 1em;
 				padding-left: 30px;
 			}
-			li{
+			>li{
 				&:first-child{
 					position: absolute;
 					left: -28px;
@@ -725,6 +725,9 @@
 					p{
 						margin-top: 0;
 						text-align: justify;
+					}
+					ul{
+						margin-bottom: 1em;
 					}
 				}
 			}
@@ -872,11 +875,12 @@
 		}
 	}
 	.qa_search{
-		display: inline-block;
+		display: block;
 		clear: both;
 		position: relative;
-		float: right;
+		float: none;
 		margin: 0;
+		border-bottom: 1px solid #fff;
 		@include screen('mobile') {
 			width: 100%;
 			position: relative;
@@ -913,7 +917,7 @@
 		}
 	}
 	.qa_search_block{
-		display: block;
+		display: none;
 		clear: both;
 		background: #09283b;
 		padding: 2.5em 1em;
@@ -976,6 +980,16 @@
 			}
 		}
 	}
+	.category{
+		a:before{
+			background: url(../images/basic/icon_search2.png) no-repeat center center;
+			background-size: contain;
+		}
+		a:hover:before,a:focus:before{
+			background: url(../images/basic/icon_search2_.png) no-repeat center center;
+			background-size: contain;
+		}
+	}
 }
 .qa_list{
 	>ul{
@@ -1031,27 +1045,34 @@
 			font-size: 1.375em;
 			padding: .8em;
 			display: table-cell;
-			vertical-align: top;
+			vertical-align: middle;
 		}
 		.text{
 			font-size: 1.125em;
 			display: table-cell;
-			padding: 1em;
+			padding: 1em 3em 1em 1em;
 			vertical-align: top;
 			color: #444;
+			font-weight: bold;
+			img{
+				vertical-align: text-bottom;
+				margin-left: 5px;
+			}
 		}
 	}
 	.answer{
-		margin: 10px 20px;
+		margin: 10px 0;
 		clear: both;
 		.share{
 			text-align: right;
 			margin: 0;
 			display: block;
 			width: 100%;
+			padding-right: 5px;
 			ul{
-				right: -4px;
+				right: 0;
 				left: auto;
+				box-shadow: 0 0 0 RGBA(0, 0, 0, 0);
 			}
 			.shareButton {
 				display: inline-block;
@@ -1109,11 +1130,13 @@
 		}
 		.text{
 			line-height: 160%;
+			margin: 0 40px;
 		}
 		.dep{
 			text-align: right;
-			color: #0059ab;
+			color: #9b9b9b;
 			margin-bottom: 1em;
+			margin-right: 40px;
 		}
 	}
 }

@@ -56,7 +56,7 @@
               </form>  
             </div>
             <!-- category -->
-            <div class="category col5">
+            <div class="category col6">
               <ul>
                 <li><a href="#">標籤1</a></li>
                 <li><a href="#">標籤2</a></li>
@@ -125,7 +125,7 @@
                   <div class="question">
                     <a href="">
                       <span class="num">Q1230</span>
-                      <span class="text">如何購買法拍屋</span>
+                      <span class="text">如何購買法拍屋 <img src="images/basic/icon_new.png" alt="new"><img src="images/basic/icon_hot.png" alt="hot"></span>
                     </a>
                   </div>
                   <div class="answer">
@@ -173,7 +173,7 @@
                   <div class="question">
                     <a href="">
                       <span class="num">Q1230</span>
-                      <span class="text">如何購買法拍屋</span>
+                      <span class="text">如何購買法拍屋<img src="images/basic/icon_hot.png" alt="hot"></span>
                     </a>
                   </div>
                   <div class="answer">

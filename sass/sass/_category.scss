@@ -10,6 +10,14 @@
             float: left;
         }
     }
+    &.col2{
+        ul li{
+            @include make-xs-column(12);
+            @include make-sm-column(6);
+            @include make-md-column(6);
+            @include make-lg-column(6);
+        }
+    }
     &.col3{
         ul li{
             @include make-xs-column(12);
@@ -29,9 +37,9 @@
     &.col6{
         ul li{
             @include make-xs-column(12);
-            @include make-sm-column(6);
-            @include make-md-column(6);
-            @include make-lg-column(6);
+            @include make-sm-column(2);
+            @include make-md-column(2);
+            @include make-lg-column(2);
         }
     }
     &.col5{

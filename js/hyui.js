@@ -48,6 +48,8 @@ $(function() {
     var _sidebar = $('.sidebar'),
     _search = $('.search'),
     _nav = $('.navigation'),
+    _units = $('.units'),
+    _units_block = $('.units_block'),
     _sidebarClose = $('.sidebarClose'),
     _sidebarCtrl = $('.sidebarCtrl'),
     _overlay = $('.menu_overlay');
@@ -115,6 +117,8 @@ $(function() {
             _sidebar.hide();
             _overlay.hide();
             _nav.prependTo(_mArea);
+            // _units.prependTo(_mArea);
+            // _units_block.prependTo(_mArea);
             _menu.prependTo(_mArea);
             _headershare.appendTo(_mArea);
             // $('.megamenu .menu_2nd>.menuSlider').show();
@@ -171,7 +175,9 @@ $(function() {
             /*-----------------------------------*/
             hideSidebar();
             _body.removeClass('noscroll');
-            _nav.prependTo('.header .container');
+            _nav.prependTo('.header .container');         
+            _units_block.prependTo('.header .container');
+            _units.prependTo('.header .container');
             _headershare.appendTo('.header .container');
             _search.appendTo('.menu>ul>li:last-child .megamenu');
             _menu.appendTo('.header .container');
@@ -181,7 +187,7 @@ $(function() {
             // $('.language').find('ul').hide();
             // 副選單滑出
             liHasChild.on({
-              mouseenter: function() {
+              mousedown: function() {
                     // $(this).children('ul').stop(true, false).fadeIn();
                     $(this).children('.megamenu').stop(true, false).fadeIn();
                     $('.menuSlider').slick('refresh');
