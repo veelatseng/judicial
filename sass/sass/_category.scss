@@ -53,13 +53,23 @@
         color: $primaryColor;
         width: 100%;
         @include box-sizing();
+        // &:before{
+        //     content: "";
+        //     width: 13px;
+        //     height: 14px;
+        //     display: inline-block;
+        //     background: url(../images/basic/icon_category.png) no-repeat center center;
+        //     margin-right: .5em;
+        // }
         &:before{
             content: "";
-            width: 13px;
-            height: 14px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 0 5px 6px;
+            border-color: transparent transparent transparent #5978a4;
             display: inline-block;
-            background: url(../images/basic/icon_category.png) no-repeat center center;
-            margin-right: .5em;
+            margin-right: 8px;
         }
         &:hover,
         &:focus {
@@ -68,7 +78,8 @@
             box-shadow: none;
             &:before{
                 content: "";
-                background: url(../images/basic/icon_category_.png) no-repeat center center;
+                // background: url(../images/basic/icon_category_.png) no-repeat center center;
+                border-color: transparent transparent transparent #fff;
             }
         }
         &.active {

@@ -656,7 +656,7 @@
 		padding: 1.5em 2em;
 		// font-size: 0.9375em;
 		letter-spacing: .04em;
-		display: none;
+		// display: none;
 		.info{
 			margin-bottom: 2em;
 			display: block;clear: both;
@@ -767,7 +767,6 @@
 		}
 	}
 	.history_search{
-		display: block;
 		background: #f4f4f4;
 	}
 	.function{
@@ -1060,8 +1059,9 @@
 			text-align: right;
 			margin: 0;
 			display: block;
-			width: 100%;
+			// width: 100%;
 			padding-right: 5px;
+			float: right;
 			ul{
 				right: 0;
 				left: auto;
