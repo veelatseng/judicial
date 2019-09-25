@@ -221,11 +221,13 @@ $(function(){
         $(this).next(".qa_search_block").slideToggle();
         e.preventDefault();
     });
-    $('.qa_list').each(function() {
+    $('.qa_list>ul>li').each(function() {
         $(this).find('.answer').hide();
-        var _qaItem = $(this).children('ul').children('li').children('.question').children('a');
+        var _qaItem = $(this).children('.question').children('a');
+        var _scrollTop= $(this).offset().top - 55;
         _qaItem.each(function() {
             function qa(e){
+                $('html, body').stop(true, true).animate({ scrollTop: _scrollTop }, 800, 'easeOutExpo');
                 $(this).parent('.question').parent('li').siblings().children('.question').children('a').removeClass('active');
                 $(this).toggleClass('active');
                 $(this).parent('.question').parent('li').siblings().children('.answer').slideUp();

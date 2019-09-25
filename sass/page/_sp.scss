@@ -902,7 +902,8 @@
 			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 			&:after{
 				content: "";
-				background: $lightColor url(../images/icon_more_.png) no-repeat center center;
+				background: $lightColor url(../images/basic/icon_search2_.png) no-repeat center center;
+				background-size: 20px;
 				position: absolute;
 				right: 0;
 				top: 0;
@@ -981,14 +982,6 @@
 		}
 	}
 	.category{
-		a:before{
-			background: url(../images/basic/icon_search2.png) no-repeat center center;
-			background-size: contain;
-		}
-		a:hover:before,a:focus:before{
-			background: url(../images/basic/icon_search2_.png) no-repeat center center;
-			background-size: contain;
-		}
 	}
 }
 .qa_list{

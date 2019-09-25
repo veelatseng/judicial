@@ -125,7 +125,7 @@
                   <div class="question">
                     <a href="">
                       <span class="num">Q1230</span>
-                      <span class="text">如何購買法拍屋 <img src="images/basic/icon_new.png" alt="new"><img src="images/basic/icon_hot.png" alt="hot"></span>
+                      <span class="text">如何購買法拍屋 <img src="images/basic/icon_new.png" alt="new"></span>
                     </a>
                   </div>
                   <div class="answer">
@@ -173,7 +173,7 @@
                   <div class="question">
                     <a href="">
                       <span class="num">Q1230</span>
-                      <span class="text">如何購買法拍屋<img src="images/basic/icon_hot.png" alt="hot"></span>
+                      <span class="text">如何購買法拍屋</span>
                     </a>
                   </div>
                   <div class="answer">
