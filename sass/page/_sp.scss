@@ -1214,49 +1214,6 @@
 			&:nth-child(3){
 				text-align: center;
 			}
-			a{
-				
-				&.new,&.hot,&.pdf,&.odt{
-					text-indent: -9999px;
-					overflow: hidden;
-					display: inline-block;
-					margin: 0 5px;
-					&:before{
-						content: "";
-						display: block;
-					}
-					&:focus{
-						box-shadow: 0 0px 0px 1px #5a77a0;
-					}
-				}
-				&.new{
-					
-				}
-				&.hot{
-					&:before{
-						content: "";
-
-					}
-				}
-				&.pdf{
-					width: 21px;
-					height: 24px;
-					&:before{
-						width: 21px;
-						height: 24px;
-						background: url(../images/basic/icon_pdf.png) no-repeat 0 0 
-					}
-				}
-				&.odt{
-					width: 21px;
-					height: 24px;
-					&:before{
-						width: 21px;
-						height: 24px;
-						background: url(../images/basic/icon_odt.png) no-repeat 0 0 
-					}
-				}
-			}
 		}
 	}
 	.pdf_block{
@@ -1333,7 +1290,7 @@
 }
 .communique{
 	.communique_info{
-		padding:10px 1em 10px 2em;
+		padding: 10px 1em 10px 1.5em;
 		border-top: 1px solid #ddd;
 		border-bottom: 1px solid #ddd;
 		display: block;
@@ -1343,7 +1300,7 @@
 		&:before{
 			content: "";
 			position: absolute;
-			left: 12px;
+			left: 8px;
 			top: 17px;
 			display: block;
 			width: 12px;
@@ -1393,6 +1350,17 @@
 			margin-right: 0;
 			@include screen('mobile') {
 				width: 100%;
+			}
+		}
+	}
+	.function_panel{
+		border: 0;
+		padding: 0 .5em;
+	}
+	.lp .table_list{
+		td{
+			&:nth-child(6){
+				text-align: center;
 			}
 		}
 	}

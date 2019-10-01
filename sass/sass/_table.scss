@@ -66,8 +66,39 @@ table {
         text-align: left;
       }
     }
-    a {
+    a{
       word-break: break-all;
+      &.new,&.hot,&.pdf,&.odt{
+        text-indent: -9999px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 0 5px;
+        &:before{
+          content: "";
+          display: block;
+        }
+        &:focus{
+          box-shadow: 0 0px 0px 1px #5a77a0;
+        }
+      }
+      &.pdf{
+        width: 21px;
+        height: 24px;
+        &:before{
+          width: 21px;
+          height: 24px;
+          background: url(../images/basic/icon_pdf.png) no-repeat 0 0 
+        }
+      }
+      &.odt{
+        width: 21px;
+        height: 24px;
+        &:before{
+          width: 21px;
+          height: 24px;
+          background: url(../images/basic/icon_odt.png) no-repeat 0 0 
+        }
+      }
     }
   }
   &.table_hover {

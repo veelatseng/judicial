@@ -36,11 +36,11 @@
           <?php require_once('include/breadcrumb.html'); ?>
           <!-- h2節點 -->
           <h2 class="pageTitle">司法院公報</h2>
+          <div class="communique_info">
+            108年9月份最新公報上線，歡迎多加利用。
+          </div>   
           <!-- LP Start -->
-          <section class="lp">
-            <div class="communique_info">
-              108年9月份最新公報上線，歡迎多加利用。
-            </div>
+          <section class="lp">   
             <div class="communique_search_block">
               <form action="" class="form_inline">
                 <div class="form_grp">
@@ -83,6 +83,7 @@
                     <th>期數</th>
                     <th>類別</th>
                     <th>標題</th>
+                    <th>檔案下載</th>
                     <th>頁次</th>
                   </tr>
                 </thead>
@@ -93,6 +94,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
+                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                   <tr>
@@ -101,6 +103,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
+                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                   <tr>
@@ -109,6 +112,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
+                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                   <tr>
@@ -117,6 +121,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
+                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                   <tr>
@@ -125,6 +130,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
+                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                   <tr>
@@ -133,6 +139,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
+                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                   <tr>
@@ -141,6 +148,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
+                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                   <tr>
@@ -149,6 +157,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
+                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                   <tr>
@@ -157,6 +166,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
+                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                   <tr>
@@ -165,6 +175,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
+                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                 </tbody>
