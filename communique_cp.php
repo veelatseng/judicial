@@ -97,8 +97,6 @@
             </table>
           </section>
           <!-- CP End -->
-          <!-- Pagination -->
-          <?php require_once('include/pagination.html'); ?>
         </div>
       </div>
       <!-- container -->
