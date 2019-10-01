@@ -10,20 +10,65 @@ table {
     padding: .5em;
     text-align: left;
   }
-  td {
-    border: #ddd 1px solid;
-    word-break: break-all;
-    a {
-      word-break: break-all;
+  tr{
+    &:nth-child(even){
+      background: #F5F5F5;
     }
   }
   th {
-    background: #5a77a0;
+    background: #777;
     color: #fff;
     border: #DDD 1px solid;
+    border-right: 0;
+    border-left: 0;
     text-align: center;
     white-space: nowrap;
     font-weight: normal;
+    &.nowrap{
+      white-space: nowrap;
+      @include screen('mobile') {
+        white-space: normal;
+      }
+    }
+    &.left{
+      text-align: left;
+    }
+    &.right{
+      text-align: right;
+      @include screen('mobile') {
+        text-align: left;
+      }
+    }
+  }
+  td {
+    border: #ddd 1px solid;
+    border-right: 0;
+    border-left: 0;
+    word-break: break-all;
+    &.nowrap{
+      white-space: nowrap;
+      @include screen('mobile') {
+        white-space: normal;
+      }
+    }
+    &.date,&.num,&.cneter {
+      text-align: center;
+      @include screen('mobile') {
+        text-align: left;
+      }
+    }
+    &.left{
+      text-align: left;
+    }
+    &.right{
+      text-align: right;
+      @include screen('mobile') {
+        text-align: left;
+      }
+    }
+    a {
+      word-break: break-all;
+    }
   }
   &.table_hover {
     tr:hover {
@@ -38,46 +83,45 @@ table {
 }
 .table_list {
   @include screen('xs_mobile') {
-        background-color: transparent !important; //Force table to not be like tables anymore
-        thead,
-        tbody,
-        th,
-        td,
-        tr {
-          display: block;
-        }
-        thead tr {
-          position: absolute;
-          top: -9999px;
-          left: -9999px;
-        }
-        tr {
-          border: 1px solid #ccc;
-            margin-bottom: 10px; // background-color: #333;
-          }
-          td {
-            // Behave  like a "row"
-            border: none !important;
-            border-bottom: 1px solid #eee !important;
-            position: relative;
-            padding-left: 35% !important;
-            white-space: normal;
-            text-align: left;
-            &:before {
-              content: attr(data-title);
-              position: absolute;
-              top: .5em;
-              left: .5em;
-              width: 30%;
-              padding-right: 10px;
-              white-space: nowrap;
-              text-align: left;
-              font-weight: bold;
-              color: #000;
-            }
-          }
-        }
+    background-color: transparent !important; 
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    tr {
+      border: 1px solid #ccc;
+      margin-bottom: 10px; 
+    }
+    td {
+      border: none !important;
+      border-bottom: 1px solid #eee !important;
+      position: relative;
+      padding-left: 35% !important;
+      white-space: normal;
+      text-align: left;
+      &:before {
+        content: attr(data-title);
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        width: 30%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: #000;
       }
+    }
+  }
+}
 // fix_th_table
 .fix_th_table {
   margin: 1em 0;

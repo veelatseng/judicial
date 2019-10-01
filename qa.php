@@ -40,16 +40,41 @@
             <div class="qa_search_block">
               <form action="" class="form_inline">
                 <div class="form_grp">
-                  <label for="">標題</label>
-                  <input name="" id="" type="text" placeholder="請輸入標題">
-                  <label for="">資料類別</label>
+                  <label for="">問題編號</label>
+                  <input name="" id="" type="text" placeholder="請輸入問題編號">
+                </div>
+                <div class="form_grp">
+                  <label for="">類別</label>
                   <select name="" id="">
-                    <option value="">請選擇</option>
+                    <option value="">全部</option>
+                    <option value="01">民事</option>
+                    <option value="02">刑事</option>
+                    <option value="03">少年</option>
+                    <option value="04">家事</option>
+                    <option value="05">行政訴訟</option>
+                    <option value="06">智財</option>
+                    <option value="07">公懲</option>
+                    <option value="08">民事執行</option>
+                    <option value="09">債務清理</option>
+                    <option value="10">非訟</option>
+                    <option value="11">公證</option>
+                    <option value="12">提存</option>
+                    <option value="13">登記</option>
+                    <option value="19">大法庭</option>
+                    <option value="21">司法人事</option>
+                    <option value="22">司法會計</option>
+                    <option value="23">司法統計</option>
+                    <option value="24">政風</option>
+                    <option value="26">出版品</option>
+                    <option value="29">法官評鑑</option>
+                    <option value="30">釋憲</option>
                   </select>
-                  <label for="">單位</label>
-                  <select name="" id="">
-                    <option value="">請選擇</option>
-                  </select>
+                </div>
+                <div class="form_grp">
+                  <label for="">全文檢索</label>
+                  <input name="" id="" type="text" placeholder="請輸入問題編號">
+                </div>
+                <div class="btn_grp">
                   <input name="" type="submit" title="查詢" value="查詢" />
                   <input name="" type="reset" title="清除" value="清除" />
                 </div>

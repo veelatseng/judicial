@@ -6,6 +6,35 @@ h1.title {
 }
 .cp {
   margin-top: 1em;
+  .pic {
+    float: left;
+    margin: 5px 1em .5em 0;
+    width: auto;
+    width: 45%;
+    max-width: 400px;
+    background: #F2F2F2;
+    overflow: hidden;
+    padding: .5em .5em .2em;
+    img {
+      float: none;
+      width: 100%;
+      margin: 0;
+      display:block;
+    }
+    span {
+      text-align: center;
+      display: block;
+      font-size: .938em;
+    }
+    @include screen('mobile') {
+      float: none;
+      max-width: 100%;
+      width: auto;
+      margin: 0px auto;
+      display: block;
+      margin-bottom: .5em;
+    }
+  }
   &.small_size {
     font-size: .938em;
   }
@@ -53,7 +82,7 @@ h1.title {
     background: #F2F2F2;
     @extend %clearfix;
     li {
-      width: 32%;
+      width: 24%;
       margin-bottom: .5em;
       display: inline-block;
       vertical-align: top;

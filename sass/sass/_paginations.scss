@@ -140,14 +140,16 @@
         padding: 1px 4px;
         margin: 0;
         display: inline-block;
+        color: $primaryColor;
         &:first-child{
           margin-left: 5px;
         }
         &:last-child{
           margin-right: 5px;
         }
+
         &:hover{
-          color: $primaryColor;
+          color: #5a77a0;
           text-decoration: underline;
         }
         &:focus{
@@ -155,6 +157,17 @@
           color: #fff;
           border-radius: 3px;
           box-shadow: 0 0 0 0 transparent inset;
+        }
+        &.active{
+          background: $primaryColor;
+          color: #fff;
+          border-radius: 2px;
+          &:focus{
+            background: #5a77a0;
+            color: #fff;
+            border-radius: 3px;
+            box-shadow: 0 0 0 0 transparent inset;
+          }
         }
       }
     }

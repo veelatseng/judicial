@@ -58,12 +58,18 @@ body {
   &:before{
     content: "";
     width: 100%;
-    height: 194px;
+    height: 195px;
     background:#e9e5e1 url(../images/inner_bg.jpg) no-repeat center center;
     display: block;
     margin-bottom: 2em;
     @include screen('mobile') {
       display: none;
+    }
+  }
+  &.communique{
+    &:before{
+      content: "";
+      background:#e9e5e1 url(../images/communique_bg.jpg) no-repeat center center;
     }
   }
   &.small_size {
@@ -111,9 +117,9 @@ body {
             border-bottom: 0;
           }
           >a{
-            padding: .6em 1em;
+            padding: .6em 1em .6em 2em;
             display: block;
-            color: $primaryColor;
+            color: #444;
             font-weight: bold;
             position: relative;
             &:before{
@@ -122,13 +128,26 @@ body {
               height: 0;
               border-style: solid;
               border-width: 5px 0 5px 6px;
-              border-color: transparent transparent transparent $primaryColor;
-              display: inline-block;
-              margin-right: 8px;
+              border-color: transparent transparent transparent #444;
+              display: block;
+              position: absolute;
+              left: 15px;
+              top: 17px;
             }
             &:hover,&:focus,&.active{
               background: #ccc;
+              color: $primaryColor;
               box-shadow: none;
+              &:before{
+                content: "";
+                border-color: transparent transparent transparent $primaryColor;
+              }
+            }
+            &.active{
+              background: transparent;
+              &:hover{
+                background: #ccc;
+              }
             }
           }
           ul{
@@ -138,9 +157,23 @@ body {
             li{
               border-top: 1px dotted #ccc;
               a{
-                padding: .6em 1em .6em 2em;
+                padding: .6em 1em .6em 2.1em;
                 display: block;
                 color: #444;
+                position: relative;
+                &:before{
+                  content: "";
+                  width: 5px;
+                  height: 5px;
+                  display: block;
+                  border-right: 1px solid #515151;
+                  border-top: 1px solid #515151;
+                  transform: rotate(45deg);
+                  vertical-align: middle;
+                  position: absolute;
+                  left: 15px;
+                  top: 17px;
+                }
                 &:hover,&:focus{
                   color: $linkColor;
                   box-shadow: none;

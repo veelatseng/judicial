@@ -85,7 +85,7 @@
 		}
 	}
 }
-
+// 司法改革
 .reform{
 	position: relative;
 	.reform_title{
@@ -836,7 +836,6 @@
 		}
 	}
 }
-
 .noBg{
 	background: none;
 	padding: 0 5.3em;
@@ -851,6 +850,7 @@
 		padding: 1.5em 0;
 	}
 }
+// 常見問答
 .qa{
 	.qaTitle{
 		text-align: center;
@@ -922,13 +922,18 @@
 		background: #09283b;
 		padding: 2.5em 1em;
 		box-sizing: border-box;
+		overflow: hidden;
 		@include screen('mobile') {
 			padding: 1em;
 		}
-		.form_grp{
+		.form_grp,.btn_grp{
 			overflow: hidden;
 			margin: 0;
-			width: 100%;
+			padding: 0;
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(3);
+			@include make-lg-column(3);
 		}
 		label{
 			color: #fff;
@@ -936,46 +941,50 @@
 			vertical-align: baseline;
 			@include screen('mobile') {
 				display: block;
-				margin: 0 0 10px 0
+				margin-bottom: 10px;
 			}
 		}
 		select{
 			border-radius: 0;
 			border:0;
-			width: 20%;
-			// margin: 0 5px;
+			width: 80%;
 			@include screen('mobile') {
-				width: 100%;
+				width: 100%!important;
 			}
 		}
 		input[type="text"]{
 			border-radius: 0;
 			border:0;
-			// margin: 0 5px;
 			padding: 10px;
 			color: #444;
-			width: 20%;
 			@include screen('mobile') {
-				width: 100%;
+				width: 100%!important;
+			}
+		}
+		select,input{
+			margin-bottom: 0;
+			@include screen('mobile') {
+				margin-bottom: 10px;
 			}
 		}
 		input[type="button"],input[type="submit"],input[type="reset"]{
 			border-radius: 0;
 			border:0;
-			margin: 0 0 0 10px;
+			margin: 0 1%;
 			background: $linkColor;
 			color: #fff;
-			padding: 8px 16px 9px 16px;
 			vertical-align: top;
-			width: 10%;
-			@media (max-width:1150px){
-				width: auto;
-			}
+			width: 48%;
+			float: left;
+			padding: .63em 1em!important;
 			@include screen('mobile') {
-				width: 48%;
-				margin: 1em 3% 0 0;
+				width: 49%;
+				margin-top: .8em!important;
+				margin-right: 1%;
+				margin-left: 0;
 				&:nth-child(2n){
-					margin: 1em 0 0 0;
+					margin-left: 1%;
+					margin-right: 0;
 				}
 			}
 		}
@@ -1133,6 +1142,7 @@
 		}
 	}
 }
+// 書狀範例
 .document{
 	.advanced_search_block{
 		display: block;
@@ -1188,6 +1198,13 @@
 			clear: both;
 			.form_grp{
 				border-bottom: 0;
+				@include make-xs-column(12);
+				@include make-sm-column(6);
+				@include make-md-column(6);
+				@include make-lg-column(6);
+			}
+			.btn_grp{
+				padding: 0;
 			}
 		}
 	}
@@ -1254,6 +1271,7 @@
 		}
 	}
 }
+// 當事人
 .party{
 	.process{
 		width: 80%;
@@ -1309,6 +1327,72 @@
 						}
 					}
 				}
+			}
+		}
+	}
+}
+.communique{
+	.communique_info{
+		padding:10px 1em 10px 2em;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		display: block;
+		clear: both;
+		margin-bottom: 1em;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 12px;
+			top: 17px;
+			display: block;
+			width: 12px;
+			height: 12px;
+			background: url(../images/basic/icon_clock.png) no-repeat 0 0;
+		}
+	}
+	.communique_search_block{
+		background: #e5e5e5;
+		padding: 1em 1em;
+		box-sizing: border-box;
+		overflow: hidden;
+		clear: both;
+		margin-bottom: 1em;
+		.form_grp,.btn_grp{
+			padding: 0;
+			margin: 0;
+			@include screen('mobile') {
+				width: 100%;
+			}
+		}
+		select,input{
+			margin-bottom: 0;
+			margin-right: 4px;
+			@include screen('mobile') {
+				margin-bottom: 10px;
+			}
+		}
+		input{
+			padding: .54em;
+		}
+		input[type="text"]{
+			width: 250px;
+			@include screen('mobile') {
+				width: 100%;
+			}
+		}
+		input[type="button"],input[type="submit"],input[type="reset"]{
+			border-radius: 0;
+			border:0;
+			background: $linkColor;
+			color: #fff;
+			padding: 0.45em 1em !important;
+			margin-top: 0 !important;
+			vertical-align: middle;
+			width: 100px;
+			margin-right: 0;
+			@include screen('mobile') {
+				width: 100%;
 			}
 		}
 	}

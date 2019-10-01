@@ -187,7 +187,7 @@ $(function() {
             // $('.language').find('ul').hide();
             // 副選單滑出
             liHasChild.on({
-              mousedown: function() {
+              mouseenter: function() {
                     // $(this).children('ul').stop(true, false).fadeIn();
                     $(this).children('.megamenu').stop(true, false).fadeIn();
                     $('.menuSlider').slick('refresh');
