@@ -94,7 +94,7 @@
                     <td data-title="期數" class="num">01</td>
                     <td data-title="類別" class="num">解釋</td>
                     <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
+                    <td data-title="檔案下載"><a href="#" class="jpg">jpg</a></td>
                     <td data-title="頁次">1-3</td>
                   </tr>
                   <tr>

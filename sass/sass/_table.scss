@@ -68,7 +68,7 @@ table {
     }
     a{
       word-break: break-all;
-      &.new,&.hot,&.pdf,&.odt{
+      &.new,&.hot,&.pdf,&.odt,&.jpg{
         text-indent: -9999px;
         overflow: hidden;
         display: inline-block;
@@ -90,13 +90,22 @@ table {
           background: url(../images/basic/icon_pdf.png) no-repeat 0 0 
         }
       }
-      &.odt{
+      &.jpg{
         width: 21px;
         height: 24px;
         &:before{
           width: 21px;
           height: 24px;
-          background: url(../images/basic/icon_odt.png) no-repeat 0 0 
+          background: url(../images/basic/icon_jpg.jpg) no-repeat 0 0 
+        }
+      }
+      &.pdf{
+        width: 21px;
+        height: 24px;
+        &:before{
+          width: 21px;
+          height: 24px;
+          background: url(../images/basic/icon_pdf.png) no-repeat 0 0 
         }
       }
     }
