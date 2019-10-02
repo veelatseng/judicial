@@ -1208,7 +1208,7 @@
 			}
 		}
 	}
-	.table_list{
+	table{
 		th{}
 		td{
 			&:nth-child(3){
@@ -1357,7 +1357,7 @@
 		border: 0;
 		padding: 0 .5em;
 	}
-	.lp .table_list{
+	.lp table{
 		td{
 			&:nth-child(6){
 				text-align: center;
