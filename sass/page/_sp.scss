@@ -947,7 +947,7 @@
 		select{
 			border-radius: 0;
 			border:0;
-			width: 80%;
+			width: 70%;
 			@include screen('mobile') {
 				width: 100%!important;
 			}
@@ -1333,7 +1333,7 @@
 			padding: .54em;
 		}
 		input[type="text"]{
-			width: 230px;
+			width: 130px;
 			@include screen('mobile') {
 				width: 100%;
 			}
