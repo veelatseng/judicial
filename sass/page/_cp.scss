@@ -211,7 +211,6 @@ div.tag {
       }
     }
     a {
-
       &:hover,
       &:focus {
         // border: 2px solid #666;
@@ -223,50 +222,6 @@ div.tag {
         color: #666;
         display: inline-block;
         margin: 0px .5em;
-      }
-      &.doc,&.odf,&.pdf,&.xls,&.ppt,&.ppt,&.jpg,&.mp3,&.mov,&.txt,&.dot,&.zip,&.other{
-        width: 21px;
-        height: 24px;
-        display: inline-block;
-        margin-right: 4px;
-        text-indent: -9999px;
-        vertical-align: text-bottom;
-      }
-      &.doc{
-        background: url(../images/basic/icon_doc.jpg);
-      }
-      &.odf{
-        background: url(../images/basic/icon_odf.jpg);
-      }
-      &.pdf{
-        background: url(../images/basic/icon_pdf.jpg);
-      }
-      &.xls{
-        background: url(../images/basic/icon_xls.jpg);
-      }
-      &.ppt{
-        background: url(../images/basic/icon_ppt.jpg);
-      }
-      &.jpg{
-        background: url(../images/basic/icon_jpg.jpg);
-      }
-      &.mp3{
-        background: url(../images/basic/icon_mp3.jpg);
-      }
-      &.mov{
-        background: url(../images/basic/icon_mov.jpg);
-      }
-      &.txt{
-        background: url(../images/basic/icon_txt.jpg);
-      }
-      &.dot{
-        background: url(../images/basic/icon_doc.jpg);
-      }
-      &.zip{
-        background: url(../images/basic/icon_zip.jpg);
-      }
-      &.other{
-        background: url(../images/basic/icon_other.jpg);
       }
     }
   }

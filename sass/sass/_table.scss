@@ -68,7 +68,7 @@ table {
     }
     a{
       word-break: break-all;
-      &.new,&.hot,&.pdf,&.odt,&.jpg{
+      &.new,&.hot{
         text-indent: -9999px;
         overflow: hidden;
         display: inline-block;
@@ -99,13 +99,31 @@ table {
           background: url(../images/basic/icon_jpg.jpg) no-repeat 0 0 
         }
       }
-      &.pdf{
+      &.odt{
         width: 21px;
         height: 24px;
         &:before{
           width: 21px;
           height: 24px;
-          background: url(../images/basic/icon_pdf.png) no-repeat 0 0 
+          background: url(../images/basic/icon_odt.png) no-repeat 0 0 
+        }
+      }
+      &.doc{
+        width: 21px;
+        height: 24px;
+        &:before{
+          width: 21px;
+          height: 24px;
+          background: url(../images/basic/icon_doc.png) no-repeat 0 0 
+        }
+      }
+      &.zip{
+        width: 21px;
+        height: 24px;
+        &:before{
+          width: 21px;
+          height: 24px;
+          background: url(../images/basic/icon_zip.png) no-repeat 0 0 
         }
       }
     }

@@ -72,6 +72,12 @@ body {
       background:#e9e5e1 url(../images/communique_bg.jpg) no-repeat center center;
     }
   }
+  &.weekly{
+    &:before{
+      content: "";
+      background:#e9e5e1 url(../images/weekly_bg.jpg) no-repeat center center;
+    }
+  }
   &.small_size {
     font-size: .938em;
   }
@@ -189,5 +195,59 @@ body {
   .content_block{
     overflow: hidden;
     padding-bottom: 2em;
+    a{
+      &:focus{
+        box-shadow: 0 0px 0px 1px #5a77a0;
+      }
+      &.doc,&.odf,&.pdf,&.xls,&.ppt,&.ppt,&.jpg,&.mp3,&.mov,&.txt,&.dot,&.zip,&.other,&.odt{
+        width: 21px;
+        height: 24px;
+        display: inline-block;
+        margin-right: 4px;
+        text-indent: -9999px;
+        vertical-align: text-bottom;
+        margin: 0 2px;
+        overflow: hidden;
+      }
+      &.doc{
+        background: url(../images/basic/icon_doc.png);
+      }
+      &.odf{
+        background: url(../images/basic/icon_odf.png);
+      }
+      &.odt{
+        background: url(../images/basic/icon_odt.png);
+      }
+      &.pdf{
+        background: url(../images/basic/icon_pdf.png);
+      }
+      &.xls{
+        background: url(../images/basic/icon_xls.jpg);
+      }
+      &.ppt{
+        background: url(../images/basic/icon_ppt.jpg);
+      }
+      &.jpg{
+        background: url(../images/basic/icon_jpg.png);
+      }
+      &.mp3{
+        background: url(../images/basic/icon_mp3.jpg);
+      }
+      &.mov{
+        background: url(../images/basic/icon_mov.jpg);
+      }
+      &.txt{
+        background: url(../images/basic/icon_txt.jpg);
+      }
+      &.dot{
+        background: url(../images/basic/icon_doc.jpg);
+      }
+      &.zip{
+        background: url(../images/basic/icon_zip.png);
+      }
+      &.other{
+        background: url(../images/basic/icon_other.jpg);
+      }
+    }
   }
 }

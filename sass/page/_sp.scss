@@ -926,14 +926,27 @@
 		@include screen('mobile') {
 			padding: 1em;
 		}
-		.form_grp,.btn_grp{
+		.form_grp{
 			overflow: hidden;
 			margin: 0;
 			padding: 0;
 			@include make-xs-column(12);
-			@include make-sm-column(6);
+			@include make-sm-column(4);
 			@include make-md-column(4);
 			@include make-lg-column(3);
+		}
+		.btn_grp{
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(3);
+			@include screen('notebook') {
+				margin-top: 1em;
+				text-align: center;
+			}
 		}
 		label{
 			color: #fff;
@@ -977,11 +990,16 @@
 			width: 48%;
 			float: left;
 			padding: .63em 1em!important;
+			@include screen('notebook') {
+				width: 20%;
+				float: none;
+			}
 			@include screen('mobile') {
 				width: 49%;
 				margin-top: .8em!important;
 				margin-right: 1%;
 				margin-left: 0;
+				float: left;
 				&:nth-child(2n){
 					margin-left: 1%;
 					margin-right: 0;
@@ -1290,9 +1308,9 @@
 }
 .communique{
 	.communique_info{
-		padding: 10px 1em 10px 1.5em;
 		border-top: 1px solid #ddd;
 		border-bottom: 1px solid #ddd;
+		padding: 10px 1em 10px 1.5em;
 		display: block;
 		clear: both;
 		margin-bottom: 1em;
@@ -1309,6 +1327,80 @@
 		}
 	}
 	.communique_search_block{
+		background: #e5e5e5;
+		padding: 1em 1em;
+		box-sizing: border-box;
+		overflow: hidden;
+		clear: both;
+		margin: 1em 0;
+		.form_grp,.btn_grp{
+			padding: 0;
+			margin: 0;
+			@include screen('mobile') {
+				width: 100%;
+			}
+		}
+		select,input{
+			margin-bottom: 0;
+			margin-right: 4px;
+			@include screen('mobile') {
+				margin-bottom: 10px;
+			}
+		}
+		input{
+			padding: .54em;
+		}
+		input[type="text"]{
+			width: 130px;
+			@include screen('mobile') {
+				width: 100%;
+			}
+		}
+		input[type="button"],input[type="submit"],input[type="reset"]{
+			border-radius: 0;
+			border:0;
+			background: $linkColor;
+			color: #fff;
+			padding: 0.45em 1em !important;
+			margin-top: 0 !important;
+			vertical-align: middle;
+			width: 100px;
+			margin-right: 0;
+			@include screen('mobile') {
+				width: 100%;
+			}
+		}
+	}
+	.function_panel{
+		border: 0;
+		padding: 0 .5em;
+	}
+	.lp table{
+		td{
+			&:nth-child(6){
+				text-align: center;
+			}
+		}
+	}
+}
+.weekly{
+	.weekly_info{
+		padding: 5px 1em 5px 1.5em;
+		display: block;
+		clear: both;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 8px;
+			top: 12px;
+			display: block;
+			width: 12px;
+			height: 12px;
+			background: url(../images/basic/icon_clock.png) no-repeat 0 0;
+		}
+	}
+	.weekly_search_block{
 		background: #e5e5e5;
 		padding: 1em 1em;
 		box-sizing: border-box;
