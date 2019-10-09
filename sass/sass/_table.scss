@@ -51,7 +51,7 @@ table {
         white-space: normal;
       }
     }
-    &.date,&.num,&.cneter {
+    &.date,&.num,&.center {
       text-align: center;
       @include screen('mobile') {
         text-align: left;

@@ -199,14 +199,14 @@ body {
       &:focus{
         box-shadow: 0 0px 0px 1px #5a77a0;
       }
-      &.doc,&.odf,&.pdf,&.xls,&.ppt,&.ppt,&.jpg,&.mp3,&.mov,&.txt,&.dot,&.zip,&.other,&.odt{
+      &.doc,&.odf,&.odt,&.pdf,&.xls,&.ppt,&.ppt,&.jpg,&.mp3,&.mov,&.txt,&.dot,&.zip,&.other{
         width: 21px;
         height: 24px;
         display: inline-block;
         margin-right: 4px;
         text-indent: -9999px;
         vertical-align: text-bottom;
-        margin: 0 2px;
+        margin: 0 3px;
         overflow: hidden;
       }
       &.doc{
@@ -222,31 +222,31 @@ body {
         background: url(../images/basic/icon_pdf.png);
       }
       &.xls{
-        background: url(../images/basic/icon_xls.jpg);
+        background: url(../images/basic/icon_xls.png);
       }
       &.ppt{
-        background: url(../images/basic/icon_ppt.jpg);
+        background: url(../images/basic/icon_ppt.png);
       }
       &.jpg{
         background: url(../images/basic/icon_jpg.png);
       }
       &.mp3{
-        background: url(../images/basic/icon_mp3.jpg);
+        background: url(../images/basic/icon_mp3.png);
       }
       &.mov{
-        background: url(../images/basic/icon_mov.jpg);
+        background: url(../images/basic/icon_mov.png);
       }
       &.txt{
-        background: url(../images/basic/icon_txt.jpg);
+        background: url(../images/basic/icon_txt.png);
       }
       &.dot{
-        background: url(../images/basic/icon_doc.jpg);
+        background: url(../images/basic/icon_doc.png);
       }
       &.zip{
         background: url(../images/basic/icon_zip.png);
       }
       &.other{
-        background: url(../images/basic/icon_other.jpg);
+        background: url(../images/basic/icon_other.png);
       }
     }
   }

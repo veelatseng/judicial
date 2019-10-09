@@ -38,7 +38,9 @@
           <h2 class="pageTitle">司法院公報</h2>
           <div class="communique_info">
             108年9月份最新公報上線，歡迎多加利用。
-          </div>   
+          </div>
+          <!-- function_panel -->
+          <?php require_once('include/function_panel.html'); ?>
           <!-- LP Start -->
           <section class="lp">   
             <div class="communique_search_block">

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/judicial.css">
 </head>
 
-<body>
+<body> 
   <!-- 直接跳主內容區 -->
   <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
   <!-- wrapper Start -->
@@ -36,41 +36,36 @@
           <?php require_once('include/breadcrumb.html'); ?>
           <!-- h2節點 -->
           <h2 class="pageTitle">進階搜尋</h2>
+          <!-- function_panel -->
+          <?php require_once('include/function_panel.html'); ?>
           <div class="weekly_info">
-            民國95年（第1269期）之前，僅第1、4版之PDF檔，另開視窗連結。
-          </div> 
-          <div class="weekly_info">
-            民國95年（第1269期）之後，包含第1、4版之PDF及HTML檔，在原視窗呈現。
-          </div>   
+            <ul>
+              <li>民國95年（第1269期）之前，僅第1、4版之PDF檔，另開視窗連結。</li>
+              <li>民國95年（第1269期）之後，包含第1、4版之PDF及HTML檔，在原視窗呈現。</li>
+            </ul>
+          </div>
           <!-- LP Start -->
           <section class="lp">   
             <div class="weekly_search_block">
               <form action="" class="form_inline">
                 <div class="form_grp">
                   <label for="">期別：</label>
-                  <select name="" id="">
-                    <option value="">108年</option>
-                  </select>
-                  <select name="" id="">
-                    <option value="">108年</option>
-                  </select>
-                  <label for="">~</label>
+                  <input type="text" class="iss">
+                  <label class="tilde">~</label>
+                  <input type="text" class="iss">
                 </div>
                 <div class="form_grp">
-                  <select name="" id="">
-                    <option value="">108年</option>
-                  </select>
-                  <select name="" id="">
-                    <option value="">108年</option>
-                  </select>
+                  <label for="">作者名：</label>
+                  <input type="text" class="name">
                 </div>
                 <div class="form_grp">
-                  <select name="" id="">
-                    <option value="">請選擇類別</option>
-                  </select>
+                  <label for="">出刊日期：</label>
+                  <input type="text" class="date">
+                  <label class="tilde">~</label>
+                  <input type="text" class="date">
                 </div>
                 <div class="form_grp">
-                  <input name="" id="" type="text" placeholder="請輸入標題關鍵字">
+                  <input name="" id="" type="text" placeholder="請輸入關鍵字">
                 </div>
                 <div class="btn_grp">
                   <input name="" type="submit" title="查詢" value="查詢" />
@@ -82,105 +77,83 @@
               <table summary="" class="table_sprite table_hover">
                 <thead>
                   <tr>
-                    <th>出刊年月</th>
-                    <th>卷數</th>
-                    <th>期數</th>
-                    <th>類別</th>
+                    <th>期別</th>
+                    <th>出刊日期</th>
                     <th>標題</th>
                     <th>檔案下載</th>
-                    <th>頁次</th>
+                    <th>作者</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td data-title="出刊年月">108年1月</td>
-                    <td data-title="卷數" class="num">61</td>
-                    <td data-title="期數" class="num">01</td>
-                    <td data-title="類別" class="num">解釋</td>
-                    <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="jpg">jpg</a></td>
-                    <td data-title="頁次">1-3</td>
+                    <td data-title="期別" class="num">1957</td>
+                    <td data-title="出刊日期" class="num">2019/6/21</td>
+                    <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a><a href="#" class="pdf">pdf</a><a href="#" class="odt">odt</a><a href="#" class="zip">zip</a></td>
+                    <td data-title="作者">王小明</td>
                   </tr>
                   <tr>
-                    <td data-title="出刊年月">108年1月</td>
-                    <td data-title="卷數" class="num">61</td>
-                    <td data-title="期數" class="num">01</td>
-                    <td data-title="類別" class="num">解釋</td>
-                    <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
-                    <td data-title="頁次">1-3</td>
+                    <td data-title="期別" class="num">1957</td>
+                    <td data-title="出刊日期" class="num">2019/6/21</td>
+                    <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a></td>
+                    <td data-title="作者">王小明</td>
                   </tr>
                   <tr>
-                    <td data-title="出刊年月" class="nowrap">108年1月108年1月108年1月108年1月</td>
-                    <td data-title="卷數" class="num">61</td>
-                    <td data-title="期數" class="num">01</td>
-                    <td data-title="類別" class="num">解釋</td>
-                    <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
-                    <td data-title="頁次">1-3</td>
+                    <td data-title="期別" class="num">1957</td>
+                    <td data-title="出刊日期" class="num">2019/6/21</td>
+                    <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a></td>
+                    <td data-title="作者">王小明</td>
                   </tr>
                   <tr>
-                    <td data-title="出刊年月">108年1月</td>
-                    <td data-title="卷數" class="num">61</td>
-                    <td data-title="期數" class="num">01</td>
-                    <td data-title="類別" class="num">解釋</td>
-                    <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
-                    <td data-title="頁次">1-3</td>
+                    <td data-title="期別" class="num">1957</td>
+                    <td data-title="出刊日期" class="num">2019/6/21</td>
+                    <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a></td>
+                    <td data-title="作者">王小明</td>
                   </tr>
                   <tr>
-                    <td data-title="出刊年月">108年1月</td>
-                    <td data-title="卷數" class="num">61</td>
-                    <td data-title="期數" class="num">01</td>
-                    <td data-title="類別" class="num">解釋</td>
-                    <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
-                    <td data-title="頁次">1-3</td>
+                    <td data-title="期別" class="num">1957</td>
+                    <td data-title="出刊日期" class="num">2019/6/21</td>
+                    <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a></td>
+                    <td data-title="作者">王小明</td>
                   </tr>
                   <tr>
-                    <td data-title="出刊年月">108年1月</td>
-                    <td data-title="卷數" class="num">61</td>
-                    <td data-title="期數" class="num">01</td>
-                    <td data-title="類別" class="num">解釋</td>
-                    <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
-                    <td data-title="頁次">1-3</td>
+                    <td data-title="期別" class="num">1957</td>
+                    <td data-title="出刊日期" class="num">2019/6/21</td>
+                    <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a></td>
+                    <td data-title="作者">王小明</td>
                   </tr>
                   <tr>
-                    <td data-title="出刊年月">108年1月</td>
-                    <td data-title="卷數" class="num">61</td>
-                    <td data-title="期數" class="num">01</td>
-                    <td data-title="類別" class="num">解釋</td>
-                    <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
-                    <td data-title="頁次">1-3</td>
+                    <td data-title="期別" class="num">1957</td>
+                    <td data-title="出刊日期" class="num">2019/6/21</td>
+                    <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a></td>
+                    <td data-title="作者">王小明</td>
                   </tr>
                   <tr>
-                    <td data-title="出刊年月">108年1月</td>
-                    <td data-title="卷數" class="num">61</td>
-                    <td data-title="期數" class="num">01</td>
-                    <td data-title="類別" class="num">解釋</td>
-                    <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
-                    <td data-title="頁次">1-3</td>
+                    <td data-title="期別" class="num">1957</td>
+                    <td data-title="出刊日期" class="num">2019/6/21</td>
+                    <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a></td>
+                    <td data-title="作者">王小明</td>
                   </tr>
                   <tr>
-                    <td data-title="出刊年月">108年1月</td>
-                    <td data-title="卷數" class="num">61</td>
-                    <td data-title="期數" class="num">01</td>
-                    <td data-title="類別" class="num">解釋</td>
-                    <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
-                    <td data-title="頁次">1-3</td>
+                    <td data-title="期別" class="num">1957</td>
+                    <td data-title="出刊日期" class="num">2019/6/21</td>
+                    <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a></td>
+                    <td data-title="作者">王小明</td>
                   </tr>
                   <tr>
-                    <td data-title="出刊年月">108年1月</td>
-                    <td data-title="卷數" class="num">61</td>
-                    <td data-title="期數" class="num">01</td>
-                    <td data-title="類別" class="num">解釋</td>
-                    <td data-title="期數">司法院釋字第771號解釋</td>
-                    <td data-title="檔案下載"><a href="#" class="pdf">pdf</a></td>
-                    <td data-title="頁次">1-3</td>
+                    <td data-title="期別" class="num">1957</td>
+                    <td data-title="出刊日期" class="num">2019/6/21</td>
+                    <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a></td>
+                    <td data-title="作者">王小明</td>
                   </tr>
                 </tbody>
               </table>
