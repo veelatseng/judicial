@@ -33,9 +33,8 @@
         <div class="topTitle">
           <h2>司法改革方案&進度</h2>
           <ul class="link">
-            <li><a href="">司法改革方案</a></li>
-            <li><a href="">文件下載</a></li>
-            <li><a href="">司法改革進度追蹤資訊平台</a></li>
+            <li><a href="">司法改革方案及進度</a></li>
+            <li><a href="">司法院與行政院司改進度追蹤平台</a></li>
           </ul>
         </div>
         <div class="content_block">

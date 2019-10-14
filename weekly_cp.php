@@ -25,7 +25,7 @@
     <?php require_once('include/header.html'); ?>
     <!-- header End -->
     <!-- main Start -->
-    <div id="center" class="main innerpage">
+    <div id="center" class="main innerpage weekly">
       <!-- 內頁新增一個classname-->
       <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
       <div class="container">
@@ -35,17 +35,14 @@
           <!-- breadcrumb路徑 -->
           <?php require_once('include/breadcrumb.html'); ?>
           <!-- h2節點 -->
-          <h2 class="pageTitle">節點標題</h2>
+          <h2 class="pageTitle">第 1 版</h2>
           <!-- function_panel -->
           <?php require_once('include/function_panel_cp.html'); ?>
           <!-- CP Start -->
           <section class="cp">
-            <ul class="info">
-              <li>發布日期:2018-03-20</li>
-              <li>更新日期:2018-03-20</li>
-              <li>發布單位:移民輔導科</li>
-              <li>點閱次數:123456</li>
-            </ul>
+            <h3 class="title1">積極實踐司改決議</h3>
+            <h4 class="title2">司改第4次半年進度報告：法官法、刑訴等法案已完成修正</h4>
+            <h5 class="title3">司法改革要打造能解決紛爭、凝聚全民的司法</h5>
             <!-- pic -->
             <?php require_once('include/pic.html'); ?>
             <p>連結文字樣式 </a>大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。</p>
@@ -148,42 +145,9 @@
               </div>
             </div>
           </div>
-          <!-- weblink 外部連結 -->
-          <div class="web_link">
-            <h3 class="block_title">外部連結</h3>
-            <ol>
-              <li><a href="javscript:;">外部連結1</a></li>
-              <li><a href="javscript:;">外部連結2</a></li>
-              <li><a href="javscript:;">外部連結3</a></li>
-              <li><a href="javscript:;">外部連結4</a></li>
-              <li><a href="javscript:;">外部連結5</a></li>
-            </ol>
-          </div>
-          <!-- file download 檔案下載 -->
-          <div class="file_download">
-            <h3 class="block_title">檔案下載</h3>
-            <ul>
-              <li> <span>惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測</span><a href="xxxx.doc" class="doc">doc</a>
-                <a href="xxxx.odf" class="odf">odf</a>
-                <a href="http://www.google.com.tw" class="other">檔案下載(非副檔名做結尾)</a>
-                <span class="update">15kb</span>
-                <span class="file_view">下載次數：255次</span>
-              </li>
-              <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span><a href="xxxx.xls" class="xls">xls</a>
-                <span class="update">15kb</span>
-                <span class="file_view">下載次數：255次</span>
-              </li>
-              <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span>
-                <a href="xxxx.pptx" class="ppt">ppt</a>
-                <a href="xxxx.jpg" class="jpg">jpg</a>
-                <span class="update">15kb</span>
-                <span class="file_view">下載次數：255次</span>
-              </li>
-              <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span><a href="xxxx.pdf" class="pdf">pdf</a>
-                <span class="update">15kb</span>
-                <span class="file_view">下載次數：255次</span>
-              </li>
-            </ul>
+          <div class="refer">
+            <span class="prev"><a href="">遺產稅基量化標準 列最高行大法庭第2案</a></span>
+            <span class="next"><a href="">監察院司法及獄政委員會巡察司法院</a></span>
           </div>
         </div>
       </div>

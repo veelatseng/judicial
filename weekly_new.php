@@ -44,11 +44,33 @@
           <?php require_once('include/function_panel.html'); ?>
           <div class="weekly_info">
             <ul>
-              <li>民國95年（第1269期）之前，僅第1、4版之PDF檔，另開視窗連結。</li>
-              <li>民國95年（第1269期）之後，包含第1、4版之PDF及HTML檔，在原視窗呈現。</li>
+              <li><span class="date">2019/01/27</span>2019/2/2-2019/2/10適逢春節，本刊2019/2/8停刊一次。</li>
+              <li><span class="date">2019/03/03</span>系統將於2019/03/03進行歲休，造成不便請見諒。</li>
             </ul>
           </div>
-          <div class="iss_list">
+          <div class="weekly_paper">
+            <div class="centrespread">
+              <div class="fullpage">
+                <a href="images/weekly_left.jpg" data-caption="第4版"><img src="images/weekly_left.jpg" alt="第4版"></a>
+                <span>第4版</span>
+              </div>
+              <div class="fullpage">
+                <a href="images/weekly_right.jpg" data-caption="第1版"><img src="images/weekly_right.jpg" alt="第1版"></a>
+                <span>第1版</span>
+              </div>
+            </div>
+            <div class="centrespread">
+              <div class="fullpage">
+                <a href="images/weekly_left.jpg" data-caption="第2版"><img src="images/weekly_left.jpg" alt="第2版"></a>
+                <span>第2版</span>
+              </div>
+              <div class="fullpage">
+                <a href="images/weekly_right.jpg" data-caption="第1版"><img src="images/weekly_right.jpg" alt="第1版"></a>
+                <span>第1版</span>
+              </div>
+            </div>
+          </div>
+          <div class="weekly_iss_list">
             <h3 class="block_title">本期要目</h3>
             <ul>
               <li><a href="">司改第4次半年進度報告：法官法、刑訴等法案已完成修正</a></li>
