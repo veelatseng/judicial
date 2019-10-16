@@ -46,6 +46,9 @@ h1.title {
   table {
     background: #FFF;
     margin-top: 10px;
+    p{
+      margin-bottom: 0;
+    }
   }
   img {
     &.float_left {

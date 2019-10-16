@@ -62,6 +62,7 @@
   padding: 3.3em 240px;
   margin: 0 0 5.3em 0;
   font-weight: normal;
+  overflow: hidden;
   @include screen('mobile') {
     padding: 1em 2em;
     background: $primaryColor;
