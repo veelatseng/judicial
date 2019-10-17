@@ -40,12 +40,6 @@
           <?php require_once('include/function_panel_cp.html'); ?>
           <!-- CP Start -->
           <section class="cp">
-            <ul class="info">
-              <li>發布日期:2018-03-20</li>
-              <li>更新日期:2018-03-20</li>
-              <li>發布單位:移民輔導科</li>
-              <li>點閱次數:123456</li>
-            </ul>
             <!-- yncSlider -->
             <div class="Syncing_slider">
               <h3 class="block_title">相片集錦</h3>
@@ -107,81 +101,88 @@
               </div>
               <!-- slider-nav end-->
             </div>
-          </section>
-          <!-- CP End -->
-          <!-- cp_slider+slick_lightbox -->
-          <div class="lightbox_slider">
-            <h3 class="block_title">燈箱照片</h3>
-            <div class="cp_slider">
-              <div class="img-container">
-                <a href="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第一張圖說">
-                  <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
-                  <span class="caption">第1張圖說</span>
-                </a>
-              </div>
-              <div class="img-container">
-                <a href="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第二張圖說">
-                  <img src="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
-                  <span class="caption">第2張圖說</span>
-                </a>
-              </div>
-              <div class="img-container">
-                <a href="https://assets.imgix.net/unsplash/transport.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第三張圖說">
-                  <img src="https://assets.imgix.net/unsplash/transport.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
-                  <span class="caption">第3張圖說</span>
-                </a>
-              </div>
-              <div class="img-container">
-                <a href="https://assets.imgix.net/unsplash/bridge.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第四張圖說">
-                  <img src="https://assets.imgix.net/unsplash/bridge.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
-                  <span class="caption">第4張圖說</span>
-                </a>
-              </div>
-              <div class="img-container">
-                <a href="images/demo/12.jpg" data-caption="第5張圖說">
-                  <img src="images/demo/12.jpg" alt="">
-                  <span class="caption">第5張圖說</span>
-                </a>
+            <!-- cp_slider+slick_lightbox -->
+            <div class="lightbox_slider">
+              <h3 class="block_title">燈箱照片</h3>
+              <div class="cp_slider">
+                <div class="img-container">
+                  <a href="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第一張圖說">
+                    <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                    <span class="caption">第1張圖說</span>
+                  </a>
+                </div>
+                <div class="img-container">
+                  <a href="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第二張圖說">
+                    <img src="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                    <span class="caption">第2張圖說</span>
+                  </a>
+                </div>
+                <div class="img-container">
+                  <a href="https://assets.imgix.net/unsplash/transport.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第三張圖說">
+                    <img src="https://assets.imgix.net/unsplash/transport.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                    <span class="caption">第3張圖說</span>
+                  </a>
+                </div>
+                <div class="img-container">
+                  <a href="https://assets.imgix.net/unsplash/bridge.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第四張圖說">
+                    <img src="https://assets.imgix.net/unsplash/bridge.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                    <span class="caption">第4張圖說</span>
+                  </a>
+                </div>
+                <div class="img-container">
+                  <a href="images/demo/12.jpg" data-caption="第5張圖說">
+                    <img src="images/demo/12.jpg" alt="">
+                    <span class="caption">第5張圖說</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- weblink 外部連結 -->
-          <div class="web_link">
-            <h3 class="block_title">外部連結</h3>
-            <ol>
-              <li><a href="javscript:;">外部連結1</a></li>
-              <li><a href="javscript:;">外部連結2</a></li>
-              <li><a href="javscript:;">外部連結3</a></li>
-              <li><a href="javscript:;">外部連結4</a></li>
-              <li><a href="javscript:;">外部連結5</a></li>
-            </ol>
-          </div>
-          <!-- file download 檔案下載 -->
-          <div class="file_download">
-            <h3 class="block_title">檔案下載</h3>
-            <ul>
-              <li> <span>惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測</span><a href="xxxx.doc" class="doc">doc</a>
-                <a href="xxxx.odf" class="odf">odf</a>
-                <a href="http://www.google.com.tw" class="other">檔案下載(非副檔名做結尾)</a>
-                <span class="update">15kb</span>
-                <span class="file_view">下載次數：255次</span>
-              </li>
-              <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span><a href="xxxx.xls" class="xls">xls</a>
-                <span class="update">15kb</span>
-                <span class="file_view">下載次數：255次</span>
-              </li>
-              <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span>
-                <a href="xxxx.pptx" class="ppt">ppt</a>
-                <a href="xxxx.jpg" class="jpg">jpg</a>
-                <span class="update">15kb</span>
-                <span class="file_view">下載次數：255次</span>
-              </li>
-              <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span><a href="xxxx.pdf" class="pdf">pdf</a>
-                <span class="update">15kb</span>
-                <span class="file_view">下載次數：255次</span>
-              </li>
+            <!-- weblink 外部連結 -->
+            <div class="web_link">
+              <h3 class="block_title">外部連結</h3>
+              <ol>
+                <li><a href="javscript:;">外部連結1</a></li>
+                <li><a href="javscript:;">外部連結2</a></li>
+                <li><a href="javscript:;">外部連結3</a></li>
+                <li><a href="javscript:;">外部連結4</a></li>
+                <li><a href="javscript:;">外部連結5</a></li>
+              </ol>
+            </div>
+            <!-- file download 檔案下載 -->
+            <div class="file_download">
+              <h3 class="block_title">檔案下載</h3>
+              <ul>
+                <li> <span>惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測</span><a href="xxxx.doc" class="doc">doc</a>
+                  <a href="xxxx.odf" class="odf">odf</a>
+                  <a href="http://www.google.com.tw" class="other">檔案下載(非副檔名做結尾)</a>
+                  <span class="update">15kb</span>
+                  <span class="file_view">下載次數：255次</span>
+                </li>
+                <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span><a href="xxxx.xls" class="xls">xls</a>
+                  <span class="update">15kb</span>
+                  <span class="file_view">下載次數：255次</span>
+                </li>
+                <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span>
+                  <a href="xxxx.pptx" class="ppt">ppt</a>
+                  <a href="xxxx.jpg" class="jpg">jpg</a>
+                  <span class="update">15kb</span>
+                  <span class="file_view">下載次數：255次</span>
+                </li>
+                <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span><a href="xxxx.pdf" class="pdf">pdf</a>
+                  <span class="update">15kb</span>
+                  <span class="file_view">下載次數：255次</span>
+                </li>
+              </ul>
+            </div>
+            <ul class="info">
+              <li>發布日期:2018-03-20</li>
+              <li>更新日期:2018-03-20</li>
+              <li>發布單位:移民輔導科</li>
+              <li>點閱次數:123456</li>
             </ul>
-          </div>
+          </section>
+          <!-- CP End -->
+
         </div>
       </div>
       <!-- container -->
