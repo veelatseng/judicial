@@ -35,7 +35,7 @@
           <!-- breadcrumb路徑 -->
           <?php require_once('include/breadcrumb.html'); ?>
           <!-- h2節點 -->
-          <h2 class="pageTitle">節點標題</h2>
+          <h2 class="pageTitle">立法院三讀通過勞動事件法制定條文及民事訴訟法、民事訴訟法施行法、行政訴訟法、刑事訴訟法關於判決宣示或公告之修正條文 新聞稿</h2>
           <!-- function_panel -->
           <?php require_once('include/function_panel_cp.html'); ?>
           <!-- CP Start -->
@@ -185,7 +185,6 @@
             </ul>
           </section>
           <!-- CP End -->
-
         </div>
       </div>
       <!-- container -->

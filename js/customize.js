@@ -314,10 +314,10 @@ $(function(){
 });
 
 
-$('.centrespread').slickLightbox({
-  caption: 'caption',
-  useHistoryApi: 'true',
-  lazy: true
-});
+// $('.centrespread').slickLightbox({
+//   caption: 'caption',
+//   useHistoryApi: 'true',
+//   lazy: true
+// });
 
 

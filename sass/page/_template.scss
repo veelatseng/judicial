@@ -180,6 +180,9 @@ body {
                   left: 15px;
                   top: 17px;
                 }
+                &.active{
+                  color: $linkColor;
+                }
                 &:hover,&:focus{
                   color: $linkColor;
                   box-shadow: none;

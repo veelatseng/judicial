@@ -78,6 +78,7 @@
                   <input name="" type="submit" title="查詢" value="查詢" />
                   <input name="" type="reset" title="清除" value="清除" />
                 </div>
+                <a href="" class="code">代碼說明</a>
               </form>  
             </div>
             <!-- category -->

@@ -35,14 +35,17 @@
           <!-- breadcrumb路徑 -->
           <?php require_once('include/breadcrumb.html'); ?>
           <!-- h2節點 -->
-          <h2 class="pageTitle">第 1 版</h2>
+          <div class="title1">積極實踐司改決議</div>
+          <h2 class="pageTitle">司改第4次半年進度報告：法官法、刑訴等法案已完成修正</h2>
+          <h3 class="title3">司法改革要打造能解決紛爭、凝聚全民的司法</h3>
           <!-- function_panel -->
           <?php require_once('include/function_panel_cp.html'); ?>
           <!-- CP Start -->
           <section class="cp">
-            <h3 class="title1">積極實踐司改決議</h3>
-            <h4 class="title2">司改第4次半年進度報告：法官法、刑訴等法案已完成修正</h4>
-            <h5 class="title3">司法改革要打造能解決紛爭、凝聚全民的司法</h5>
+            <ul class="author">
+              <li>作者：王大明</li>
+              <li>譯者：王大明</li>
+            </ul>
             <!-- pic -->
             <?php require_once('include/pic.html'); ?>
             <p>連結文字樣式 </a>大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。</p>
@@ -107,44 +110,44 @@
                 <td>td 資料</td>
               </tr>
             </table>
-          </section>
-          <!-- CP End -->
-          <!-- cp_slider+slick_lightbox -->
-          <div class="lightbox_slider">
-            <h3 class="block_title">燈箱照片</h3>
-            <div class="cp_slider">
-              <div class="img-container">
-                <a href="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第一張圖說">
-                  <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
-                  <span class="caption">第1張圖說</span>
-                </a>
-              </div>
-              <div class="img-container">
-                <a href="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第二張圖說">
-                  <img src="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
-                  <span class="caption">第2張圖說</span>
-                </a>
-              </div>
-              <div class="img-container">
-                <a href="https://assets.imgix.net/unsplash/transport.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第三張圖說">
-                  <img src="https://assets.imgix.net/unsplash/transport.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
-                  <span class="caption">第3張圖說</span>
-                </a>
-              </div>
-              <div class="img-container">
-                <a href="https://assets.imgix.net/unsplash/bridge.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第四張圖說">
-                  <img src="https://assets.imgix.net/unsplash/bridge.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
-                  <span class="caption">第4張圖說</span>
-                </a>
-              </div>
-              <div class="img-container">
-                <a href="images/demo/12.jpg" data-caption="第5張圖說">
-                  <img src="images/demo/12.jpg" alt="">
-                  <span class="caption">第5張圖說</span>
-                </a>
+            <!-- cp_slider+slick_lightbox -->
+            <div class="lightbox_slider">
+              <h3 class="block_title">燈箱照片</h3>
+              <div class="cp_slider">
+                <div class="img-container">
+                  <a href="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第一張圖說">
+                    <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                    <span class="caption">第1張圖說</span>
+                  </a>
+                </div>
+                <div class="img-container">
+                  <a href="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第二張圖說">
+                    <img src="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                    <span class="caption">第2張圖說</span>
+                  </a>
+                </div>
+                <div class="img-container">
+                  <a href="https://assets.imgix.net/unsplash/transport.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第三張圖說">
+                    <img src="https://assets.imgix.net/unsplash/transport.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                    <span class="caption">第3張圖說</span>
+                  </a>
+                </div>
+                <div class="img-container">
+                  <a href="https://assets.imgix.net/unsplash/bridge.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第四張圖說">
+                    <img src="https://assets.imgix.net/unsplash/bridge.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                    <span class="caption">第4張圖說</span>
+                  </a>
+                </div>
+                <div class="img-container">
+                  <a href="images/demo/12.jpg" data-caption="第5張圖說">
+                    <img src="images/demo/12.jpg" alt="">
+                    <span class="caption">第5張圖說</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+          <!-- CP End -->
           <div class="refer">
             <span class="prev"><a href="">遺產稅基量化標準 列最高行大法庭第2案</a></span>
             <span class="next"><a href="">監察院司法及獄政委員會巡察司法院</a></span>
