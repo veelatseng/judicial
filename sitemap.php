@@ -26,9 +26,9 @@
     <!-- header End -->
     <!-- main Start -->
     <div id="center" class="main innerpage">
-      <!-- 內頁新增一個classname-->
-      <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
       <div class="container">
+        <!-- 內頁新增一個classname-->
+        <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
         <div class="content_block">
           <!-- breadcrumb路徑 -->
           <?php require_once('include/breadcrumb.html'); ?>
