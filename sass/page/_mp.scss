@@ -789,6 +789,7 @@
         background: $lightColor;
         right: 0;
         top: -70px;
+        display: none;
         @include screen('mobile') {
           position: relative;
           top:auto;

@@ -1676,42 +1676,82 @@
 	.refer{
 		clear: both;
 		display: block;
-		margin: 1em 0;
+		margin: 2em 0;
 		overflow: hidden;
 		.prev,.next{
-			@include make-xs-column(12);
-			@include make-sm-column(6);
-			@include make-md-column(6);
-			@include make-lg-column(6);
+			@include screen('mobile') {
+				width: 50%;
+			}
+			font-size: 1.125em;
 			a{
 				color: #444;
+				display: block;
+				white-space: nowrap;
+				position: relative;
 				&:hover{
 					color:$color-weekly;
 				}
 			}
 		}
-		.prev{
+		.prev a{
+			padding-left: 30px;
+			float: left;
 			&:before{
 				content: "";
-				width: 15px;
-				height: 16px;
-				display: inline-block;
-				margin-right: 5px;
-				background:$darkColor url(../images/basic/icon_refer.png) no-repeat center center;
-				vertical-align: text-bottom;
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				border: 2px solid #FFF;
+				border-left: none;
+				border-bottom: none;
+				transform: rotate(-135deg);
+				left: 7px;
+				top: 5px;
+				transition: .3s ease-out;
+				z-index: 11;
+			}
+			&:after{
+				content: "";
+				width: 20px;
+				height: 30px;
+				background: $darkColor;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 10;
 			}
 		}
 		.next{
 			text-align: right;
-			&:after{
-				content: "";
-				width: 15px;
-				height: 16px;
-				display: inline-block;
-				margin-left: 5px;
-				background:$darkColor url(../images/basic/icon_refer.png) no-repeat center center;
-				vertical-align: text-bottom;
-				transform: rotate(180deg);
+			float: right;
+			a{
+				padding-right: 30px;
+				&:before{
+					content: "";
+					position: absolute;
+					width: 10px;
+					height: 10px;
+					border: 2px solid #FFF;
+					border-left: none;
+					border-bottom: none;
+					transform: rotate(45deg);
+					right: 7px;
+					top: 5px;
+					transition: .3s ease-out;
+					z-index: 11;
+				}
+				&:after{
+					content: "";
+					width: 20px;
+					height: 30px;
+					background: $darkColor;
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 0;
+					z-index: 10;
+				}
 			}
 		}
 	}
@@ -1792,7 +1832,7 @@
 			span.date{
 				background: $linkColor;
 				color: #fff;
-				border-radius: 3px;
+				border-radius: 9px;
 				padding: .6em .8em;
 				position: absolute;
 				left: 0;
@@ -1813,6 +1853,13 @@
 				}
 				>li{
 					margin-bottom: 25px;
+					.day{
+						clear: both;
+						display: block;
+						font-size: 0.9375em;
+						color: #666;
+						margin-bottom: 2px;
+					}
 					ul{
 						list-style-type:disc ;
 						li{

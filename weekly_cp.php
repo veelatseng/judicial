@@ -146,6 +146,12 @@
                 </div>
               </div>
             </div>
+            <ul class="info">
+              <li>發布日期:2018-03-20</li>
+              <li>更新日期:2018-03-20</li>
+              <li>發布單位:移民輔導科</li>
+              <li>點閱次數:123456</li>
+            </ul>
           </section>
           <!-- CP End -->
           <div class="refer">

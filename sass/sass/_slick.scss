@@ -153,8 +153,9 @@
 //   }
 .lightbox_slider {
   background: #fff;
-  padding: 1em 0 3em 0;
+  padding: 1em 0;
   clear: both;
+  
   .cp_slider {
     @include gutter(50px);
   }
@@ -180,20 +181,19 @@
     @include text-overflow;
     transition: .3s ease-out;
   }
-    // dots
-    .slick-dots {
-      bottom: -30px !important;
-      margin-bottom: 0px;
-      @include screen('mobile') {
-        bottom: -40px !important;
-        padding: 0;
-      }
-      li {
-        width: 10px;
-        height: 10px;
-        margin: 0 10px;
-      }
+  .slick-dots {
+    margin-bottom: 0px;
+    padding: 0;
+    position: relative;
+    @include screen('mobile') {
+      padding: 0;
     }
+    li {
+      width: 10px;
+      height: 10px;
+      margin: 0 10px;
+    }
+  }
     //Arrows
     .slick-prev {
       left: 0;
