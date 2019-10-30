@@ -870,7 +870,7 @@
 	}
 }
 // 常見問答
-.qa{
+.qa,.meeting{
 	.qaTitle{
 		text-align: center;
 		font-size: 1.625em;
@@ -892,145 +892,145 @@
 			vertical-align: text-top;
 		}
 	}
-	.qa_search{
-		display: block;
-		clear: both;
-		position: relative;
-		float: none;
-		margin: 0;
-		border-bottom: 1px solid #fff;
-		@include screen('mobile') {
-			width: 100%;
-			position: relative;
-			bottom:auto;
-			right: auto;
-			margin-top: 10px;
-			margin-bottom: 10px;
-			margin-right: 0;
-			float: none;
-			display: block;
-		}
-		a{
-			line-height: 2.5em;
-			color: #fff;
-			padding:0 3.5em 0 1em;
-			letter-spacing: .05em;
-			display: block;
-			background: #09283b; 
-			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-			&:after{
-				content: "";
-				background: $lightColor url(../images/basic/icon_search2_.png) no-repeat center center;
-				background-size: 20px;
-				position: absolute;
-				right: 0;
-				top: 0;
-				bottom: 0;
-				width: 40px;
-				display: block;
-			}
-			&:hover,&:focus{
-				background: $linkColor;
-				box-shadow: none;
-			}
-		}
-	}
-	.qa_search_block{
-		display: none;
-		clear: both;
-		background: #09283b;
-		padding: 1.5em 1em;
-		box-sizing: border-box;
-		overflow: hidden;
-		position: relative;
-		@include screen('mobile') {
-			padding: 1em;
-		}
-		.form_grp{
-			overflow: hidden;
-			margin: 0;
-			padding: 0;
-			@include make-xs-column(12);
-			@include make-sm-column(4);
-			@include make-md-column(4);
-			@include make-lg-column(3);
-		}
-		.btn_grp{
-			overflow: hidden;
-			margin: 0;
-			padding: 0;
-			@include make-xs-column(12);
-			@include make-sm-column(12);
-			@include make-md-column(12);
-			@include make-lg-column(3);
-			@include screen('notebook') {
-				margin-top: 1em;
-				text-align: center;
-			}
-		}
-		label{
-			color: #fff;
-			margin:0 .5em;
-			vertical-align: baseline;
-			@include screen('mobile') {
-				display: block;
-				margin-bottom: 10px;
-			}
-		}
-		select{
-			border-radius: 0;
-			border:0;
-			width: 70%;
-			@include screen('mobile') {
-				width: 100%!important;
-			}
-		}
-		input[type="text"]{
-			border-radius: 0;
-			border:0;
-			padding: 10px;
-			color: #444;
-			@include screen('mobile') {
-				width: 100%!important;
-			}
-		}
-		select,input{
-			margin-bottom: 0;
-			@include screen('mobile') {
-				margin-bottom: 10px;
-			}
-		}
-		input[type="button"],input[type="submit"],input[type="reset"]{
-			border-radius: 0;
-			border:0;
-			margin: 0 1%;
-			background: $linkColor;
-			color: #fff;
-			vertical-align: top;
-			width: 48%;
-			float: left;
-			padding: .63em 1em!important;
-			@include screen('notebook') {
-				width: 20%;
-				float: none;
-			}
-			@include screen('mobile') {
-				width: 49%;
-				margin-top: .8em!important;
-				margin-right: 1%;
-				margin-left: 0;
-				float: left;
-				&:nth-child(2n){
-					margin-left: 1%;
-					margin-right: 0;
-				}
-			}
-		}
-	}
 	.category{
 	}
 }
-.qa_list{
+.qa_search{
+	display: block;
+	clear: both;
+	position: relative;
+	float: none;
+	margin: 0;
+	border-bottom: 1px solid #fff;
+	@include screen('mobile') {
+		width: 100%;
+		position: relative;
+		bottom:auto;
+		right: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 0;
+		float: none;
+		display: block;
+	}
+	a{
+		line-height: 2.5em;
+		color: #fff;
+		padding:0 3.5em 0 1em;
+		letter-spacing: .05em;
+		display: block;
+		background: #09283b; 
+		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		&:after{
+			content: "";
+			background: $lightColor url(../images/basic/icon_search2_.png) no-repeat center center;
+			background-size: 20px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 40px;
+			display: block;
+		}
+		&:hover,&:focus{
+			background: $linkColor;
+			box-shadow: none;
+		}
+	}
+}
+.qa_search_block{
+	display: none;
+	clear: both;
+	background: #09283b;
+	padding: 1.5em 1em;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+	@include screen('mobile') {
+		padding: 1em;
+	}
+	.form_grp{
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		@include make-xs-column(12);
+		@include make-sm-column(4);
+		@include make-md-column(4);
+		@include make-lg-column(3);
+	}
+	.btn_grp{
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(12);
+		@include make-lg-column(3);
+		@include screen('notebook') {
+			margin-top: 1em;
+			text-align: center;
+		}
+	}
+	label{
+		color: #fff;
+		margin:0 .5em;
+		vertical-align: baseline;
+		@include screen('mobile') {
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+	select{
+		border-radius: 0;
+		border:0;
+		width: 70%;
+		@include screen('mobile') {
+			width: 100%!important;
+		}
+	}
+	input[type="text"]{
+		border-radius: 0;
+		border:0;
+		padding: 10px;
+		color: #444;
+		@include screen('mobile') {
+			width: 100%!important;
+		}
+	}
+	select,input{
+		margin-bottom: 0;
+		@include screen('mobile') {
+			margin-bottom: 10px;
+		}
+	}
+	input[type="button"],input[type="submit"],input[type="reset"]{
+		border-radius: 0;
+		border:0;
+		margin: 0 1%;
+		background: $linkColor;
+		color: #fff;
+		vertical-align: top;
+		width: 48%;
+		float: left;
+		padding: .63em 1em!important;
+		@include screen('notebook') {
+			width: 20%;
+			float: none;
+		}
+		@include screen('mobile') {
+			width: 49%;
+			margin-top: .8em!important;
+			margin-right: 1%;
+			margin-left: 0;
+			float: left;
+			&:nth-child(2n){
+				margin-left: 1%;
+				margin-right: 0;
+			}
+		}
+	}
+}
+.qa_list,.meeting_list{
 	>ul{
 		@include li-reset;
 		>li{
@@ -1178,6 +1178,55 @@
 			margin-bottom: 1em;
 			margin-right: 40px;
 		}
+	}
+}
+.meeting_search_block{
+	background: #e5e5e5;
+	padding: 1em;
+	box-sizing: border-box;
+	overflow: hidden;
+	clear: both;
+	margin: 1em 0;
+	text-align: center;
+	@include screen('mobile') {
+		padding: .5em;
+	}
+	.form_grp{
+		margin: 0;
+	}
+	select{
+		margin-bottom: 0;
+	}
+	.btn_grp{
+		width: 20%;
+		margin: 0;
+		padding: 0;
+		@include screen('mobile') {
+			width:  50%;
+			padding-top: 10px;
+		}
+		input{
+			width: 100%;
+		}
+	}
+	input{
+		padding: .54em;
+		margin-bottom: 0;
+	}
+	input[type="text"]{
+		width: 300px!important;
+		@include screen('mobile') {
+			width: auto!important;
+		}
+	}
+	input[type="button"],input[type="submit"],input[type="reset"]{
+		border-radius: 0;
+		border:0;
+		background: $linkColor;
+		color: #fff;
+		padding: 0.46em 1em !important;
+		margin-top: 0 !important;
+		vertical-align: middle;
 	}
 }
 // 書狀範例
@@ -1820,7 +1869,7 @@
 			background: $linkColor;
 			display: block;
 			position: absolute;
-			left: 50px;
+			left: 39px;
 			top: 1.5em;
 			@include screen('mobile') {
 				left: 20px;

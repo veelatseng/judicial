@@ -20,54 +20,54 @@
       // min-width: 10em;
       >a {
         display: block;
-        padding: 0 16px;
+        padding: 0 21px;
         min-height: 3em;
         line-height: 3em;
         color: #fff;
         position: relative;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-        @media all and (max-width: 1198px) {
-          padding: 0 15px;
+        @media all and (max-width: 1191px) {
+          padding: 0 20px;
         }
         @media all and (max-width: 1175px) {
-          padding: 0 14px;
+          padding: 0 19px;
         }
         @media all and (max-width: 1158px) {
-          padding: 0 14px;
+          padding: 0 18px;
         }
         @media all and (max-width: 1153px) {
-          padding: 0 13px;
+          padding: 0 17px;
         }
         @media all and (max-width: 1131px) {
-          padding: 0 12px;
+          padding: 0 16px;
         }
         @media all and (max-width: 1109px) {
-          padding: 0 11px;
+          padding: 0 15px;
         }
         @media all and (max-width: 1087px) {
-          padding: 0 10px;
+          padding: 0 14px;
         }
         @media all and (max-width: 1065px) {
-          padding: 0 9px;
+          padding: 0 13px;
         }
         @media all and (max-width: 1043px) {
-          padding: 0 8px;
+          padding: 0 12px;
         }
         @media all and (max-width: 1021px) {
-          padding: 0 7px;
+          padding: 0 11px;
         }
         @media all and (max-width: 999px) {
-          padding: 0 6px;
+          padding: 0 10px;
         }
         @media all and (max-width: 977px) {
-          padding: 0 5px;
+          padding: 0 9px;
         }
         @media all and (max-width: 955px) {
-          padding: 0 4px;
+          padding: 0 8px;
         }
-        @media all and (max-width: 949px) {
-          padding: 0 3px;
-        }
+        // @media all and (max-width: 949px) {
+        //   padding: 0 7px;
+        // }
         &:hover,&:focus{
           box-shadow: 0 0 0 0 #000 inset;
         }
@@ -297,6 +297,34 @@
                   color:#222;
                 }
               }
+            }
+          }
+          .slick-prev, .slick-next{
+            filter: invert(0);
+          }
+        }
+        .more{
+          position: absolute;
+          right: 20px;
+          bottom: 10px;
+          font-size: 0.9375em;
+          a{
+            color: #fff;
+            padding-left: 1.5em;
+            position: relative;
+            display: block;
+            padding: 4px 4px 4px 1.5em;
+            line-height: 150%;
+            &:before{
+              content: '';
+              width: 14px;
+              height: 14px;
+              display: block;
+              position: absolute;
+              left: 0;
+              top: 8px;
+              background:url(../images/icon_more.png) no-repeat right center;
+              filter: invert(1);
             }
           }
         }

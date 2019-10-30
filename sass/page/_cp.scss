@@ -119,7 +119,6 @@ h1.title {
     @extend %clearfix;
     li {
       width: 24%;
-      margin-bottom: .5em;
       display: inline-block;
       vertical-align: top;
       @include screen('tablet') {
@@ -130,11 +129,84 @@ h1.title {
       @include screen('mobile') {
         width: 100%;
         display: block;
+        margin-bottom: .2em;
       }
     }
   }
   .block_title{
     margin-bottom: 20px!important;
+  }
+  .category{
+    padding-bottom: 10px;
+    border-bottom: 2px solid $darkColor;
+    a {
+      padding: .4em .75em;
+      display: block;
+      color: $primaryColor;
+      width: 100%;
+      @include box-sizing();
+      &:before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 6px;
+        border-color: transparent transparent transparent #5978a4;
+        display: inline-block;
+        margin-right: 8px;
+      }
+      &:hover,
+      &:focus {
+        color: #FFF;
+        background: $primaryColor;
+        box-shadow: none;
+        &:before{
+          border-color: transparent transparent transparent #fff;
+        }
+      }
+      &.active {
+        color: #FFF;
+        background: $primaryColor;
+      }
+      span {
+        font-size: .813em;
+        &:before {
+          content: "(";
+          display: inline-block;
+        }
+        &:after {
+          content: ")";
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .left_col{
+    display: inline-block;
+  }
+  &.organization{
+    .pic{
+      width: 400px;
+      margin-right: 60px;
+      display: inline-block;
+      @include screen('mobile') {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+  &.supervisor{
+    .pic{
+      width: 240px;
+      margin-right: 40px;
+      display: inline-block;
+      @include screen('mobile') {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+      }
+    }
   }
 }
 .block_title {

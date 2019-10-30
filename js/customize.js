@@ -236,7 +236,7 @@ $(function(){
     $(this).next(".qa_search_block").slideToggle();
     e.preventDefault();
   });
-  $('.qa_list>ul>li').each(function() {
+  $('.qa_list>ul>li,.meeting_list>ul>li').each(function() {
     $(this).find('.answer').hide();
     var _qaItem = $(this).children('.question').children('a');
     var _scrollTop= $(this).offset().top - 55;
