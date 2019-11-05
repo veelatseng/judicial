@@ -156,7 +156,7 @@
               <h3 class="block_title">檔案下載</h3>
               <ul>
                 <li> <span>惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測</span><a href="xxxx.doc" class="doc">doc</a>
-                  <a href="xxxx.odf" class="odf">odf</a>
+                  <a href="xxxx.odf" class="odf">odf</a><a href="#" class="sevenz">7z</a>
                   <a href="http://www.google.com.tw" class="other">檔案下載(非副檔名做結尾)</a>
                   <span class="update">15kb</span>
                   <span class="file_view">下載次數：255次</span>

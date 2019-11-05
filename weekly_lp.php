@@ -89,7 +89,7 @@
                     <td data-title="期別" class="num">1957</td>
                     <td data-title="出刊日期" class="num">2019/6/21</td>
                     <td data-title="標題"><a href="">司法院院會通過商業事件審理法草案 設智財及商業法院</a></td>
-                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a><a href="#" class="pdf">pdf</a><a href="#" class="odt">odt</a><a href="#" class="zip">zip</a></td>
+                    <td data-title="檔案下載" class="center"><a href="#" class="jpg">jpg</a><a href="#" class="pdf">pdf</a><a href="#" class="odt">odt</a><a href="#" class="zip">zip</a><a href="#" class="sevenz">7z</a></td>
                     <td data-title="作者">王小明</td>
                   </tr>
                   <tr>
