@@ -1,10 +1,12 @@
 .lp {
-
   table {
-
     td {
+      word-break: normal;
+      word-wrap: break-word;
       a {
         @include aSetting_nocolor;
+        word-break: normal;
+        word-wrap: break-word;
       }
       img{
         vertical-align: text-bottom;

@@ -197,51 +197,42 @@
                 <h3 class="tabItem active"><a href="#">家事</a></h3>
                 <!--選到的頁籤項目-->
                 <div class="tabContent">
-                  <!-- leftimg/rightimg 為第一項客製 -->
-                  <a href="" class="leftimg"><img src="images/type1-a.jpg" alt=""></a>
-                  <a href="" class="rightimg"><img src="images/type1-b.jpg" alt=""></a>
+                  <a href=""><img src="images/15_司法業務類型_家事.jpg" alt=""></a>
                   <div class="more"><a href="">暸解更多</a></div>
                 </div>
                 <h3 class="tabItem"><a href="#">少年</a></h3>
                 <div class="tabContent">
-                  <!-- <a href="" class="leftimg"><img src="images/type1-a.jpg" alt=""></a> -->
-                  <a href="" class="rightimg"><img src="images/type1-b.jpg" alt=""></a>
+                  <a href=""><img src="images/15_司法業務類型_少年.jpg" alt=""></a>
                   <div class="more"><a href="">暸解更多</a></div>
                 </div>
                 <h3 class="tabItem"><a href="#">勞動<span>NEW!</span></a></h3>
                 <div class="tabContent">
-                  <a href="" class="leftimg"><img src="images/type1-a.jpg" alt=""></a>
-                  <a href="" class="rightimg"><img src="images/type1-b.jpg" alt=""></a>
+                  <a href=""><img src="images/15_司法業務類型_勞動.jpg" alt=""></a>
                   <div class="more"><a href="">暸解更多</a></div>
                 </div>
                 <h3 class="tabItem"><a href="#">民事</a></h3>
                 <div class="tabContent">
-                  <a href="" class="leftimg"><img src="images/type1-a.jpg" alt=""></a>
-                  <a href="" class="rightimg"><img src="images/type1-b.jpg" alt=""></a>
+                  <a href=""><img src="images/15_司法業務類型_民事.jpg" alt=""></a>
                   <div class="more"><a href="">暸解更多</a></div>
                 </div>
                 <h3 class="tabItem"><a href="#">刑事</a></h3>
                 <div class="tabContent">
-                  <a href="" class="leftimg"><img src="images/type1-a.jpg" alt=""></a>
-                  <a href="" class="rightimg"><img src="images/type1-b.jpg" alt=""></a>
+                  <a href=""><img src="images/15_司法業務類型_刑事.jpg" alt=""></a>
                   <div class="more"><a href="">暸解更多</a></div>
                 </div>
                 <h3 class="tabItem"><a href="#">行政</a></h3>
                 <div class="tabContent">
-                  <a href="" class="leftimg"><img src="images/type1-a.jpg" alt=""></a>
-                  <a href="" class="rightimg"><img src="images/type1-b.jpg" alt=""></a>
+                  <a href=""><img src="images/15_司法業務類型_行政.jpg" alt=""></a>
                   <div class="more"><a href="">暸解更多</a></div>
                 </div>
                 <h3 class="tabItem"><a href="#">智財</a></h3>
                 <div class="tabContent">
-                  <a href="" class="leftimg"><img src="images/type1-a.jpg" alt=""></a>
-                  <a href="" class="rightimg"><img src="images/type1-b.jpg" alt=""></a>
+                  <a href=""><img src="images/15_司法業務類型_智財.jpg" alt=""></a>
                   <div class="more"><a href="">暸解更多</a></div>
                 </div>
                 <h3 class="tabItem"><a href="#">商業</a></h3>
                 <div class="tabContent">
-                  <a href="" class="leftimg"><img src="images/type1-a.jpg" alt=""></a>
-                  <a href="" class="rightimg"><img src="images/type1-b.jpg" alt=""></a>
+                  <a href=""><img src="images/15_司法業務類型_商業.jpg" alt=""></a>
                   <div class="more"><a href="">暸解更多</a></div>
                 </div>
               </section>

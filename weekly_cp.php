@@ -155,7 +155,7 @@
           </section>
           <!-- CP End -->
           <div class="refer">
-            <span class="prev"><a href="">遺產稅基量化標準 列最高行大法庭第2案</a></span>
+            <span class="prev"><a href="">遺產稅基量化標準 列最高行大法庭第2案遺產稅基量化標準遺產稅基量化標準</a></span>
             <span class="next"><a href="">監察院司法及獄政委員會巡察司法院</a></span>
           </div>
         </div>

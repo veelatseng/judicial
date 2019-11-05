@@ -542,6 +542,7 @@
         display: block;
         clear: both;
         overflow: hidden;
+        list-style: none;
         @include screen('mobile') {
           margin: 10px 0;
         }

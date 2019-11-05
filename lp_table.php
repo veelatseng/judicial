@@ -70,12 +70,12 @@
                   </tr>
                   <tr>
                     <td data-title="序號" class="num">04</td>
-                    <td data-title="標題"><a href="#">春節送禮認標章 環保減碳又健康</a></td>
+                    <td data-title="標題"><a href="#">institutional protection mechanism institutional protection mechanism institutional protection mechanism</a></td>
                     <td data-title="日期" class="date">2018/01/01</td>
                   </tr>
                   <tr>
                     <td data-title="序號" class="num">05</td>
-                    <td data-title="標題"><a href="#">環保替代役歲末新春送溫暖</a></td>
+                    <td data-title="標題">institutional protection mechanism institutional protection mechanism institutional protection mechanism</td>
                     <td data-title="日期" class="date">2018/01/01</td>
                   </tr>
                   <tr>

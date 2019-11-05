@@ -528,10 +528,7 @@
     }
   }
   .type{
-    width: 60%;
-    @include screen('mobile') {
-      width: 100%;  
-    }
+    width: 100%;
   }
   .tabSet{
     overflow: initial;
@@ -595,46 +592,49 @@
     }
     a{
       display: inline-block;
-      border:1px solid rgba(0,0,0,0);
+      box-shadow: 0 0px 1px 0 transparent;
       &:focus{
-        border:1px solid $lightColor;
-        box-shadow: 0 0px 0px 0 #cbac52 inset;
-      }
-    }
-    .leftimg{
-      width: 59%;
-      display: inline-block;
-      @include screen('mobile') {
-        width: 100%;
-        display: block;
-        text-align: center;
-        margin-bottom: 1em;
+        box-shadow: 0 0px 1px 0 #cbac52;
       }
       img{
-        vertical-align: top;
-        @include screen('mobile') {
-          max-width: 100%;
-          height: auto;
-        }
-      }
-    }
-    .rightimg{
-      width: 40%;
-      display: inline-block;
-      text-align: right;
-      @include screen('mobile') {
         width: 100%;
-        display: block;
-        text-align: center;
-      }
-      img{
-        vertical-align: top;
-        @include screen('mobile') {
-          max-width: 100%;
-          height: auto;
-        }
+        height: auto;
       }
     }
+    // .leftimg{
+    //   width: 59%;
+    //   display: inline-block;
+    //   @include screen('mobile') {
+    //     width: 100%;
+    //     display: block;
+    //     text-align: center;
+    //     margin-bottom: 1em;
+    //   }
+    //   img{
+    //     vertical-align: top;
+    //     @include screen('mobile') {
+    //       max-width: 100%;
+    //       height: auto;
+    //     }
+    //   }
+    // }
+    // .rightimg{
+    //   width: 40%;
+    //   display: inline-block;
+    //   text-align: right;
+    //   @include screen('mobile') {
+    //     width: 100%;
+    //     display: block;
+    //     text-align: center;
+    //   }
+    //   img{
+    //     vertical-align: top;
+    //     @include screen('mobile') {
+    //       max-width: 100%;
+    //       height: auto;
+    //     }
+    //   }
+    // }
     .more{
       font-size: 0.9375em;
       font-weight: bold;
