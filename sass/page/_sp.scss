@@ -1766,14 +1766,14 @@
 					border-bottom: none;
 					transform: rotate(-135deg);
 					left: 7px;
-					top: 5px;
+					top: 4px;
 					transition: .3s ease-out;
 					z-index: 11;
 				}
 				&:after{
 					content: "";
 					width: 20px;
-					height: 30px;
+					height: 21px;
 					background: $darkColor;
 					display: block;
 					position: absolute;
@@ -1799,14 +1799,14 @@
 					border-bottom: none;
 					transform: rotate(45deg);
 					right: 7px;
-					top: 5px;
+					top: 4px;
 					transition: .3s ease-out;
 					z-index: 11;
 				}
 				&:after{
 					content: "";
 					width: 20px;
-					height: 30px;
+					height: 21px;
 					background: $darkColor;
 					display: block;
 					position: absolute;

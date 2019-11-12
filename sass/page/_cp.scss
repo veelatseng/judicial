@@ -148,6 +148,7 @@ h1.title {
       color: $primaryColor;
       width: 100%;
       @include box-sizing();
+      line-height: 1.45em;
       &:before{
         content: "";
         width: 0;
