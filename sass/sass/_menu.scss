@@ -458,7 +458,7 @@
         }
         
       }
-      &:nth-last-child(2),&:nth-last-child(3){
+      &:nth-last-child(2){
         >a:hover,>a:focus{
           background: rgb(74,134,217);
           background: linear-gradient(90deg, rgba(74,134,217,1) 0%, rgba(30,72,178,1) 100%);

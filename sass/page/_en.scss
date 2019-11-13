@@ -1,0 +1,63 @@
+.menu>ul>li:nth-last-child(2){
+  background: none;
+}
+.menu>ul>li:nth-last-child(2)>a:hover, .menu>ul>li:nth-last-child(2)>a:focus {
+  background: none;
+  &:before{
+    display: block;
+  }
+}
+.menu>ul>li>a {
+  padding: 0 42px;
+  @media all and (max-width: 1199px) {
+    padding: 0 40px;
+  }
+  @media all and (max-width: 1178px) {
+    padding: 0 38px;
+  }
+  @media all and (max-width: 1158px) {
+    padding: 0 36px;
+  }
+  @media all and (max-width: 1153px) {
+    padding: 0 34px;
+  }
+  @media all and (max-width: 1131px) {
+    padding: 0 32px;
+  }
+  @media all and (max-width: 1109px) {
+    padding: 0 30px;
+  }
+  @media all and (max-width: 1087px) {
+    padding: 0 28px;
+  }
+  @media all and (max-width: 1065px) {
+    padding: 0 26px;
+  }
+  @media all and (max-width: 1043px) {
+    padding: 0 24px;
+  }
+  @media all and (max-width: 1021px) {
+    padding: 0 22px;
+  }
+  @media all and (max-width: 999px) {
+    padding: 0 20px;
+  }
+  @media all and (max-width: 977px) {
+    padding: 0 18px;
+  } 
+  @media all and (max-width: 955px) {
+    padding: 0 16px;
+  } 
+}
+.menu li li {
+  width: 50%;
+}
+.menu>ul>li .megamenu .search .keywordHot:before {
+  content: "Popular Keywords：";
+}
+.statistics_block {
+  margin:2em 15em;
+}
+.cp .info li {
+  width: 49%;
+}
