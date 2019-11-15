@@ -60,7 +60,7 @@
   position: relative;
   color: #fff;
   padding: 3.3em 240px;
-  margin: 0 0 5.3em 0;
+  margin: 0 0 1.5em 0;
   font-weight: normal;
   overflow: hidden;
   @include screen('mobile') {
@@ -191,7 +191,7 @@
 
 .center_block{
   width: 1030px;
-  margin: 0 auto 7.5em auto;
+  margin: 5.3em auto 7.5em auto;
   padding-top: 18px;
   background: $primaryColor;
   position: relative;
