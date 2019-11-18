@@ -2072,6 +2072,9 @@
 				@include make-xs-column(6);
 				@include make-sm-column(4);
 				@include make-md-column(4);
+				@media all and (min-width: 1122px) {
+					width: 16.66667%;
+				}
 				@include make-lg-column(2);
 				@include gutter(14px);
 				margin-bottom: 20px;

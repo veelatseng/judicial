@@ -234,8 +234,7 @@
           }
         }
         .menuSlider{
-          width: 76%;
-          margin-right: 4%;
+          width: 85%;
           display: block;
           float: right;
           font-size: 1em;
@@ -243,9 +242,15 @@
             width: 100%;
             margin: 0;
             float: none;
+            overflow: hidden;
           }
           .slide{
             padding: 0 1em;
+            @include make-xs-column(12);
+            @include make-sm-column(2);
+            @include make-md-column(2);
+            @include make-lg-column(2);
+            box-sizing: border-box;
             @include screen('mobile') {
               padding: 0;
               border-left: 5px solid #2a476f;
@@ -308,13 +313,25 @@
           right: 20px;
           bottom: 10px;
           font-size: 0.9375em;
+          @include screen('mobile') {
+            position: relative;
+            right: auto;
+            bottom: auto;
+            border-left: 5px solid #2a476f;
+            border-bottom: 1px solid #CCC;
+            background: #e5e5e5;
+            font-size: 1em;
+          }
           a{
             color: #fff;
-            padding-left: 1.5em;
             position: relative;
             display: block;
             padding: 4px 4px 4px 1.5em;
             line-height: 150%;
+            @include screen('mobile') {
+              padding: 0.8em 1em !important;
+              color: #222;
+            }
             &:before{
               content: '';
               width: 14px;
@@ -325,6 +342,9 @@
               top: 8px;
               background:url(../images/icon_more.png) no-repeat right center;
               filter: invert(1);
+              @include screen('mobile') {
+                display: none;
+              }
             }
           }
         }

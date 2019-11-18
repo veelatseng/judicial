@@ -464,6 +464,7 @@
     }
     .tabContent{
       padding-top: 20px;
+      min-height: 462px;
       .more{
         position: relative;
         right: auto;
@@ -690,6 +691,7 @@
     // overflow: hidden;
     display: block;
     clear: both;
+    min-height: 424px;
     @include screen('mobile') {
       width: 100%;
     }

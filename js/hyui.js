@@ -93,7 +93,7 @@ $(function() {
     liHasChild.children('a').keyup(function() {
       $('.megamenu .menu_2nd>ul').show();
       $(this).siblings('.megamenu').show();
-      $('.menuSlider').slick('refresh');
+      // $('.menuSlider').slick('refresh');
       $(this).parent("li").siblings().focus(function() {
         $(this).hide();
       });
@@ -190,52 +190,52 @@ $(function() {
               mouseenter: function() {
                     // $(this).children('ul').stop(true, false).fadeIn();
                     $(this).children('.megamenu').stop(true, false).fadeIn();
-                    $('.menuSlider').slick('refresh');
+                    // $('.menuSlider').slick('refresh');
                   },
                   mouseleave: function() {
                     // $(this).parent().siblings('ul').hide();
                     // $(this).children('ul').stop(true, false).fadeOut();
                     $(this).parent().siblings('.megamenu').hide();
                     $(this).children('.megamenu').stop(true, false).fadeOut();
-                    $('.menuSlider').slick('refresh');
+                    // $('.menuSlider').slick('refresh');
                   }
                 });
-            $('.menuSlider').slick({
-              dots: false,
-              infinite: true,
-              speed: 300,
-              slidesToShow: 5,
-              slidesToScroll: 1,
-              autoplay: false,
-              arrow: true,
-              accessibility: true,
-              responsive: [{
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 4,
-                  slidesToScroll: 4,
-                  infinite: true,
-                  dots: false,
-                  arrows: true
-                }
-              }, {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  arrows: true
-                }
-              }, {
-                breakpoint: 575, 
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  arrows: true
-                }
-              }]
+            // $('.menuSlider').slick({
+            //   dots: false,
+            //   infinite: true,
+            //   speed: 300,
+            //   slidesToShow: 5,
+            //   slidesToScroll: 1,
+            //   autoplay: false,
+            //   arrow: true,
+            //   accessibility: true,
+            //   responsive: [{
+            //     breakpoint: 1024,
+            //     settings: {
+            //       slidesToShow: 4,
+            //       slidesToScroll: 4,
+            //       infinite: true,
+            //       dots: false,
+            //       arrows: true
+            //     }
+            //   }, {
+            //     breakpoint: 768,
+            //     settings: {
+            //       slidesToShow: 1,
+            //       slidesToScroll: 1,
+            //       arrows: true
+            //     }
+            //   }, {
+            //     breakpoint: 575, 
+            //     settings: {
+            //       slidesToShow: 1,
+            //       slidesToScroll: 1,
+            //       arrows: true
+            //     }
+            //   }]
 
-            });
-            liHasChild.off('click');
+            // });
+            // liHasChild.off('click');
             // 如果點在外面
             // $(document).on('touchend click', function(e) {
             //     var target = e.target;
