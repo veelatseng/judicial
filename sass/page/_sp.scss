@@ -961,6 +961,9 @@
 		@include make-md-column(4);
 		@include make-lg-column(3);
 		z-index: 10;
+		@include screen('notebook') {
+			margin-bottom: 10px!important;
+		}
 	}
 	.btn_grp{
 		overflow: hidden;
@@ -1938,6 +1941,62 @@
 		}
 	}
 }
+.notary_search_block,.appraiser_search_block,.interpreter_search_block{
+	background: #e5e5e5;
+	padding: 1em;
+	box-sizing: border-box;
+	overflow: hidden;
+	clear: both;
+	margin: 1em 0;
+	text-align: center;
+	label{
+		color: #202020;
+		margin-bottom: 0;
+	}
+
+	input[type="text"] {
+		width: 300px !important;
+		margin-bottom: 0;
+		@include screen('mobile') {
+			margin-bottom: 5px;
+		}
+	}
+	select{
+		margin-bottom: 0;
+		@include screen('mobile') {
+			margin-bottom: 5px;
+		}
+	}
+	.btn_grp{
+		width: 20%;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		@include screen('mobile') {
+			width:  50%;
+			padding-top: 10px;
+		}
+		input{
+			width: 100%;
+		}
+	}
+	input[type="button"],input[type="submit"],input[type="reset"]{
+		border-radius: 0;
+		border:0;
+		background: $linkColor;
+		color: #fff;
+		padding: 0.46em 1em !important;
+		margin-top: 0 !important;
+		vertical-align: middle;
+		margin-bottom: 0;
+		@include screen('mobile') {
+			margin-bottom: 5px;
+		}
+	}
+	input[type="reset"]{
+		background: #999;
+	}
+}
 .notary{
 	.notaryTitle{
 		text-align: center;
@@ -1960,67 +2019,32 @@
 			vertical-align: text-top;
 		}
 	}
-	.notary_search_block{
-		background: #1e3050;
-		padding: 1em;
-		box-sizing: border-box;
-		overflow: hidden;
-		clear: both;
-		margin: 1em 0;
-		text-align: center;
-		label{
-			color: #fff;
-			margin-bottom: 0;
-		}
-		.btn_grp{
-			width: 20%;
-			margin: 0;
-			padding: 0;
-			@include screen('mobile') {
-				width:  50%;
-				padding-top: 10px;
-			}
-			input{
-				width: 100%;
-			}
-		}
-		input[type="text"] {
-			width: 300px !important;
-			margin-bottom: 0;
-			@include screen('mobile') {
-				margin-bottom: 5px;
-			}
-		}
-		select{
-			margin-bottom: 0;
-			@include screen('mobile') {
-				margin-bottom: 5px;
-			}
-		}
-		input[type="button"],input[type="submit"],input[type="reset"]{
-			border-radius: 0;
-			border:0;
-			background: $linkColor;
-			color: #fff;
-			padding: 0.46em 1em !important;
-			margin-top: 0 !important;
-			vertical-align: middle;
-			margin-bottom: 0;
-			@include screen('mobile') {
-				margin-bottom: 5px;
-			}
-		}
-	}
 	.notarytable{
 		margin-bottom: 2em;
 		img{
-			width: 100%;
 			max-height: 120px;
 		}
 		table{
+			border-left: #ddd 1px solid;
+			border-right: #ddd 1px solid;
+			tr{
+				&:first-child th {
+					color: #fff;
+					text-align: center;
+					&:first-child{
+						border-right: 1px solid #ddd;
+					}
+				}
+				&:nth-child(even) {
+					background: #fff;
+				}
+			}
 			th,td{
-				border: #ddd 1px solid;
+				border: #ddd 0px solid;
 				text-align: left;
+				color: #202020;
+				background: #fff;
+				vertical-align: top;
 			}
 			th{
 				@include screen('mobile') {
@@ -2032,7 +2056,6 @@
 		.type1{
 			tr:first-child th{
 				background: $darkColor;
-				text-align: left;
 			}
 			.notarypic{
 				@include screen('mobile') {
@@ -2042,11 +2065,54 @@
 		}
 		.type2{
 			border-top: 0;
+			border-bottom: 1px solid #ddd;
 			tr:first-child th{
 				border-top: 0;
+				background: #767676;
 			}
-			tr:last-child th,tr:last-child td{
-				border-bottom: 3px solid $darkColor;
+		}
+	}
+}
+.appraiser{
+}
+.interpreter{
+	.interpreter_search_block .btn_grp{
+		input{
+			width: 45%;
+		}
+	}
+	.interpretertable{
+		table{
+			border: #ddd 1px solid;
+			margin-bottom: 1em;
+			tr{
+				&:first-child th {
+					color: #fff;
+					text-align: center;
+					background: $darkColor;
+					border-right: 1px solid #ddd;
+					&:last-child{
+						border-right: 0px solid #fff;
+					}
+				}
+				&:nth-child(even) {
+					background: #fff;
+				}
+				td:last-child{
+					text-align: left;
+				}
+			}
+			th,td{
+				border: #ddd 0px solid;
+				text-align: left;
+				color: #202020;
+				background: #fff;
+			}
+			th{
+				@include screen('mobile') {
+					white-space: normal;
+					text-align: center;
+				}
 			}
 		}
 	}

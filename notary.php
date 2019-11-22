@@ -118,17 +118,21 @@
                   <td>0930033304</td>
                 </tr>
                 <tr>
-                  <th>事務所地址</th>
-                  <td colspan="2">臺北市中正區羅斯福路3段126號4樓之1</td>
+                  <th rowspan="2">事務所地址</th>
+                  <td colspan="2" rowspan="2"><a href="">臺北市中正區羅斯福路3段126號4樓之1</a></td>
                   <th>信箱</th>
                   <td><a href="mailto:">cstar@seed.net.tw</a></td>
+                </tr>
+                <tr>
+                  <th>網址</th>
+                  <td><a href="">http://www.judicial.hycms.net/tw/lp-152-1.html</a></td>
                 </tr>
               </table>
             </div>
             <!-- 表 -->
             <div class="notarytable">
               <!-- 表上 -->
-              <table class="type1 table_lis">
+              <table class="type1">
                 <tr>
                   <th colspan="2">台北</th>
                   <th colspan="3">登錄號數 A001</th>
@@ -182,15 +186,21 @@
                   <td>0930033304</td>
                 </tr>
                 <tr>
-                  <th>事務所地址</th>
-                  <td colspan="2">臺北市中正區羅斯福路3段126號4樓之1</td>
+                  <th rowspan="2">事務所地址</th>
+                  <td colspan="2" rowspan="2"><a href="">臺北市中正區羅斯福路3段126號4樓之1</a></td>
                   <th>信箱</th>
                   <td><a href="mailto:">cstar@seed.net.tw</a></td>
+                </tr>
+                <tr>
+                  <th>網址</th>
+                  <td><a href="">http://www.judicial.hycms.net/tw/lp-152-1.html</a></td>
                 </tr>
               </table>
             </div>
           </section>
           <!-- Notary End -->
+          <!-- Pagination -->
+          <?php require_once('include/pagination.html'); ?>
         </div>
       </div>
       <!-- container -->
