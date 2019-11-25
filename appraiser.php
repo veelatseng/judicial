@@ -38,7 +38,6 @@
           <section class="appraiser">
             <div class="appraiser_search_block">
               <form method="post" id="QueryForm" class="form_inline">
-                <input type="hidden" name="Action" id="Action" value="Qeury">
                 <div class="form_grp">
                   <label for="" class="form_title">類別</label>
                   <select id="">
@@ -295,7 +294,7 @@
               </table>
             </div>
           </section>
-          <!-- Nppraiser End -->
+          <!-- Appraiser End -->
           <!-- Pagination -->
           <?php require_once('include/pagination.html'); ?>
         </div>

@@ -1941,7 +1941,7 @@
 		}
 	}
 }
-.notary_search_block,.appraiser_search_block,.interpreter_search_block{
+.notary_search_block,.appraiser_search_block,.interpreter_search_block,.modify_search_block,.schedule_search_block,.humanrights_search_block,.calendar_search_block{
 	background: #e5e5e5;
 	padding: 1em;
 	box-sizing: border-box;
@@ -1949,6 +1949,7 @@
 	clear: both;
 	margin: 1em 0;
 	text-align: center;
+	position: relative;	
 	label{
 		color: #202020;
 		margin-bottom: 0;
@@ -1995,6 +1996,13 @@
 	}
 	input[type="reset"]{
 		background: #999;
+	}
+	.code{
+		color: #202020;
+		&:before{
+			filter: invert(1);
+			opacity: .8;
+		}
 	}
 }
 .notary{
@@ -2076,9 +2084,24 @@
 .appraiser{
 }
 .interpreter{
-	.interpreter_search_block .btn_grp{
-		input{
-			width: 45%;
+	.interpreter_search_block{
+		.code{
+			color: #202020;
+			position: relative;
+			display: inline-block;
+			right: auto;
+			bottom: auto;
+			vertical-align: middle;
+			@include screen('mobile') {
+				position: absolute;
+				right: 1.5em;
+				bottom: 1.2em;
+			}
+		}
+		.btn_grp{
+			input{
+				width: 45%;
+			}
 		}
 	}
 	.interpretertable{
@@ -2116,6 +2139,145 @@
 			}
 		}
 	}
+}
+.modify,.schedule,.humanrights{
+	table tr{
+		&:first-child th {
+			color: #fff;
+			text-align: center;
+			background: $darkColor;
+			border-right: 1px solid #ddd;
+			&:last-child{
+				border-right: 0px solid #fff;
+			}
+		}
+	}
+}
+.humanrights{
+	.humanrights_search_block .btn_grp{
+		margin-top: 8px;
+		input{
+			width: 45%;
+		}
+	}
+}
+.calendar{
+	.calendar_search_block .btn_grp{
+		input{
+			width: 45%;
+		}
+	}
+	.week{
+		margin-bottom: 14px;
+		display: block;
+		overflow: hidden;
+		text-align: center;
+		ul{
+			@include li-reset;
+			display: inline-block;
+			li{
+				float: left;
+				margin-right: 10px;
+
+				a{
+					border: 1px solid $linkColor;
+					padding: .6em 3em;
+					display: block;
+					position: relative;
+					color: $linkColor;
+					@include screen('mobile') {
+						padding: .6em 2em;
+					}
+					&.lastweek{
+						&:before{
+							content: "";
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 8px 12px 8px 0;
+							border-color: transparent $linkColor transparent transparent;
+							display: inline-block;
+							position: absolute;
+							left: 1.3em;
+							top: .85em;
+							@include screen('mobile') {
+								left: 1em;
+							}
+						}
+					}
+					&.thisweek{
+						background: $linkColor;
+						color: #fff;
+						border: 1px solid $linkColor;
+					}
+					&.nextweek{
+						&:after{
+							content: "";
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 8px 0 8px 12px;
+							border-color: transparent transparent transparent $linkColor;
+							display: inline-block;
+							position: absolute;
+							right: 1.3em;
+							top: .85em;
+							@include screen('mobile') {
+								right: 1em;
+							}
+						}
+					}
+					&:hover{
+						background: $linkColor;
+						color: #fff;
+						border: 1px solid $linkColor;
+						&:before{
+							content: "";
+							border-color: transparent #fff transparent transparent;
+						}
+						&:after{
+							content: "";
+							border-color: transparent transparent transparent #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	.calendartable{
+		overflow-x: scroll;
+	}
+	table{
+		.date{
+			font-weight: bold;
+		}
+		tr:first-child th{
+			background: $darkColor;
+		}
+		td:last-child,td:nth-last-child(2){
+			vertical-align: top;
+		}
+		.am,.pm{
+			tr:first-child{
+				background: transparent;
+			}
+			vertical-align: top;
+			tr:nth-child(even) {
+				background: transparent;
+			}
+			td{
+				border: transparent 0px solid;
+				vertical-align: top;
+			}
+			th{
+				background: transparent!important;
+				color: #202020!important;
+				border: transparent 0px solid;
+				vertical-align: top;
+			}
+		}
+	}
+
 }
 .professional{
 	padding: 55px 60px;

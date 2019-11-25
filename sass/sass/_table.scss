@@ -58,6 +58,9 @@ table {
         text-align: left;
       }
     }
+    &.num{
+      white-space: nowrap;
+    }
     &.left{
       text-align: left;
     }
@@ -82,49 +85,12 @@ table {
           box-shadow: 0 0px 0px 1px #5a77a0;
         }
       }
-      &.pdf{
-        width: 21px;
-        height: 24px;
-        &:before{
-          width: 21px;
-          height: 24px;
-          background: url(../images/basic/icon_pdf.png) no-repeat 0 0 
-        }
-      }
-      &.jpg{
-        width: 21px;
-        height: 24px;
-        &:before{
-          width: 21px;
-          height: 24px;
-          background: url(../images/basic/icon_jpg.jpg) no-repeat 0 0 
-        }
-      }
-      &.odt{
-        width: 21px;
-        height: 24px;
-        &:before{
-          width: 21px;
-          height: 24px;
-          background: url(../images/basic/icon_odt.png) no-repeat 0 0 
-        }
-      }
-      &.doc{
-        width: 21px;
-        height: 24px;
-        &:before{
-          width: 21px;
-          height: 24px;
-          background: url(../images/basic/icon_doc.png) no-repeat 0 0 
-        }
-      }
-      &.zip{
-        width: 21px;
-        height: 24px;
-        &:before{
-          width: 21px;
-          height: 24px;
-          background: url(../images/basic/icon_zip.png) no-repeat 0 0 
+      &.article{
+        color: $primaryColor;
+        text-decoration: underline;
+        display: block;
+        &:hover{
+          text-decoration: none;
         }
       }
     }

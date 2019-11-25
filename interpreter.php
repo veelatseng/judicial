@@ -37,7 +37,7 @@
           <!-- Interpreter Start -->
           <section class="interpreter">
             <div class="interpreter_search_block">
-              <form method="post" id="QueryForm"  class="form_inline">
+              <form method="post" id="QueryForm" class="form_inline">
                 <div class="form_grp">
                   <label for="" class="form_title">建置法院</label>
                   <select id="">
@@ -60,6 +60,7 @@
                   <input name="" type="submit" value="查詢">
                   <input name="" type="reset" value="清除">
                 </div>
+                <a href="" class="code">通譯法規資訊</a>
               </form>
             </div>
             <div class="category col4">

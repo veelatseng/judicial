@@ -206,7 +206,7 @@ body {
       &:focus{
         box-shadow: 0 0px 0px 1px #5a77a0;
       }
-      &.doc,&.odf,&.odt,&.ods,&.pdf,&.xls,&.ppt,&.ppt,&.jpg,&.mp3,&.mov,&.txt,&.dot,&.zip,&.sevenz,&.other{
+      &.doc,&.odf,&.odt,&.ods,&.pdf,&.xls,&.ppt,&.ppt,&.jpg,&.mp3,&.mov,&.txt,&.dot,&.zip,&.sevenz,&.other,&.verdict{
         width: 21px;
         height: 24px;
         display: inline-block;
@@ -260,6 +260,9 @@ body {
       }
       &.other{
         background: url(../images/basic/icon_other.png);
+      }
+      &.verdict{
+        background: url(../images/basic/icon_verdict.png);
       }
     }
   }
