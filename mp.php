@@ -586,7 +586,7 @@
           <div class="type">
             <div class="tabSet">
               <div class="tabs">
-                <h3 class="tabItem"><a href="#">民事</a></h3>
+                <h3 class="tabItem active"><a href="#">民事</a></h3>
                 <div class="tabContent">
                   <a href="">
                     <picture>
@@ -638,7 +638,7 @@
                                   </a>
                                   <div class="more"><a href="">暸解更多</a></div>
                                 </div>
-                                <h3 class="tabItem active"><a href="#">家事</a></h3>
+                                <h3 class="tabItem"><a href="#">家事</a></h3>
                                 <div class="tabContent">
                                   <a href="">
                                     <picture>

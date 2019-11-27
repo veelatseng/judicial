@@ -154,9 +154,10 @@ body {
               }
             }
             &.active{
-              background: transparent;
+              background: #ccc;
+              
               &:hover{
-                background: #ccc;
+                background: transparent;
               }
             }
           }
@@ -176,20 +177,28 @@ body {
                   width: 5px;
                   height: 5px;
                   display: block;
-                  border-right: 1px solid #515151;
-                  border-top: 1px solid #515151;
+                  border-right: 2px solid #515151;
+                  border-top: 2px solid #515151;
                   transform: rotate(45deg);
                   vertical-align: middle;
                   position: absolute;
-                  left: 15px;
+                  left: 13px;
                   top: 17px;
                 }
                 &.active{
-                  color: $linkColor;
+                  // color: $linkColor;
+                  color: #fff;
+                  background: $primaryColor;
+                  &:before {
+                    content: "";
+                    border-right: 2px solid #fff;
+                    border-top: 2px solid #fff;
+                  }
                 }
                 &:hover,&:focus{
                   color: $linkColor;
                   box-shadow: none;
+
                 }
               }
             }
@@ -206,7 +215,7 @@ body {
       &:focus{
         box-shadow: 0 0px 0px 1px #5a77a0;
       }
-      &.doc,&.odf,&.odt,&.ods,&.pdf,&.xls,&.ppt,&.ppt,&.jpg,&.mp3,&.mov,&.txt,&.dot,&.zip,&.sevenz,&.other,&.verdict{
+      &.doc,&.odf,&.odt,&.ods,&.pdf,&.xls,&.ppt,&.ppt,&.jpg,&.mp3,&.mov,&.txt,&.dot,&.zip,&.sevenz,&.other,&.verdict,&.searchcontent{
         width: 21px;
         height: 24px;
         display: inline-block;
@@ -263,6 +272,23 @@ body {
       }
       &.verdict{
         background: url(../images/basic/icon_verdict.png);
+      }
+      &.calendar{
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        margin-right: 4px;
+        text-indent: -9999px;
+        vertical-align: text-bottom;
+        margin: 0 3px;
+        overflow: hidden;
+        background: url(../images/basic/icon_calendar.png);
+        background-size: cover;
+      }
+      &.searchcontent{
+        width: 24px;
+        background: url(../images/basic/icon_search3.png);
+        background-size: cover;
       }
     }
   }

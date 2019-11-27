@@ -1306,10 +1306,15 @@
 		}
 	}
 	table{
-		th{}
+		border: 1px solid #ddd;
+		th{
+			border-bottom: 1px solid #fff;
+		}
 		td{
+			border-bottom: 1px solid #ddd;
 			&:nth-child(3){
 				text-align: center;
+
 			}
 		}
 	}
@@ -1941,7 +1946,12 @@
 		}
 	}
 }
-.notary_search_block,.appraiser_search_block,.interpreter_search_block,.modify_search_block,.schedule_search_block,.humanrights_search_block,.calendar_search_block{
+.notary_search_block,.appraiser_search_block,
+.interpreter_search_block,
+.modify_search_block,
+.schedule_search_block,
+.humanrights_search_block,
+.calendar_search_block{
 	background: #e5e5e5;
 	padding: 1em;
 	box-sizing: border-box;
@@ -2035,17 +2045,9 @@
 		table{
 			border-left: #ddd 1px solid;
 			border-right: #ddd 1px solid;
-			tr{
-				&:first-child th {
-					color: #fff;
-					text-align: center;
-					&:first-child{
-						border-right: 1px solid #ddd;
-					}
-				}
-				&:nth-child(even) {
-					background: #fff;
-				}
+			@include screen('mobile') {
+				border-left: #ddd 0px solid;
+				border-right: #ddd 0px solid;
 			}
 			th,td{
 				border: #ddd 0px solid;
@@ -2055,15 +2057,19 @@
 				vertical-align: top;
 			}
 			th{
+				text-align: left;
 				@include screen('mobile') {
 					white-space: normal;
-					text-align: center;
 				}
 			}
 		}
 		.type1{
 			tr:first-child th{
 				background: $darkColor;
+				color: #fff;
+				&:nth-child(even) {
+					background: #fff;
+				}
 			}
 			.notarypic{
 				@include screen('mobile') {
@@ -2074,9 +2080,11 @@
 		.type2{
 			border-top: 0;
 			border-bottom: 1px solid #ddd;
-			tr:first-child th{
-				border-top: 0;
-				background: #767676;
+			th,td{
+				background: #eee;
+			}
+			tr:last-child td:last-child{
+				border-right: 1px solid #ddd;
 			}
 		}
 	}
@@ -2114,6 +2122,12 @@
 					text-align: center;
 					background: $darkColor;
 					border-right: 1px solid #ddd;
+					&:first-child,&:nth-child(2){
+						font-size: 1.125em;
+					}
+					&:nth-child(2){
+						text-align: left;
+					}
 					&:last-child{
 						border-right: 0px solid #fff;
 					}
@@ -2144,7 +2158,7 @@
 	table tr{
 		&:first-child th {
 			color: #fff;
-			text-align: center;
+			// text-align: center;
 			background: $darkColor;
 			border-right: 1px solid #ddd;
 			&:last-child{
@@ -2278,6 +2292,42 @@
 		}
 	}
 
+}
+.table_list_search{
+	background: #e5e5e5;
+	padding: 1em;
+	box-sizing: border-box;
+	overflow: hidden;
+	clear: both;
+	margin: 1em 0;
+	position: relative;
+	.form_grp{
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+		@include make-md-column(6);
+		@include make-lg-column(6);
+		border-bottom: 0;
+		.form_title{
+			width: 30%;
+		}
+		.form_content{
+			width: 70%;
+			&.date{
+				input{
+					width: 30%;
+				}
+			}
+		}
+	}
+	.btn_grp{
+		width: 100%;
+		clear: both;
+		padding: 0;
+		input{
+			padding-left: 2em;
+			padding-right: 2em;
+		}
+	}
 }
 .professional{
 	padding: 55px 60px;

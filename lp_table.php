@@ -43,7 +43,7 @@
             <!-- category -->
             <?php require_once('include/category.html'); ?>
             <!-- 表格列表 -->
-            <div class="table_list">
+            <div>
               <table summary="" class="table_sprite table_hover">
                 <thead>
                   <tr>

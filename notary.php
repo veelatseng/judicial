@@ -66,15 +66,14 @@
               <!-- 表上 -->
               <table class="type1">
                 <tr>
-                  <th colspan="2">台北</th>
-                  <th colspan="3">登錄號數 A001</th>
+                  <th colspan="5">地區  民間公證人  姓名</th>
                 </tr>
                 <tr>
                   <th width="10%">姓名</th>
-                  <td width="30%">陳永星</td>
+                  <td width="40%">陳永星</td>
                   <th width="10%">證書字號</th>
-                  <td width="30%">91年度民公證字第0054號</td>
-                  <td width="10%" rowspan="3" class="notarypic"><img src="images/supervisor.jpg" alt=""></td>
+                  <td width="28%">91年度民公證字第0054號</td>
+                  <td width="12%" rowspan="3" class="notarypic"><img src="images/supervisor.jpg" alt=""></td>
                 </tr>
                 <tr>
                   <th>核定外文</th>
@@ -96,100 +95,28 @@
               <!-- 表下 -->
               <table class="type2">
                 <tr>
-                  <th colspan="3">事務所地區、名稱及地址</th>
-                  <th colspan="2">聯絡資訊</th>
-                </tr>
-                <tr>
                   <th width="10%">地區</th>
-                  <td colspan="2">臺灣臺北地方法院 轄區第一區(中正、萬華區)</td>
+                  <td width="40%">臺灣臺北地方法院 轄區第一區(中正、萬華區)</td>
                   <th width="10%">電話</th>
-                  <td>（02）23679845</td>
+                  <td width="40%"colspan="2">（02）23679845</td>
                 </tr>
                 <tr>
                   <th>事務所名稱</th>
-                  <td colspan="2">臺灣臺北地方法院所屬民間公證人陳永星事務所</td>
+                  <td>臺灣臺北地方法院所屬民間公證人陳永星事務所</td>
                   <th>傳真</th>
-                  <td>（02）23679845</td>
+                  <td colspan="2">（02）23679845</td>
                 </tr>
                 <tr>
                   <th>負責公證人</th>
-                  <td colspan="2">陳永星</td>
+                  <td>陳永星</td>
                   <th>手機</th>
-                  <td>0930033304</td>
+                  <td colspan="2">0930033304</td>
                 </tr>
                 <tr>
                   <th rowspan="2">事務所地址</th>
-                  <td colspan="2" rowspan="2"><a href="">臺北市中正區羅斯福路3段126號4樓之1</a></td>
+                  <td rowspan="2"><a href="">臺北市中正區羅斯福路3段126號4樓之1</a></td>
                   <th>信箱</th>
-                  <td><a href="mailto:">cstar@seed.net.tw</a></td>
-                </tr>
-                <tr>
-                  <th>網址</th>
-                  <td><a href="">http://www.judicial.hycms.net/tw/lp-152-1.html</a></td>
-                </tr>
-              </table>
-            </div>
-            <!-- 表 -->
-            <div class="notarytable">
-              <!-- 表上 -->
-              <table class="type1">
-                <tr>
-                  <th colspan="2">台北</th>
-                  <th colspan="3">登錄號數 A001</th>
-                </tr>
-                <tr>
-                  <th width="10%">姓名</th>
-                  <td width="30%">陳永星</td>
-                  <th width="10%">證書字號</th>
-                  <td width="30%">91年度民公證字第0054號</td>
-                  <td width="10%" rowspan="3" class="notarypic"><img src="images/supervisor.jpg" alt=""></td>
-                </tr>
-                <tr>
-                  <th>核定外文</th>
-                  <td>英文第二級</td>
-                  <th>證書日期</th>
-                  <td>91.02.18</td>
-                </tr>
-                <tr>
-                  <th>職務範圍</th>
-                  <td>全職（公證及認證）</td>
-                  <th>登錄完畢</th>
-                  <td>91.08.08</td>
-                </tr>
-                <tr>
-                  <th>備註</th>
-                  <td colspan="4">自108年9月25日起，迄109年9月24日止，因停職不能執行職務期間，臺灣臺北地方法院指定由 喬書漢公證人兼任業務。</td>
-                </tr>
-              </table>
-              <!-- 表下 -->
-              <table class="type2">
-                <tr>
-                  <th colspan="3">事務所地區、名稱及地址</th>
-                  <th colspan="2">聯絡資訊</th>
-                </tr>
-                <tr>
-                  <th width="10%">地區</th>
-                  <td colspan="2">臺灣臺北地方法院 轄區第一區(中正、萬華區)</td>
-                  <th width="10%">電話</th>
-                  <td>（02）23679845</td>
-                </tr>
-                <tr>
-                  <th>事務所名稱</th>
-                  <td colspan="2">臺灣臺北地方法院所屬民間公證人陳永星事務所</td>
-                  <th>傳真</th>
-                  <td>（02）23679845</td>
-                </tr>
-                <tr>
-                  <th>負責公證人</th>
-                  <td colspan="2">陳永星</td>
-                  <th>手機</th>
-                  <td>0930033304</td>
-                </tr>
-                <tr>
-                  <th rowspan="2">事務所地址</th>
-                  <td colspan="2" rowspan="2"><a href="">臺北市中正區羅斯福路3段126號4樓之1</a></td>
-                  <th>信箱</th>
-                  <td><a href="mailto:">cstar@seed.net.tw</a></td>
+                  <td colspan="2"><a href="mailto:">cstar@seed.net.tw</a></td>
                 </tr>
                 <tr>
                   <th>網址</th>

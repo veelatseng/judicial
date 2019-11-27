@@ -389,7 +389,7 @@
       li{
         margin-bottom: 12px;
         position: relative;
-        padding-right: 10em;
+        padding-right: 9em;
         padding-left: 6em;
         display: block;
         @include screen('tablet') {
@@ -671,6 +671,9 @@
       }
     }
     &.active{
+      &+.tabContent {
+        display: block;
+      }
       a{
         color: $primaryColor;
         border-bottom: 2px solid $primaryColor;
@@ -689,7 +692,7 @@
   .tabContent{
     width: 1032px;
     // overflow: hidden;
-    display: block;
+    // display: block;
     clear: both;
     min-height: 424px;
     @include screen('mobile') {

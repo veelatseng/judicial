@@ -2,6 +2,10 @@
 table {
   width: 100%;
   border-collapse: collapse;
+  caption{
+    text-align: left;
+    margin-bottom: 10px;
+  }
   @include screen('xs_mobile') {
     width: 100%;
   }
