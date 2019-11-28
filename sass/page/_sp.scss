@@ -2562,6 +2562,15 @@
 	.sentence{
 		margin-bottom: 60px;
 		clear: both;
+		.banner{
+			width: 1050px;
+			height: 160px;
+			img{
+				width: 100%;
+				height: auto;
+				max-height: 160px;
+			}
+		}
 		ul.list{
 			overflow: hidden;
 			@include li-reset;

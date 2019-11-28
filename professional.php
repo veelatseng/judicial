@@ -144,7 +144,10 @@
             <!-- 量刑趨勢建議系統 -->
             <div class="sentence">
               <h3 class="block_title">量刑趨勢建議系統</h3>
-              <ul class="list">
+              <div class="banner">
+                <img src="images/pbanner.jpg" alt="">
+              </div>
+              <!-- <ul class="list">
                 <li><a href=""><span><img src="images/professional/penalty1.png" alt="妨害性自主罪"></span>妨害性自主罪</a></li>
                 <li><a href=""><span><img src="images/professional/penalty2.png" alt="殺人與傷害致死罪"></span>殺人與傷害致死罪</a></li>
                 <li><a href=""><span><img src="images/professional/penalty3.png" alt="搶奪罪"></span>搶奪罪</a></li>
@@ -153,7 +156,8 @@
                 <li><a href=""><span><img src="images/professional/penalty6.png" alt="槍砲案件"></span>槍砲案件</a></li>
                 <li><a href=""><span><img src="images/professional/penalty7.png" alt="不能安全駕駛罪"></span>不能安全駕駛罪</a></li>
                 <li><a href=""><span><img src="images/professional/penalty8.png" alt="竊盜罪"></span>竊盜罪</a></li>
-              </ul>
+              </ul> -->
+
             </div>
             
             <div class="info">
