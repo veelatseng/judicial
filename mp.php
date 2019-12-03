@@ -49,16 +49,20 @@
         <!-- 報名專區 -->
         <section class="apply_block">
           <h2 class="blkTitle">報名專區</h2>
-          <div class="apply_title">
-            <a href="#">108年度澄字第3532號管中閔懲戒案言詞辯論旁聽報名108年度澄字第3532號管中閔懲戒案言詞辯論旁聽報名</a>
-          </div>
-          <div class="apply_text">
-            108年8月19日(星期一)下午2時30分
-          </div>
-          <div class="apply_date">
-            <span class="month">05</span>
-            <span class="day">29</span>
-          </div>
+          <ul class="apply_list">
+            <li>
+              <span>活動日期：108-12-08起</span>
+              <a href="">司法院大法官108年度學術研討會 (主題：憲法訴訟的新時代)</a>
+            </li>
+            <li>
+              <span>活動日期：108-12-06</span>
+              <a href="">司法院所屬各機關法官助理管理系統宣導會議</a>
+            </li>
+            <li>
+              <span>活動日期：108-12-02</span>
+              <a href="">司法院108年度強化司法業務暨宣導之官網建置採購案上稿教育訓練</a>
+            </li>
+          </ul>
           <div class="apply_bg">
             <img src="images/apply_bg.jpg" alt="">
           </div>

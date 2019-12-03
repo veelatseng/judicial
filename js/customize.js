@@ -255,9 +255,9 @@ $(function(){
   });
 });
 $(function(){
-  $('.advanced_search_block .advanced_search').hide();
+  $('.advanced_search_block .advanced_search,.table_list_search_block .table_list_search').hide();
   $('.search_btn').off().click(function(e) {
-    $('.advanced_search_block .advanced_search').stop().slideToggle();
+    $('.advanced_search_block .advanced_search,.table_list_search_block .table_list_search').stop().slideToggle();
     e.preventDefault();
   });
 });

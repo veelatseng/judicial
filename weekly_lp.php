@@ -47,7 +47,7 @@
           <!-- LP Start -->
           <section class="lp">   
             <div class="weekly_search_block">
-              <form action="" class="form_inline">
+              <form action="" class="form_grid">
                 <div class="form_grp">
                   <label for="">期別：</label>
                   <input type="text" class="iss">
@@ -60,15 +60,16 @@
                 </div>
                 <div class="form_grp">
                   <label for="">出刊日期：</label>
-                  <input type="text" class="date">
+                  <input type="date" class="date">
                   <label class="tilde">~</label>
-                  <input type="text" class="date">
+                  <input type="date" class="date">
                 </div>
                 <div class="form_grp">
                   <input name="" id="" type="text" placeholder="請輸入關鍵字">
                 </div>
                 <div class="btn_grp">
-                  <input name="" type="submit" title="查詢" value="查詢" />
+                  <input name="BtnSubmit" id="BtnSubmit" type="submit" value="查詢">
+                  <input name="BtnReset" id="BtnReset" type="reset" value="清除">
                 </div>
               </form>  
             </div>

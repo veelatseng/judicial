@@ -121,14 +121,9 @@ h1.title {
     background: #F2F2F2;
     @extend %clearfix;
     li {
-      width: 24%;
+      width: 33%;
       display: inline-block;
       vertical-align: top;
-      @include screen('tablet') {
-        width: 48%;
-        margin-bottom: .2em;
-        font-size: 0.875em;
-      }
       @include screen('mobile') {
         width: 100%;
         display: block;
@@ -140,8 +135,7 @@ h1.title {
     margin-bottom: 20px!important;
   }
   .category{
-    padding-bottom: 10px;
-    border-bottom: 2px solid $darkColor;
+
     a {
       padding: .4em .75em;
       display: block;
@@ -189,6 +183,7 @@ h1.title {
     display: inline-block;
   }
   &.organization{
+    margin-top: 0;
     .pic{
       width: 400px;
       margin-right: 40px;
@@ -226,6 +221,7 @@ h1.title {
     }
   }
   &.supervisor{
+    margin-top: 0;
     .pic{
       width: 240px;
       margin-right: 40px;

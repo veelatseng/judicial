@@ -92,6 +92,12 @@
                   <td colspan="4">自108年9月25日起，迄109年9月24日止，因停職不能執行職務期間，臺灣臺北地方法院指定由 喬書漢公證人兼任業務。</td>
                 </tr>
                 <tr>
+                  <th scope="row">地區</th>
+                  <td>轄區</td>
+                  <th scope="row">電話</th>
+                  <td colspan="2"></td>
+                </tr>
+                <tr>
                   <th scope="row">事務所名稱</th>
                   <td></td>
                   <th scope="row">傳真</th>
@@ -104,14 +110,16 @@
                   <td colspan="2"></td>
                 </tr>
                 <tr>
-                  <th rowspan="2" scope="row">事務所地址</th>
-                  <td rowspan="2"><a href=""></a></td>
+                  <th scope="row">事務所地址</th>
+                  <td ><a href=""></a></td>
                   <th scope="row">信箱</th>
                   <td colspan="2"><a href=""></a></td>
                 </tr>
                 <tr>
-                  <th scope="row">網址</th>
-                  <td colspan="2"><a href=""></a></td>
+                  <th scope="row">事務所網址</th>
+                  <td ><a href=""></a></td>
+                  <th scope="row">其他</th>
+                  <td colspan="2"></td>
                 </tr>
               </table>
             </div>
