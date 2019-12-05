@@ -2045,7 +2045,7 @@
 			border: #ddd 1px solid;
 			border: #ddd 1px solid;
 			tr:first-child th{
-				background: $primaryColor;
+				background: $thColor;
 				color: #fff;
 				font-size: 1.125em;
 				&:nth-child(even) {
@@ -2068,6 +2068,7 @@
 				color: #202020;
 				background: #fff;
 				vertical-align: top;
+				padding: .3em;
 			}
 			th{
 				text-align: left;
@@ -2111,7 +2112,7 @@
 		}
 	}
 	.table_list table th{
-		background: $primaryColor;
+		background: $thColor;
 	}
 }
 .interpreter{
@@ -2147,7 +2148,7 @@
 				&:first-child th {
 					color: #fff;
 					text-align: center;
-					background: $primaryColor;
+					background: $thColor;
 					border-right: 1px solid #ddd;
 					&:first-child,&:nth-child(2){
 						font-size: 1.125em;
@@ -2171,12 +2172,23 @@
 				text-align: left;
 				color: #202020;
 				background: #fff;
+				padding: .3em;
 			}
 			th{
 				@include screen('mobile') {
 					white-space: normal;
 					text-align: center;
 				}
+			}
+			+div.right{
+				text-align: right;;
+				font-size: 0.9375em;
+				margin-top: -8px;
+				margin-bottom: 10px;
+			}
+			caption{
+				font-weight: bold;
+				color: $primaryColor;
 			}
 		}
 	}
@@ -2186,7 +2198,7 @@
 		&:first-child th {
 			color: #fff;
 			// text-align: center;
-			background: $primaryColor;
+			background: $thColor;
 			border-right: 1px solid #ddd;
 			&:last-child{
 				border-right: 0px solid #fff;
@@ -2284,6 +2296,14 @@
 				}
 			}
 		}
+		.number{
+			text-align: center;
+			margin: 10px 0 0 0;
+			span{
+				color: $primaryColor;
+				margin: 0 6px;
+			}
+		}
 	}
 	.calendartable{
 		overflow-x: scroll;
@@ -2291,9 +2311,10 @@
 	table{
 		.date{
 			font-weight: bold;
+			font-size: 1.125em;
 		}
 		tr:first-child th{
-			background:$primaryColor;
+			background:$thColor;
 		}
 		td:last-child,td:nth-last-child(2){
 			vertical-align: top;

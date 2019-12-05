@@ -52,7 +52,7 @@
           <ul class="apply_list">
             <li>
               <span>活動日期：108-12-08起</span>
-              <a href="">司法院大法官108年度學術研討會 (主題：憲法訴訟的新時代)</a>
+              <a href="">司法院大法官108年度學術研討會 (主題：憲法訴訟的新時代)司法院大法官108年度學術研討會 (主題：憲法訴訟的新時代)</a>
             </li>
             <li>
               <span>活動日期：108-12-06</span>
@@ -60,14 +60,21 @@
             </li>
             <li>
               <span>活動日期：108-12-02</span>
-              <a href="">司法院108年度強化司法業務暨宣導之官網建置採購案上稿教育訓練</a>
+              <a href="">司法院108年度強化司法業務暨宣導之官網建置採購案上稿教育訓練司法院108年度強化司法業務暨宣導之官網建置採購案上稿教育訓練</a>
             </li>
           </ul>
+          <div class="more"><a href="">更多報名訊息</a></div>
           <div class="apply_bg">
             <img src="images/apply_bg.jpg" alt="">
           </div>
         </section>
         <section class="center_block">
+          <div class="link">
+            <ul>
+              <li><a href="">釋憲訊息</a></li>
+              <li><a href="">行事曆</a></li>
+            </ul>
+          </div>
           <h2 class="blkTitle">司法新聞<span>Judicial News</span></h2>
           <div class="news">
             <div class="tabSet">
@@ -133,71 +140,6 @@
                   <div class="more"><a href="">更多新聞</a></div>
                 </div>
                 <h3 class="tabItem"><a href="#">法規異動資訊</a></h3>
-                <div class="tabContent">
-                  <ul class="textlist">
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">本院賡續辦理「破壞司法信譽案件」專案清查，展現維護民眾訴訟權益並強化司法清廉與公正形象之決心，展現維護民眾訴訟權益並強化司法清廉與公正形象之決心</a></span>
-                      <span class="news_dep"><a href="#">政風處</a></span>
-                    </li>
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">本院108年「司法輿情現況調查」結果出爐新聞稿</a></span>
-                      <span class="news_dep">統計處</span>
-                    </li>
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">公務員懲戒委員會108年度澄字第3532號管中閔懲戒案開庭之旁聽事宜</a></span>
-                      <span class="news_dep">公務員懲戒委員會</span>
-                    </li>
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">本院於本（108）年7月22日至8月23日委託循證民調有限公司，敬請民眾配合。</a></span>
-                      <span class="news_dep">統計處</span>
-                    </li>
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">宜蘭地院「逗陣繞法院」宜蘭縣縣長偕廉政小小志工共同體驗!.</a></span>
-                      <span class="news_dep">宜蘭地方法院</span>
-                    </li> 
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">本院賡續辦理「破壞司法信譽案件」專案清查，展現維護民眾訴訟權益並強化司法清廉與公正形象之決心，展現維護民眾訴訟權益並強化司法清廉與公正形象之決心</a></span>
-                      <span class="news_dep"><a href="#">政風處</a></span>
-                    </li>
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">本院108年「司法輿情現況調查」結果出爐新聞稿</a></span>
-                      <span class="news_dep">統計處</span>
-                    </li>
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">公務員懲戒委員會108年度澄字第3532號管中閔懲戒案開庭之旁聽事宜</a></span>
-                      <span class="news_dep">公務員懲戒委員會</span>
-                    </li>
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">本院於本（108）年7月22日至8月23日委託循證民調有限公司，敬請民眾配合。</a></span>
-                      <span class="news_dep">統計處</span>
-                    </li>
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">宜蘭地院「逗陣繞法院」宜蘭縣縣長偕廉政小小志工共同體驗!.</a></span>
-                      <span class="news_dep">宜蘭地方法院</span>
-                    </li>
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">宜蘭地院「逗陣繞法院」宜蘭縣縣長偕廉政小小志工共同體驗!.</a></span>
-                      <span class="news_dep">宜蘭地方法院</span>
-                    </li>   
-                    <li>
-                      <span class="news_date">108.05.31</span>
-                      <span class="news_title"><a href="#">宜蘭地院「逗陣繞法院」宜蘭縣縣長偕廉政小小志工共同體驗!.</a></span>
-                      <span class="news_dep">宜蘭地方法院</span>
-                    </li>           
-                  </ul> 
-                </div>
-                <h3 class="tabItem"><a href="#">大法官解釋</a></h3>
                 <div class="tabContent">
                   <ul class="textlist">
                     <li>
@@ -460,67 +402,6 @@
               </div>
             </div>
           </div>
-          <!-- 司法新聞 -->
-          <!-- <div class="news">
-            <h2 class="blkTitle">司法新聞<span>Judicial News</span></h2>
-            <div class="more"><a href="">更多新聞</a></div>
-            <ul class="piclist">
-              <li>
-                <a href="#">
-                  <span class="news_title">力排眾議司法院修刑事訴訟法排除測謊當證據力排眾議司法院修刑事訴訟法排除測謊當證據</span>
-                  <span class="news_date">108.05.31</span>
-                  <span class="news_pic">
-                    <img src="images/news1.jpg" alt="">
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="news_title">本院賡續辦理「破壞司法信譽案件」專案清查</span>
-                  <span class="news_date">108.05.31</span>
-                  <span class="news_pic">
-                    <img src="images/news2.jpg" alt="">
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="news_title">本院108年「司法輿情現況調查」結果出爐新聞稿</span>
-                  <span class="news_date">108.05.31</span>
-                  <span class="news_pic">
-                    <img src="images/news3.jpg" alt="">
-                  </span>
-                </a>
-              </li>
-            </ul> 
-            <ul class="textlist">
-              <li>
-                <span class="news_date">108.05.31</span>
-                <span class="news_title"><a href="#">本院賡續辦理「破壞司法信譽案件」專案清查，展現維護民眾訴訟權益並強化司法清廉與公正形象之決心，展現維護民眾訴訟權益並強化司法清廉與公正形象之決心</a></span>
-                <span class="news_dep"><a href="#">政風處</a></span>
-              </li>
-              <li>
-                <span class="news_date">108.05.31</span>
-                <span class="news_title"><a href="#">本院108年「司法輿情現況調查」結果出爐新聞稿</a></span>
-                <span class="news_dep">統計處</span>
-              </li>
-              <li>
-                <span class="news_date">108.05.31</span>
-                <span class="news_title"><a href="#">公務員懲戒委員會108年度澄字第3532號管中閔懲戒案開庭之旁聽事宜</a></span>
-                <span class="news_dep">公務員懲戒委員會</span>
-              </li>
-              <li>
-                <span class="news_date">108.05.31</span>
-                <span class="news_title"><a href="#">本院於本（108）年7月22日至8月23日委託循證民調有限公司，敬請民眾配合。</a></span>
-                <span class="news_dep">統計處</span>
-              </li>
-              <li>
-                <span class="news_date">108.05.31</span>
-                <span class="news_title"><a href="#">宜蘭地院「逗陣繞法院」宜蘭縣縣長偕廉政小小志工共同體驗!.</a></span>
-                <span class="news_dep">宜蘭地方法院</span>
-              </li>      
-            </ul> 
-          </div> -->
           <!-- 熱門服務 -->
           <div class="service">
             <h2 class="blkTitle">熱門服務</h2>

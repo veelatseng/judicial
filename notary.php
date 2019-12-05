@@ -73,7 +73,7 @@
                   <td width="40%">陳永星</td>
                   <th width="10%">證書字號</th>
                   <td width="28%">91年度民公證字第0054號</td>
-                  <td width="12%" rowspan="3" class="notarypic"><img src="images/supervisor.jpg" alt=""></td>
+                  <td width="12%" rowspan="4" class="notarypic"><img src="images/supervisor.jpg" alt=""></td>
                 </tr>
                 <tr>
                   <th scope="row">核定外文</th>

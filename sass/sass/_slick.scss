@@ -1,17 +1,19 @@
 // slick dots
 .slick-dots {
   li {
-    margin: 0 7px;
-    width: 12px;
-    height: 12px;
+    margin: 0 4px;
+    width: 20px;
+    height: 20px;
     button {
-      width: 12px;
-      height: 12px;
+      width: 20px;
+      height: 20px;
       &:before {
         width: 12px;
         height: 12px;
         background: $primaryColor;
         opacity: 1;
+        left: 4px;
+        top: 4px;
       }
       &:hover,
       &:focus {

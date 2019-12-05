@@ -51,9 +51,10 @@
             <div class="week">
               <ul>
                 <li><a href="" class="lastweek">上週</a></li>
-                <li><a href="" class="thisweek">本週</a></li>
+                <li><a href="" class="thisweek">回本週</a></li>
                 <li><a href="" class="nextweek">下週</a></li>
               </ul>
+              <div class="number">共<span>XXX</span>筆</div>
             </div>
             <div class="calendartable">
               <table>

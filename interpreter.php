@@ -73,12 +73,15 @@
             </div>
             <div class="interpretertable">
               <table>
-                <tbody>
+                <caption>臺灣高等法院 轄區特約通譯備選人名冊</caption>
+                <thead>
                   <tr>
                     <th>阮幼菲</th>
                     <th>越南語</th>
                     <th style="width:40%">備註</th>
                   </tr>
+                </thead>
+                <tbody>
                   <tr>
                     <td>編號</td>
                     <td>108A0077</td>
@@ -94,13 +97,17 @@
                   </tr>
                 </tbody>
               </table>
+              <div class="right">承辦人：陳金卿　聯絡電話：07-5523621 分機 513</div>
               <table>
-                <tbody>
+                <caption>臺灣高等法院 轄區特約通譯備選人名冊</caption>
+                <thead>
                   <tr>
                     <th>阮幼菲</th>
                     <th>越南語</th>
                     <th style="width:40%">備註</th>
                   </tr>
+                </thead>
+                <tbody>
                   <tr>
                     <td>編號</td>
                     <td>108A0077</td>
@@ -116,6 +123,7 @@
                   </tr>
                 </tbody>
               </table>
+              <div class="right">承辦人：陳金卿　聯絡電話：07-5523621 分機 513</div>
             </div>
           </section>
           <!-- Interpreter End -->
