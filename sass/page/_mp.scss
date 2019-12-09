@@ -718,6 +718,7 @@
     min-height: 424px;
     @include screen('mobile') {
       width: 100%;
+      min-height: auto;
     }
     a{
       display: inline-block;
@@ -1052,6 +1053,7 @@
             padding: 1.2em 1.5em;
             box-sizing: border-box;
             text-align: center;
+            overflow: hidden;
             .title{
               color: #fff;
               font-size: 1.125em;
@@ -1084,9 +1086,18 @@
               display: -webkit-box;
               -webkit-line-clamp:2;
               -webkit-box-orient: vertical;
+              @include screen('mobile') {
+                height: auto;
+              }
             }
             li{
               margin-bottom: 7px;
+              @include screen('mobile') {
+                width: 50%;
+                margin-right: 0;
+                margin-bottom: 0;
+                float: left;
+              }
               &:last-child{
                 margin-bottom: 0;
               }
