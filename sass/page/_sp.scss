@@ -2422,9 +2422,10 @@
 			@include make-lg-column(6);
 			border-bottom: 0;
 			margin-bottom: 0;
-			@include screen('mobile') {
-				margin-bottom: .2em;
-			}
+			padding-bottom: 10px;
+			// @include screen('mobile') {
+			// 	margin-bottom: .2em;
+			// }
 			.form_title{
 				width: 30%;
 			}
