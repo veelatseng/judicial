@@ -5,6 +5,9 @@
         padding:1em 0;
         margin: 0;
         overflow:hidden;
+        @include screen('mobile') {
+            padding: 0;
+        }
     }
     li {
         display: block;

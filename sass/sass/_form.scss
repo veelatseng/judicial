@@ -20,14 +20,14 @@ select::-ms-expand {
     .form_grp {
         border-bottom: 1px solid #DDD;
         overflow: hidden;
-        padding: .5em 0;
+        // padding: .5em 0;
     }
     .form_title {
         @include make-xs-column(12);
         @include make-sm-column(3);
         @include make-md-column(3);
         @include make-lg-column(3);
-        @include gutter();
+        @include gutter(0);
         padding-top: 5px;
     }
     .form_content {
@@ -36,6 +36,7 @@ select::-ms-expand {
         @include make-md-column(9);
         @include make-lg-column(9);
         @include gutter();
+        padding-left: 0;
     }
 }
 //---------------------------------------------form setting--------//
@@ -81,6 +82,7 @@ form {
             display: inline-block;
             vertical-align: middle;
             margin-right: .5em;
+            margin-left: .5em;
             &~input,
             &~textarea {
                 display: inline-block;
@@ -111,8 +113,9 @@ form {
             input[type="reset"],
             input[type="button"],
             input[type="search"] {
-                margin-top: -3px;
-                padding: .45em 1em;
+                // margin-top: -3px;
+                // padding: .45em 1em;
+                padding: .4em .5em;
             }
         }
         select,

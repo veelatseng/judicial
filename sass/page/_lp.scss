@@ -17,6 +17,9 @@
   .table_notitle{
     table{
       // border-top: 3px solid $primaryColor;
+      td{
+        border-top: 0;
+      }
     }
   }
   .list {
@@ -29,6 +32,9 @@
         padding: 1em 0;
         border-bottom: 1px solid #DDD;
         position: relative; 
+        @include screen('mobile') {
+          padding: .5em 0;
+        }
         .tag{
           margin-left: 2em;
         }

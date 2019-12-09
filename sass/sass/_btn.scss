@@ -7,6 +7,10 @@ $btn-radius:2px;
 .btn_grp {
     text-align: center;
     padding: 1em 0;
+    @include screen('mobile') {
+        padding: 0;
+        margin-bottom: 0;
+    }
     .btn {
         min-width: 5em;
         margin: .25em .1em;

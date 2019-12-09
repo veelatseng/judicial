@@ -746,8 +746,9 @@
                                           <form action="" class="form_inline">
                                             <div class="form_grp">
                                               <label for="mustSameAsId">訂閱司法電子報</label>
-                                              <input name="username" id="mustSameAsId" type="text" placeholder="請輸入電子郵件信箱" accesskey="S">
-                                              <input name="" type="submit" title="訂閱" value="訂閱" />
+                                              <!-- <input name="username" id="mustSameAsId" type="text" placeholder="請輸入電子郵件信箱" accesskey="S"> -->
+                                              <span>本院提供司法新聞相關資訊之訂閱服務</span>  
+                                              <input name="" type="submit" title="去訂閱" value="去訂閱" />
                                             </div>
                                           </form>  
                                         </section>

@@ -1,3 +1,6 @@
+.mpSlider {
+  margin-bottom: 2em;
+}
 .menu>ul>li>a {
   padding: 0 42px;
   @media all and (max-width: 1199px) {
@@ -60,6 +63,9 @@
 }
 .statistics_block {
   margin:2em 15em;
+  @include screen('mobile') {
+    margin: 0;
+  }
 }
 .cp .info li {
   width: 49%;

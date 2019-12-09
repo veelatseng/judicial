@@ -101,11 +101,27 @@ body {
       float: none;
       display: block;  
       margin-bottom: 1em;
+      padding-bottom: 0;
+    }
+    .leftCtrl{
+      display: none;
+      @include screen('mobile') {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border: 0;
+        padding: .7em 1em;
+        border-radius: 0px;
+        margin: 0 0 4px 0;
+        background: $darkColor;
+        font-size: 1.125em;
+      }
     }
     nav{
       margin-right: 3em;
       @include screen('mobile') {
         margin-right: 0; 
+        display: none;
       }
       .left_title{
         background: $darkColor;
@@ -116,6 +132,11 @@ body {
         font-weight: normal;
         letter-spacing: 1px;
         margin: 0;
+        @include screen('mobile') {
+          font-size: 16px;
+          background: #444;
+          text-align: left;
+        }
       }
       >ul{
         @include li-reset;

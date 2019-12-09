@@ -4,11 +4,7 @@
 // 首頁輪播
 .mpSlider {
   width: 100%;
-  margin-bottom: 2em;
   @include gutter(0);
-  @include screen('mobile') {
-    margin: 0;
-  }
   .img-container {
     @include aspect-ratio(5, 2);
   }
@@ -31,7 +27,7 @@
     margin-bottom: 18px;
   }
   &:before{
-    content: "";
+    content: ""; 
     width: 32px;
     height: 32px;
     display: inline-block;
@@ -48,7 +44,7 @@
     margin-left: 13px;
     font-family: "Myriad Pro";
     vertical-align: middle;
-    color: #a9861f;
+    color: $linkColor;
     letter-spacing: 0;
     font-weight: normal;
     @include screen('mobile') {
@@ -60,7 +56,7 @@
   position: relative;
   color: #fff;
   padding: 32px 150px 0 220px;
-  margin: 0 0 1.5em 0;
+  margin: 0;
   font-weight: normal;
   overflow: hidden;
   min-height: 160px;
@@ -181,10 +177,9 @@
     }
   }
 }
-
 .center_block{
   width: 1030px;
-  margin: 5.3em auto;
+  margin: 6.8em auto 5.3em auto;
   padding-top: 18px;
   background: $thColor;
   position: relative;
@@ -1297,6 +1292,7 @@
   @include screen('mobile') {
     margin: 0;
     padding: 3em 2em;
+    text-align: center;
   }
   .form_inline{
     color: #fff;
@@ -1311,7 +1307,21 @@
       vertical-align: middle;
       margin: 0 12px 0 0;
       @include screen('mobile') {
-        margin: 0 0 1em 0;
+        margin: 0 0 .5em 0;
+      }
+    }
+    span{
+      font-size: 0.875em;
+      vertical-align: middle;
+      margin-right: 10px;
+      @include screen('mobile') {
+        display: block;
+        margin-right: 0;
+        margin-bottom: .8em;
+      }
+      &:before,&:after{
+        content: "/";
+        margin: 0 5px;
       }
     }
     input{
@@ -1329,6 +1339,7 @@
       }
       &[type="submit"]{
         width: 95px!important;
+        background: $linkColor;
         @include screen('mobile') {
           margin-bottom: 0;
         }

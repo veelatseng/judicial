@@ -53,18 +53,18 @@ $(function() {
     });
     $('.statistics_slider').slick({
         arrows: true,                       //左右箭頭
-        autoplay: false,                    //自動播放
-        autoplaySpeed: 3000,                //自動播放秒數
-        dots: true,                        //顯示圓點
-        dotsClass:  'slick-dots',           //原點css
+        // autoplay: false,                    //自動播放
+        // autoplaySpeed: 3000,                //自動播放秒數
+        // dots: true,                        //顯示圓點
+        // dotsClass:  'slick-dots',           //原點css
         draggable: true,                    //滑鼠可以拖曳
-        infinite: true,                     //無限輪播
-        pauseOnHover: true,                 //滑鼠移過後暫停自動撥放
-        pauseOnDotsHover: false,            //滑鼠移過圓點後暫停自動撥放
-        rtl: false,                         //改變輪播方向
-        slidesToShow: 1,                    //一次顯示幾張
-        slidesToScroll: 1,                  //一次輪播幾張
-        vertical: false                     //改成垂直方向
+        // infinite: true,                     //無限輪播
+        // pauseOnHover: true,                 //滑鼠移過後暫停自動撥放
+        // pauseOnDotsHover: false,            //滑鼠移過圓點後暫停自動撥放
+        // rtl: false,                         //改變輪播方向
+        // slidesToShow: 1,                    //一次顯示幾張
+        // slidesToScroll: 1,                  //一次輪播幾張
+        // vertical: false                     //改成垂直方向
       });
     //燈箱slick+lightBox組合
     $('.cp_slider').slick({
@@ -313,7 +313,17 @@ $(function(){
   plth();
 });
 
-
+$(function(){
+  $('.left_block').prepend('<button type="button" class="leftCtrl">次選單</button>');
+  if ($(window).outerWidth() < 948) {
+    $(".leftCtrl").show();
+    $(".leftCtrl").click(function(e) {
+      $(".left_block nav").stop().slideToggle();
+    });
+  } else {
+    $(".leftCtrl").hide();
+  }
+});
 // $('.centrespread').slickLightbox({
 //   caption: 'caption',
 //   useHistoryApi: 'true',

@@ -15,7 +15,7 @@
   }
   &.col2{
     ul li{
-      @include make-xs-column(12);
+      @include make-xs-column(6);
       @include make-sm-column(6);
       @include make-md-column(6);
       @include make-lg-column(6);
@@ -23,7 +23,7 @@
   }
   &.col3{
     ul li{
-      @include make-xs-column(12);
+      @include make-xs-column(6);
       @include make-sm-column(4);
       @include make-md-column(4);
       @include make-lg-column(4);
@@ -31,7 +31,7 @@
   }
   &.col4{
     ul li{
-      @include make-xs-column(12);
+      @include make-xs-column(6);
       @include make-sm-column(3);
       @include make-md-column(3);
       @include make-lg-column(3);
@@ -39,7 +39,7 @@
   }
   &.col6{
     ul li{
-      @include make-xs-column(12);
+      @include make-xs-column(6);
       @include make-sm-column(2);
       @include make-md-column(2);
       @include make-lg-column(2);
@@ -48,6 +48,9 @@
   &.col5{
     ul li {
       width: 20%;
+      @include screen('mobile') {
+        width: 50%;
+      }
     }
   }
   a {

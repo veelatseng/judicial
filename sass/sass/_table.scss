@@ -137,7 +137,11 @@ table {
       position: relative;
       padding-left: 35% !important;
       white-space: normal;
-      text-align: left;
+      text-align: left!important;
+      &.right,&.center,&.num,&.date{
+        text-align: left!important;
+      }
+
       &:before {
         content: attr(data-title);
         position: absolute;
@@ -221,7 +225,7 @@ table {
           -webkit-transform: translate3d(0, 0, 0);
           table {
             width: 100%;
-            min-width: 545px;
+            min-width: 100%;
           }
         }
       }

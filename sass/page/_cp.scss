@@ -6,6 +6,9 @@ h1.title {
 }
 .cp {
   margin-top: 1em;
+  @include screen('mobile') {
+    margin-top: 0;
+  }
   .author{
     overflow: hidden;
     margin: .3em 0;
@@ -121,7 +124,7 @@ h1.title {
     background: #F2F2F2;
     @extend %clearfix;
     li {
-      width: 33%;
+      width: 32%;
       display: inline-block;
       vertical-align: top;
       @include screen('mobile') {
