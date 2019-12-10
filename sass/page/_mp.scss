@@ -12,6 +12,16 @@
     padding: 0;
     bottom: 18px;
   }
+  .slick-prev{
+    @include screen('mobile') {
+      left: 10px;
+    }
+  }
+  .slick-next{
+    @include screen('mobile') {
+      right: 10px;
+    }
+  }
 }
 .blkTitle{
   color:$primaryColor;
@@ -241,7 +251,7 @@
   .news{
     padding: 24px 44px 10px 44px;
     @include screen('tablet') {
-      padding: 0 2em 2em 2em;
+      padding: 0 1.5em 2em 1.5em;
       position: relative;
     }
     .tabs>.tabItem {
@@ -728,10 +738,11 @@
         box-shadow: none;
         border: 1px solid $lightColor;
       }
-      img{
-        width: 100%;
-        height: auto;
-      }
+
+    }
+    img{
+      width: 100%;
+      height: auto;
     }
     .more{
       padding: .5em 0;

@@ -35,7 +35,7 @@
           <!-- h2節點 -->
           <h2 class="pageTitle">節點標題</h2>
           <!-- function_panel -->
-          <?php require_once('include/function_panel.html'); ?>
+          <?php require_once('include/function_panel.html'); ?> 
           <!-- LP Start -->
           <section class="lp">
 
@@ -53,17 +53,23 @@
                     </div>
                   </div>
                   <div class="form_grp">
-                    <label for="" class="form_title">案件類別</label>
-                    <div class="form_content">
-                      <select name="" id="">
-                        <option value="">全部</option>
-                      </select>
+                    <label for="" class="form_title">公告日期</label>
+                    <div class="form_content date">
+                      <input type="date" id="" name="" value="" placeholder="選擇日期">
+                      <label for="">~</label>  
+                      <input type="date" id="" name="" value="" placeholder="選擇日期">
                     </div>
                   </div>
                   <div class="form_grp">
                     <label for="" class="form_title">案號</label>
                     <div class="form_content">
                       <input type="text" id="" name="" value="" placeholder="請輸入案號">
+                    </div>
+                  </div>
+                  <div class="form_grp">
+                    <label for="" class="form_title">應受送達人(姓名)</label>
+                    <div class="form_content">
+                      <input type="text" id="" name="" value="" placeholder="請輸入姓名">
                     </div>
                   </div>
                   <div class="form_grp">
@@ -75,12 +81,6 @@
                     </div>
                   </div>
                   <div class="form_grp">
-                    <label for="" class="form_title">應受送達人(姓名)</label>
-                    <div class="form_content">
-                      <input type="text" id="" name="" value="" placeholder="請輸入姓名">
-                    </div>
-                  </div>
-                  <div class="form_grp">
                     <label for="" class="form_title">文書種類</label>
                     <div class="form_content">
                       <select name="" id="">
@@ -89,15 +89,15 @@
                     </div>
                   </div>
                   <div class="form_grp">
-                    <label for="" class="form_title">公告日期</label>
-                    <div class="form_content date">
-                      <input type="date" id="" name="" value="" placeholder="選擇日期">
-                      <label for="">~</label>  
-                      <input type="date" id="" name="" value="" placeholder="選擇日期">
+                    <label for="" class="form_title">案件類別</label>
+                    <div class="form_content">
+                      <select name="" id="">
+                        <option value="">全部</option>
+                      </select>
                     </div>
                   </div>
                   <div class="form_grp">
-                    <label for="" class="form_title">文書內容</label>
+                    <label for="" class="form_title">公告內容</label>
                     <div class="form_content">
                       <input type="text" id="" name="" value="" placeholder="請輸入文書內容">
                     </div>
@@ -422,7 +422,7 @@
                       <td  data-title="項次" class="num">1</td>
                       <td data-title="法院別">臺灣臺北地方法院</td>
                       <td data-title="案號">108年司執丑字57398號</td>
-                      <td data-title="應受送達人(姓名)" class="center"><a href="/tw/cp-139-90735-b8e6a-1.html" title="林博裕">林博裕</a></td>
+                      <td data-title="應受送達人" class="center"><a href="/tw/cp-139-90735-b8e6a-1.html" title="林博裕">林博裕</a></td>
                       <td data-title="案件類別" class="center">民事</td>
                       <td data-title="國內外" class="center">國內</td>
                       <td data-title="文書種類" class="center">裁定</td>
@@ -433,7 +433,7 @@
                       <td  data-title="項次" class="num">1</td>
                       <td data-title="法院別">臺灣臺北地方法院</td>
                       <td data-title="案號">108年司執丑字57398號</td>
-                      <td data-title="應受送達人(姓名)" class="center"><a href="/tw/cp-139-90735-b8e6a-1.html" title="林博裕">林博裕</a></td>
+                      <td data-title="應受送達人" class="center"><a href="/tw/cp-139-90735-b8e6a-1.html" title="林博裕">林博裕</a></td>
                       <td data-title="案件類別" class="center">民事</td>
                       <td data-title="國內外" class="center">國內</td>
                       <td data-title="文書種類" class="center">裁定</td>

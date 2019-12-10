@@ -2367,6 +2367,9 @@
 	clear: both;
 	margin:-42px 0 10px 0;
 	overflow: hidden;
+	@include screen('mobile') {
+		margin:-10px 0 10px 0;
+	}
 	.search_btn{
 		display: block;
 		clear: both;
@@ -2431,6 +2434,9 @@
 			}
 			.form_content{
 				width: 70%;
+				@include screen('mobile') {
+					padding-right: 0;
+				}
 				input,select{
 					margin-bottom: 0;
 				}
@@ -2439,8 +2445,13 @@
 						width: 46%;
 					}
 					label{
-						width: 6%;
+						width: 20px;
 						text-align: center;
+						display: inline-block;
+						@include screen('mobile') {
+							width: 10px;
+							display: inline-block;
+						}
 					}
 				}
 			}

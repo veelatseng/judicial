@@ -489,86 +489,72 @@
                     </div>
                     <h3 class="tabItem"><a href="#">勞動<span>NEW!</span></a></h3>
                     <div class="tabContent">
-                      <a href="">
-                        <picture>
-                          <source media="(min-width: 576px)" srcset="images/勞動a.jpg">
-                            <source media="(max-width: 575px)" srcset="images/勞動b.jpg">
-                              <img src="images/勞動a.jpg">
-                              <noscript><img src="images/勞動a.jpg"></noscript>
-                            </picture>
-                          </a>
+                      <picture>
+                        <source media="(min-width: 576px)" srcset="images/勞動a.jpg">
+                          <source media="(max-width: 575px)" srcset="images/勞動b.jpg">
+                            <img src="images/勞動a.jpg">
+                            <noscript><img src="images/勞動a.jpg"></noscript>
+                          </picture>
                           <div class="more"><a href="">暸解更多</a></div>
                         </div>
                         <h3 class="tabItem"><a href="#">刑事</a></h3>
                         <div class="tabContent">
-                          <a href="">
-                            <picture>
-                              <source media="(min-width: 576px)" srcset="images/刑事a.jpg">
-                                <source media="(max-width: 575px)" srcset="images/刑事b.jpg">
-                                  <img src="images/刑事a.jpg">
-                                  <noscript><img src="images/刑事a.jpg"></noscript>
-                                </picture>
-                              </a>
+                          <picture>
+                            <source media="(min-width: 576px)" srcset="images/刑事a.jpg">
+                              <source media="(max-width: 575px)" srcset="images/刑事b.jpg">
+                                <img src="images/刑事a.jpg">
+                                <noscript><img src="images/刑事a.jpg"></noscript>
+                              </picture>
                               <div class="more"><a href="">暸解更多</a></div>
                             </div>
                             <h3 class="tabItem"><a href="#">少年</a></h3>
                             <div class="tabContent">
-                              <a href="">
-                                <picture>
-                                  <source media="(min-width: 576px)" srcset="images/少年a.jpg">
-                                    <source media="(max-width: 575px)" srcset="images/少年b.jpg">
-                                      <img src="images/少年a.jpg">
-                                      <noscript><img src="images/少年a.jpg"></noscript>
-                                    </picture>
-                                  </a>
+                              <picture>
+                                <source media="(min-width: 576px)" srcset="images/少年a.jpg">
+                                  <source media="(max-width: 575px)" srcset="images/少年b.jpg">
+                                    <img src="images/少年a.jpg">
+                                    <noscript><img src="images/少年a.jpg"></noscript>
+                                  </picture>
                                   <div class="more"><a href="">暸解更多</a></div>
                                 </div>
                                 <h3 class="tabItem"><a href="#">家事</a></h3>
                                 <div class="tabContent">
-                                  <a href="">
-                                    <picture>
-                                      <source media="(min-width: 576px)" srcset="images/家事a.jpg">
-                                        <source media="(max-width: 575px)" srcset="images/家事b.jpg">
-                                          <img src="images/家事a.jpg">
-                                          <noscript><img src="images/家事a.jpg"></noscript>
-                                        </picture>
-                                      </a>
+                                  <picture>
+                                    <source media="(min-width: 576px)" srcset="images/家事a.jpg">
+                                      <source media="(max-width: 575px)" srcset="images/家事b.jpg">
+                                        <img src="images/家事a.jpg">
+                                        <noscript><img src="images/家事a.jpg"></noscript>
+                                      </picture>
                                       <div class="more"><a href="">暸解更多</a></div>
                                     </div>
                                     <h3 class="tabItem"><a href="#">行政</a></h3>
                                     <div class="tabContent">
-                                      <a href="">
-                                        <picture>
-                                          <source media="(min-width: 576px)" srcset="images/行政a.jpg">
-                                            <source media="(max-width: 575px)" srcset="images/行政b.jpg">
-                                              <img src="images/行政a.jpg">
-                                              <noscript><img src="images/行政a.jpg"></noscript>
-                                            </picture>
-                                          </a>
+                                      <picture>
+                                        <source media="(min-width: 576px)" srcset="images/行政a.jpg">
+                                          <source media="(max-width: 575px)" srcset="images/行政b.jpg">
+                                            <img src="images/行政a.jpg">
+                                            <noscript><img src="images/行政a.jpg"></noscript>
+                                          </picture>
                                           <div class="more"><a href="">暸解更多</a></div>
                                         </div>
                                         <h3 class="tabItem"><a href="#">智財</a></h3>
                                         <div class="tabContent">
-                                          <a href="">
-                                            <picture>
-                                              <source media="(min-width: 576px)" srcset="images/智財a.jpg">
-                                                <source media="(max-width: 575px)" srcset="images/智財b.jpg">
-                                                  <img src="images/智財a.jpg">
-                                                  <noscript><img src="images/智財a.jpg"></noscript>
-                                                </picture>
-                                              </a>
+                                          <picture>
+                                            <source media="(min-width: 576px)" srcset="images/智財a.jpg">
+                                              <source media="(max-width: 575px)" srcset="images/智財b.jpg">
+                                                <img src="images/智財a.jpg">
+                                                <noscript><img src="images/智財a.jpg"></noscript>
+                                              </picture>
                                               <div class="more"><a href="">暸解更多</a></div>
                                             </div>
                                             <h3 class="tabItem"><a href="#">商事</a></h3>
                                             <div class="tabContent">
-                                              <a href="">
-                                                <picture>
-                                                  <source media="(min-width: 576px)" srcset="images/商事a.jpg">
-                                                    <source media="(max-width: 575px)" srcset="images/商事b.jpg">
-                                                      <img src="images/商事a.jpg">
-                                                      <noscript><img src="images/商事a.jpg"></noscript>
-                                                    </picture>
-                                                  </a>
+                                              <picture>
+                                                <source media="(min-width: 576px)" srcset="images/商事a.jpg">
+                                                  <source media="(max-width: 575px)" srcset="images/商事b.jpg">
+                                                    <img src="images/商事a.jpg">
+                                                    <noscript><img src="images/商事a.jpg"></noscript>
+                                                  </picture>
                                                   <div class="more"><a href="">暸解更多</a></div>
                                                 </div>
                                               </div>
