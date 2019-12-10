@@ -46,6 +46,12 @@
             </a>
           </div>
         </section>
+        <div class="mpvideo">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e1-0l0of8h0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <a href="" class="close"></a>
+        </div>
         <!-- 報名專區 -->
         <section class="apply_block">
           <h2 class="blkTitle">報名專區</h2>

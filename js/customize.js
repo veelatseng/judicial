@@ -255,29 +255,29 @@ $(function(){
 ////////////////unimenu////////////////
 /*-----------------------------------*/
 $('nav.units_block').hide();
-
+function openuni(){
+  $('nav.units_block').css('top', '0px');
+  $('nav.units_block').slideDown(600,'easeOutQuart');
+  $('body').addClass('noscroll');
+  $(this).hide();
+}
 function closeuni(){
   $('nav.units_block').fadeOut(400,function(){
-    $(this).css('top', '-2000px');
+    $(this).css('top', '-2000px');  
   });
-    // $('.sectorUnits').show();
-  }
-  $('nav.units_block .close,nav.units_block .overlay').click(function(event) {
-    closeuni();
-  });
-  $('nav.units_block>ul>li:last-child>ul>li:last-child a').focusout(function() {
-    closeuni();
-  });
-  function openuni(){
-    $('nav.units_block').css('top', '0px');
-    $('nav.units_block').slideDown(600,'easeOutQuart');
-    $('body').addClass('noscroll');
-    $(this).hide();
-  }
+  $('body').removeClass('noscroll');
+}
+$('nav.units_block .close,nav.units_block .overlay').click(function(event) {
+  closeuni();
+});
+$('nav.units_block>ul>li:last-child>ul>li:last-child a').focusout(function() {
+  closeuni();
+});
 
-  $('.units').click(function(event) {
-   openuni();
- });
+
+$('.units').click(function(event) {
+ openuni();
+});
 
 // lp table_list th 寬度
 $(function(){
@@ -313,6 +313,13 @@ $(function(){
     $(".leftCtrl").hide();
   }
 });
+
+$(function(){
+  $(".mpvideo .close").click(function(e){
+    $('.mpvideo').hide();
+    e.preventDefault();
+  });
+})
 // $('.centrespread').slickLightbox({
 //   caption: 'caption',
 //   useHistoryApi: 'true',
