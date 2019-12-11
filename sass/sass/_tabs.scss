@@ -11,6 +11,7 @@
 .tabs {
   position: relative;
   &>.tabItem {
+    display: block;
     &.active>a {
       background-color: $primaryColor;
       color: #FFF;

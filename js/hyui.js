@@ -549,12 +549,12 @@ $(function() {
     /*-----------------------------------*/
     ////////////////多組Tab////////////////
     /*-----------------------------------*/
-    var resizeTimer1;
+    var resizeTimer2;
     _window.resize(function() {
-      clearTimeout(resizeTimer1);
-      resizeTimer1 = setTimeout(function() {
+      clearTimeout(resizeTimer2);
+      resizeTimer2 = setTimeout(function() {
         ww = _window.outerWidth();
-        typeTab();
+        newsTab();
       }, 50);
     });
 
@@ -613,12 +613,12 @@ $(function() {
     /*-----------------------------------*/
     ////////////////多組Tab////////////////
     /*-----------------------------------*/
-    var resizeTimer1;
+    var resizeTimer3;
     _window.resize(function() {
-      clearTimeout(resizeTimer1);
-      resizeTimer1 = setTimeout(function() {
+      clearTimeout(resizeTimer3);
+      resizeTimer3 = setTimeout(function() {
         ww = _window.outerWidth();
-        typeTab();
+        reformTab();
       }, 50);
     });
 

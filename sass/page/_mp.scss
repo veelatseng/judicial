@@ -195,10 +195,11 @@
   position: relative;
   @include screen('tablet') {
     width: 100%;
-    background: #fff;
+    
   }
   @include screen('mobile') {
     margin: 0;
+    background: #fff;
   }
   .link{
     position: absolute;
@@ -250,7 +251,7 @@
   }
   .news{
     padding: 24px 44px 10px 44px;
-    @include screen('tablet') {
+    @include screen('mobile') {
       padding: 0 1.5em 2em 1.5em;
       position: relative;
     }
@@ -267,6 +268,7 @@
         position: relative;
         overflow: inherit;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        min-height: 50px;
         @include screen('mobile') {
           color: #fff;
           background: #767676;
@@ -396,6 +398,9 @@
             width: 100%;
             height: auto;
             max-height: 200px;
+            @include screen('mobile') {
+              max-height:none;
+            }
           }
         }
       }
@@ -405,7 +410,7 @@
       font-size: .9375em;
       color: #dedede;
       @include screen('mobile') {
-        color: #fff;
+        color: #202020;
         padding: 6px;
       }
       li{
@@ -414,7 +419,7 @@
         padding-right: 9em;
         padding-left: 6em;
         display: block;
-        @include screen('tablet') {
+        @include screen('mobile') {
           padding: 0;
           color: #202020;
         }
@@ -422,7 +427,7 @@
       a{
         color: #fff;
         @include screen('mobile') {
-          color: $primaryColor;
+          color: #202020;
         }
         &:hover,&:focus{
           color: $secondaryColor;
@@ -435,7 +440,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        @include screen('tablet') {
+        @include screen('mobile') {
           position: relative;
           left: auto;
           margin-right: 1em;
@@ -454,8 +459,15 @@
         position: absolute;
         right: 0;
         top: 0;
+        color: #fff;
         @include screen('mobile') {
-          display: none;
+          color: $primaryColor;
+          font-weight: bold;
+        }
+        a{
+          @include screen('mobile') {
+            color: $primaryColor;
+          }
         }
       }
     }
