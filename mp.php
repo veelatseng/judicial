@@ -90,8 +90,9 @@
                   <ul class="piclist">
                     <li>
                       <a href="#">
-                        <span class="news_title">力排眾議司法院修刑事訴訟法排除測謊當證據力排眾議司法院修刑事訴訟法排除測謊當證據</span>
                         <span class="news_date">108.05.31</span>
+                        <span class="news_dep">統計處</span>
+                        <span class="news_title">力排眾議司法院修刑事訴訟法排除測謊當證據力排眾議司法院修刑事訴訟法排除測謊當證據</span>
                         <span class="news_pic">
                           <img src="images/news1.jpg" alt="">
                         </span>
@@ -99,8 +100,9 @@
                     </li>
                     <li>
                       <a href="#">
-                        <span class="news_title">本院賡續辦理「破壞司法信譽案件」專案清查</span>
                         <span class="news_date">108.05.31</span>
+                        <span class="news_dep">統計處</span>
+                        <span class="news_title">本院賡續辦理「破壞司法信譽案件」專案清查</span>
                         <span class="news_pic">
                           <img src="images/news2.jpg" alt="">
                         </span>
@@ -108,8 +110,9 @@
                     </li>
                     <li>
                       <a href="#">
-                        <span class="news_title">本院108年「司法輿情現況調查」結果出爐新聞稿</span>
                         <span class="news_date">108.05.31</span>
+                        <span class="news_dep">統計處</span>
+                        <span class="news_title">本院108年「司法輿情現況調查」結果出爐新聞稿</span>
                         <span class="news_pic">
                           <img src="images/news3.jpg" alt="">
                         </span>
@@ -150,8 +153,9 @@
                   <ul class="piclist">
                     <li>
                       <a href="#">
-                        <span class="news_title">力排眾議司法院修刑事訴訟法排除測謊當證據力排眾議司法院修刑事訴訟法排除測謊當證據</span>
                         <span class="news_date">108.05.31</span>
+                        <span class="news_dep">統計處</span>
+                        <span class="news_title">力排眾議司法院修刑事訴訟法排除測謊當證據力排眾議司法院修刑事訴訟法排除測謊當證據</span>
                         <span class="news_pic">
                           <img src="images/news1.jpg" alt="">
                         </span>
@@ -159,8 +163,9 @@
                     </li>
                     <li>
                       <a href="#">
-                        <span class="news_title">本院賡續辦理「破壞司法信譽案件」專案清查</span>
                         <span class="news_date">108.05.31</span>
+                        <span class="news_dep">統計處</span>
+                        <span class="news_title">本院賡續辦理「破壞司法信譽案件」專案清查</span>
                         <span class="news_pic">
                           <img src="images/news2.jpg" alt="">
                         </span>
@@ -168,8 +173,9 @@
                     </li>
                     <li>
                       <a href="#">
-                        <span class="news_title">本院108年「司法輿情現況調查」結果出爐新聞稿</span>
                         <span class="news_date">108.05.31</span>
+                        <span class="news_dep">統計處</span>
+                        <span class="news_title">本院108年「司法輿情現況調查」結果出爐新聞稿</span>
                         <span class="news_pic">
                           <img src="images/news3.jpg" alt="">
                         </span>
@@ -210,8 +216,9 @@
                   <ul class="piclist">
                     <li>
                       <a href="#">
-                        <span class="news_title">力排眾議司法院修刑事訴訟法排除測謊當證據力排眾議司法院修刑事訴訟法排除測謊當證據</span>
                         <span class="news_date">108.05.31</span>
+                        <span class="news_dep">統計處</span>
+                        <span class="news_title">力排眾議司法院修刑事訴訟法排除測謊當證據力排眾議司法院修刑事訴訟法排除測謊當證據</span>
                         <span class="news_pic">
                           <img src="images/news1.jpg" alt="">
                         </span>
@@ -219,8 +226,9 @@
                     </li>
                     <li>
                       <a href="#">
-                        <span class="news_title">本院賡續辦理「破壞司法信譽案件」專案清查</span>
                         <span class="news_date">108.05.31</span>
+                        <span class="news_dep">統計處</span>
+                        <span class="news_title">本院賡續辦理「破壞司法信譽案件」專案清查</span>
                         <span class="news_pic">
                           <img src="images/news2.jpg" alt="">
                         </span>
@@ -228,8 +236,9 @@
                     </li>
                     <li>
                       <a href="#">
-                        <span class="news_title">本院108年「司法輿情現況調查」結果出爐新聞稿</span>
                         <span class="news_date">108.05.31</span>
+                        <span class="news_dep">統計處</span>
+                        <span class="news_title">本院108年「司法輿情現況調查」結果出爐新聞稿</span>
                         <span class="news_pic">
                           <img src="images/news3.jpg" alt="">
                         </span>

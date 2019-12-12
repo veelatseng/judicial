@@ -370,6 +370,15 @@
           -webkit-box-orient: vertical;
 
         }
+        .news_dep{
+          position: absolute;
+          z-index: 10;
+          padding: .3em .5em;
+          color: #fff;
+          background: $darkColor;
+          right: 0;
+          top: 0;
+        }
         .news_date{
           position: absolute;
           z-index: 10;
@@ -1440,13 +1449,13 @@
   }
 }
 .mpvideo{
-  width: 305px;
-  height: 176px;
+  width: 400px;
+  height: 225px;
   padding: 5px;
   background: #000;
   position: absolute;
   right: 100px;
-  top: 140px;
+  top: 130px;
   z-index: 10;
   @include screen('mobile') {
     position: relative;

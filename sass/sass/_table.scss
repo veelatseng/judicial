@@ -28,6 +28,9 @@ table {
     text-align: center;
     white-space: nowrap;
     font-weight: normal;
+    @include screen('mobile') {
+      white-space: normal;
+    }
     &.nowrap{
       white-space: nowrap;
       @include screen('mobile') {

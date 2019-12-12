@@ -288,7 +288,7 @@ $(function(){
         thWidth = $(this).width(); 
       }
     });
-    if ($(window).outerWidth() <= 768) { 
+    if ($(window).outerWidth() <= 576) { 
       var allWidth=$('.table_list table').width(),
       thRealWidth=Math.floor((thWidth/allWidth)*100);
       $(".table_list td").css({"padding-left":(thRealWidth+5)+"%"});
