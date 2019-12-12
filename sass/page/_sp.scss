@@ -813,11 +813,10 @@
 	text-decoration: underline;
 	padding-left: 22px;
 	display: block;
-	z-index: 9;
+	z-index: 20;
 	@include screen('mobile') {
 		bottom: 1.5em;
 		right: .8em;
-		z-index: 99;
 	}
 	&:hover{
 		text-decoration: none;
