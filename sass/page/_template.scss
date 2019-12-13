@@ -133,7 +133,7 @@ body {
         letter-spacing: 1px;
         margin: 0;
         @include screen('mobile') {
-          font-size: 16px;
+          font-size: 1em;
           background: #444;
           text-align: left;
         }
