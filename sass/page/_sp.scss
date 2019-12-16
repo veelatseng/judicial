@@ -2334,9 +2334,15 @@
 		.date{
 			font-weight: bold;
 			font-size: 1.125em;
+			@include screen('mobile') {
+				white-space: nowrap!important;
+			}
 		}
 		tr:first-child th{
 			background:$thColor;
+			@include screen('mobile') {
+				text-align: left;
+			}
 		}
 		td:last-child,td:nth-last-child(2){
 			vertical-align: top;
