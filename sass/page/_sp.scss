@@ -2338,6 +2338,9 @@
 				white-space: nowrap!important;
 			}
 		}
+		th{
+			white-space: nowrap;
+		}
 		tr:first-child th{
 			background:$thColor;
 			@include screen('mobile') {
