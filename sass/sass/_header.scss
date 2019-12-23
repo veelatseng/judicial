@@ -155,6 +155,25 @@
       }
     }
   }
+  .festival{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    @media all and (max-width: 1060px) {
+      // left: 14%;
+    }
+    @include screen('mobile') {
+      display: none;
+    }
+    img{
+      height: 100%;
+      width: auto;
+      @media all and (max-width: 1060px) {
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
 }
 //search
 .search {
