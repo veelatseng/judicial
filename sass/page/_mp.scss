@@ -1259,7 +1259,7 @@
       display: block;
       @include screen('mobile') {
         border:0;
-        height: auto;
+        // height: auto;
       }
     }
   }

@@ -29,29 +29,39 @@ body {
 .container {
   padding: 0;
   margin: 0 auto;
-    max-width: $container-max; //請看_variable.scss
+  max-width: $container-max; //請看_variable.scss
+}
+.festival_b{
+  width: 100%;
+  height: 146px;
+  text-align: center;
+  margin-top: -4em;
+  z-index: 99;
+  position: relative;
+}
+.main {
+  position: relative;
+  margin: 0 auto;
+  padding: 0; // max-width: $container-max;
+  // 可先設定一個中央區塊最大寬，限制accesskey對齊
+  @include screen('mobile') {
+    padding-top: 55px;
+  } // 內頁標題設定
+  &.mp{
+    background: #e9e5e1;
+    ~.festival_b{
+      margin-top: -146px;
+    }
   }
-
-  .main {
-    position: relative;
-    margin: 0 auto;
-    padding: 0; // max-width: $container-max;
-    // 可先設定一個中央區塊最大寬，限制accesskey對齊
-    @include screen('mobile') {
-      padding-top: 55px;
-    } // 內頁標題設定
-    &.mp{
-      background: #e9e5e1;
-    }
-    .pageTitle {
-      line-height: 1.25em;
-      font-size: 1.5rem;
-      color: $darkColor;
-    }
-    .container{
-      background: #fff;
-    }
+  .pageTitle {
+    line-height: 1.25em;
+    font-size: 1.5rem;
+    color: $darkColor;
   }
+  .container{
+    background: #fff;
+  }
+}
 
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
