@@ -365,7 +365,7 @@
           .form_grp {
             margin-bottom: 0;
             margin-right: 0 !important;
-            width: 82%;
+            width: 68%;
             input {
               margin: 0;
               padding: .5em 35px .5em .5em;
@@ -394,17 +394,26 @@
             padding: .2em;
             margin-right: 0;
             margin-bottom: 0;
-            width: 15%;
+            width: 30%;
             input,input[type="submit"] {
               margin: 0;
               padding: .5em;
-              width: 100%;
+              width: 48%;
               border-radius: 0;
               background: $lightColor;
               border:1px solid $lightColor;
+              display: inline-block;
               &:hover,&:focus{
-                background: $primaryColor;
-                border:1px solid $primaryColor;
+                background: $linkColor;
+                border:1px solid $linkColor;
+              }
+              &.advance{
+                background: $aHover;
+                border:1px solid $aHover;
+                &:hover,&:focus{
+                  background: $primaryColor;
+                  border:1px solid $primaryColor;
+                }
               }
             }
           }
