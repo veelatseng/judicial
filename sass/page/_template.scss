@@ -128,6 +128,30 @@ body {
         margin: 0 0 4px 0;
         background: $darkColor;
         font-size: 1.125em;
+        position: relative;
+        &:after{
+          content: "";
+          position: absolute;
+          right: 20px;
+          top: 18px;
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid #fff;
+          border-left: 2px solid #fff;
+          transform: rotate(225deg);
+          display: block;
+          transition:all 1s;
+        }
+      }
+      &.active{
+        @include screen('mobile') {
+          &:after{
+            content: "";
+            top: 24px;
+            transform: rotate(45deg);
+            transition:all .5s;
+          }
+        }
       }
     }
     nav{

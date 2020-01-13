@@ -307,6 +307,7 @@ $(function(){
   if ($(window).outerWidth() < 948) {
     $(".leftCtrl").show();
     $(".leftCtrl").click(function(e) {
+      $(this).toggleClass('active');
       $(".left_block nav").stop().slideToggle();
     });
   } else {
