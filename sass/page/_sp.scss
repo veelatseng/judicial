@@ -1032,7 +1032,8 @@
 				}
 			}
 			&:focus{
-				box-shadow: none;		
+				box-shadow: none;	
+				box-shadow: 8px 0px 0px 0px $linkColor inset;	
 				.text{
 					color: $linkColor;
 				}
