@@ -1012,6 +1012,7 @@
 			width: 100%;
 			height: 100%;
 			display: block;
+			box-shadow: 8px 0px 0px 0px $linkColor inset;
 			&:after{
 				content: "";
 				width: 20px;

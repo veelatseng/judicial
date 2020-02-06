@@ -321,6 +321,11 @@ $(function(){
     e.preventDefault();
   });
 })
+
+$(function(){
+	$('.btn-fatfooter').click();
+})
+
 // $('.centrespread').slickLightbox({
 //   caption: 'caption',
 //   useHistoryApi: 'true',
