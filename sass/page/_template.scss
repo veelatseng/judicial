@@ -95,6 +95,12 @@ body {
       background:#e9e5e1 url(../images/weekly_bg.jpg) no-repeat center center;
     }
   }
+  &.webcam{
+    &:before{
+      content: "";
+      background:#e9e5e1 url(../images/webcam_bg.gif) no-repeat center center;
+    }
+  }
   &.small_size {
     font-size: .938em;
   }

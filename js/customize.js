@@ -232,7 +232,7 @@ $(function(){
     _qaItem.each(function() {
       function qa(e){
         $('html, body').stop(true, true).animate({ scrollTop: _scrollTop }, 800, 'easeOutExpo');
-        $(this).parents('li').siblings().children('.question a').children('a').removeClass('active');
+        $(this).parents('li').siblings().children('.question').children('a').removeClass('active');
         $(this).toggleClass('active');
         $(this).parents('li').siblings().children('.answer').slideUp();
         $(this).parent('.question').next('.answer').slideToggle();
@@ -324,6 +324,15 @@ $(function(){
 
 $(function(){
 	$('.btn-fatfooter').click();
+})
+
+$(function(){
+	$(document).on('keydown', function(e) {
+        // alt+S 查詢
+        if (e.altKey && e.keyCode == 83) {
+			$('.menu ul li').siblings(".hasChild").last().find('.megamenu').show();
+        }
+	});
 })
 
 // $('.centrespread').slickLightbox({
