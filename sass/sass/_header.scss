@@ -277,6 +277,10 @@
     left: 0;
     z-index: 98;
     background: #333;
+    box-sizing: border-box;
+    @include screen('mobile') {
+      padding: 1em;
+    }
     label {
       font-size: 0em;
       line-height: 0;
@@ -289,6 +293,10 @@
       text-align: right;
       float: left;
       height: 50px;
+      @include screen('mobile') {
+        width: 100%;
+        padding: 0!important;
+      }
       position: relative;
       @include box-sizing();
       label {
@@ -325,6 +333,10 @@
       width: 26%;
       text-align: left;
       @include box-sizing();
+      @include screen('mobile') {
+        width: 100%;
+        padding: 0;
+      }
       input {
         width: 100% !important;
         padding: .5em !important;
@@ -332,16 +344,27 @@
         border-radius: 0;
         background: #c0a42a;
         border: 1px solid #c0a42a;
+        @include screen('mobile') {
+          width: 49.5%!important;
+          padding: 0;
+        }
       }
     }
     .keywordHot {
       padding-left: 5%;
       margin-top: 10px;
       @extend %clearfix;
+      @include screen('mobile') {
+        padding-left: 0;
+        text-align: center;
+      }
       ul{
         margin: 0;
         padding: 0;
         list-style: none;
+        @include screen('mobile') {
+          display: inline-block;
+        }
         li{
           float: left;
           margin-right: 1em;
