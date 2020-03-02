@@ -51,6 +51,9 @@
     @include screen('mobile') {
       display: block !important;
     }
+    @media (max-width:320px){
+      width: 52px !important;
+    }
   }
   >.container {
     max-width: $container-max;
@@ -308,6 +311,10 @@
         padding: .6em 45px .5em .5em;
         border-radius: 0;
         border: 1px solid #fff;
+        @include screen('mobile') {
+          width: 98%;
+          margin:0 1%;
+        }
         &[type="submit"] {
           font-size: 0em;
           width: 36px !important;
@@ -345,8 +352,10 @@
         background: #c0a42a;
         border: 1px solid #c0a42a;
         @include screen('mobile') {
-          width: 49.5%!important;
+          width: 48%!important;
           padding: 0;
+          margin:0 1%;
+          float: left;
         }
       }
     }
@@ -503,6 +512,10 @@
     border:0;
     width: 60px;
   }
+  @media (max-width:320px){
+    width: 50px;
+    left: 50px;
+  }
   a{
     padding: 0 10px;
     display: block;
@@ -521,6 +534,9 @@
       background-size: 30px;
       opacity: .6;
       padding: 0;
+    }
+    @media (max-width:320px){
+      width: 50px;
     }
   }
 }

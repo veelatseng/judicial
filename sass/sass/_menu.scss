@@ -352,57 +352,39 @@
         .search {
           width: 76%;
           margin-right: 4%;
-          margin-top: 1em;
+          margin-top: 1.5em;
           display: block;
           float: right;
-          // label {
-          //   font-size: 0em
-          // }
           form{
             display: block;
-            font-size: 1.125em;
+            font-size: 1em;
           }
           .form_grp {
-            margin-bottom: 0;
-            margin-right: 0 !important;
-            width: 68%;
+            margin: 0 !important;
+            width: 70%;
+            float: left;
             input {
               margin: 0;
-              padding: .5em 35px .5em .5em;
+              padding: 10px 35px 10px .5em;
               border-radius: 0;
               width: 100%;
-              // &[type="submit"] {
-              //   font-size: 0em;
-              //   width: 30px !important;
-              //   height: 30px;
-              //   max-width: auto;
-              //   min-width: auto;
-              //   background: url(../images/basic/icon_search.png) no-repeat center center;
-              //   background-size: 20px;
-              //   border: none;
-              //   display: inline-block;
-              //   margin-left: -40px !important;
-              //   margin-top: -2px !important;
-              //   opacity: .8;
-              //   &:hover,&:focus {
-              //     opacity: 1
-              //   }
-              // }
+              border: 1px solid #000;
+              vertical-align: top;
             }
           }
           .btn_grp {
-            padding: .2em;
-            margin-right: 0;
-            margin-bottom: 0;
+            margin: 0;
+            padding: 0;
             width: 30%;
             input,input[type="submit"] {
-              margin: 0;
-              padding: .5em;
-              width: 48%;
+              margin: 0 0 0 3%;
+              padding: 8px .5em;
+              width: 47%;
               border-radius: 0;
               background: $lightColor;
               border:1px solid $lightColor;
-              display: inline-block;
+              float: left;
+              vertical-align: top;
               &:hover,&:focus{
                 background: $linkColor;
                 border:1px solid $linkColor;
@@ -419,8 +401,8 @@
           }
           .keywordHot {
             display: block;
-            margin-top: 1em;
             line-height: 1.65em;
+            clear: both;
             &:before {
               display: inline-block;
               content: "熱門關鍵字：";
@@ -486,7 +468,7 @@
             border-left: none;
           }
         }
-        
+
       }
       &:nth-last-child(2){
         >a:hover,>a:focus{
@@ -497,7 +479,7 @@
           }
         }
       }
-      
+
     }
     // ul {
     //   display: none;
