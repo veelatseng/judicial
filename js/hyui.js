@@ -1,9 +1,9 @@
 $(function() {
-  /*-----------------------------------*/
+	/*-----------------------------------*/
     ///////////// fix iOS bug /////////////
     /*-----------------------------------*/
     document.documentElement.addEventListener('gesturestart', function(event) {
-      event.preventDefault();
+		event.preventDefault();
     }, false);
     /*-----------------------------------*/
     ///////////////// 變數 ////////////////
@@ -25,7 +25,7 @@ $(function() {
     /*-----------------------------------*/
     var _navLength = $('.navigation>ul').length;
     if (_navLength > 1) {
-      $('.navigation>ul:nth-child(1)').addClass('left_nav');
+		$('.navigation>ul:nth-child(1)').addClass('left_nav');
     }
     // $('.navigation').has('.language').addClass('have_language');
     /*-----------------------------------*/
@@ -59,58 +59,59 @@ $(function() {
     var search_mode = false;
     // 打開選單 function
     function showSidebar() {
-      _sidebar.show();
-      _mArea.show();
-      _mArea.animate({
-        'margin-left': 0
-      }, 400, 'easeOutQuint');
-      _body.addClass('noscroll');
-      _overlay.fadeIn();
-      $('.m_search').hide();
-      search_mode = false;
+		_sidebar.show();
+		_mArea.show();
+		_mArea.animate({
+			'margin-left': 0
+		}, 400, 'easeOutQuint');
+		_body.addClass('noscroll');
+		_overlay.fadeIn();
+		$('.m_search').hide();
+		search_mode = false;
     }
     // 縮合選單 function
     function hideSidebar() {
-      _mArea.animate({ 'margin-left': _mArea.width() * -1 + 'px' }, 500, 'easeOutQuint', function() {
-        _sidebar.fadeOut(200);
-        _mArea.hide();
-      });
-      _body.removeClass('noscroll');
-      _overlay.fadeOut();
-      liHasChild.children('ul').hide();
+		_mArea.animate({ 'margin-left': _mArea.width() * -1 + 'px' }, 500, 'easeOutQuint', function() {
+			_sidebar.fadeOut(200);
+			_mArea.hide();
+		});
+		_body.removeClass('noscroll');
+		_overlay.fadeOut();
+		liHasChild.children('ul').hide();
     }
     // 打開選單動作
     _sidebarCtrl.click(function(e) {
-      showSidebar();
-      e.preventDefault();
+		showSidebar();
+		e.preventDefault();
     });
     // 關閉動作
     _overlay.add(_sidebarClose).off().click(function() {
-      hideSidebar();
+		hideSidebar();
     });
     _overlay.off("mouseenter");
     // 無障礙tab設定
     liHasChild.children('a').keyup(function() {
-      $('.megamenu .menu_2nd>ul').show();
-      $(this).siblings('.megamenu').show();
-      // $('.menuSlider').slick('refresh');
-      $(this).parent("li").siblings().focus(function() {
-        $(this).hide();
-      });
+		$('.megamenu .menu_2nd>ul').show();
+		$(this).siblings('.megamenu').show();
+		// $('.menuSlider').slick('refresh');
+		$(this).parent("li").siblings().focus(function() {
+			$(this).hide();
+		});
     });
     _menu.find('li').keyup(function() {
         // $(this).siblings().children('ul').hide();
         $(this).siblings().children('.megamenu').hide();
-      });
+    });
     _menu.find('li:last>a').focusout(function() {
         // _menu.find('li ul').hide();
         _menu.find('li .megamenu').hide();
-      });
+    });
     // 切換PC/Mobile 選單
     function mobileMenu() {
-      ww = _window.outerWidth();
-      if (ww < wwSmall) {
-        /*-----------------------------------*/
+		search_mode = false;
+		ww = _window.outerWidth();
+		if (ww < wwSmall) {
+			/*-----------------------------------*/
             /////////////// 手機版設定 /////////////
             /*-----------------------------------*/
             menu_status = false;
@@ -168,8 +169,9 @@ $(function() {
             });
             _body.off('touchmove');
             $('.m_search').hide();
-            // $('.language').find('ul').hide();
-          } else {
+            // $('.language').find('ul').hide();			
+        } 
+		else {
             /*-----------------------------------*/
             /////////////// PC版設定 /////////////
             /*-----------------------------------*/
@@ -182,8 +184,7 @@ $(function() {
             _search.appendTo('.menu>ul>li:last-child .megamenu');
             _menu.appendTo('.header .container');
             _search.removeClass('m_search');
-            _search.show();
-            search_mode = false;
+            _search.show();        
             // $('.language').find('ul').hide();
             // 副選單滑出
             liHasChild.on({
@@ -244,51 +245,53 @@ $(function() {
             //         $('.menuSlider').get(0).slick.setPosition()
             //     }
             // });
-          }
-        }
+		}
+	}
     //設定resize 計時器
     var resizeTimer;
     _window.bind("load resize", function(event) {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function() {
-        search_mode = true;
-        mobileMenu();
-      }, 50);
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(function() {
+			search_mode = true;
+			mobileMenu();
+		}, 50);
     });
     mobileMenu();
     // 行動版查詢
     var _searchCtrl = $('.searchCtrl');
     $('.m_search').hide();
     _searchCtrl.off().on('click', function(e) {
-      if (!search_mode) {
-        $('.m_search').stop(true, false).slideDown('400', 'easeOutQuint');
+		if (!search_mode) {
+			$('.m_search').stop(true, false).slideDown('400', 'easeOutQuint');
             // $('.m_search').find('input[type="text"]').focus();
             search_mode = true;
-          } else {
+        }
+		else {
             $('.m_search').hide();
             search_mode = false;
-          }
-        });
+        }
+	});
     // 如果點在外面
     $('.main').off().on('click touchend', function(e) {
-      $('.m_search').hide();
-      search_mode = false;
+		$('.m_search').hide();
+		search_mode = false;
     });
     // 固定版頭
     // var stickyMenuTop = $('.header .menu').offset().top;
     $(window).bind("load scroll resize", function(e) {
-      ww = _window.outerWidth();
-      if (ww >= wwSmall && $(this).scrollTop() > 118) {
-        hh = Math.floor($('.header').outerHeight(true));
-        menuH = Math.floor(_menu.outerHeight(true));
-        $('.header').addClass('fixed');
-        $('.header').css('margin-top', menuH - hh);
-        $('.main').css('margin-top', hh);
-      } else {
-        $('.header').removeClass('fixed');
-        $('.header').css('margin-top', 0);
-        $('.main').css('margin-top', 0);
-      }
+		ww = _window.outerWidth();
+		if (ww >= wwSmall && $(this).scrollTop() > 118) {
+			hh = Math.floor($('.header').outerHeight(true));
+			menuH = Math.floor(_menu.outerHeight(true));
+			$('.header').addClass('fixed');
+			$('.header').css('margin-top', menuH - hh);
+			$('.main').css('margin-top', hh);
+		} 
+		else {
+			$('.header').removeClass('fixed');
+			$('.header').css('margin-top', 0);
+			$('.main').css('margin-top', 0);
+		}
     });
     /*-----------------------------------*/
     //////////// notice訊息區塊 ////////////
@@ -301,61 +304,62 @@ $(function() {
     //////////// Accordion設定 ////////////
     /*-----------------------------------*/
     $('.accordion').each(function() {
-      $(this).find('.accordion-content').hide();
-      var _accordionItem = $(this).children('ul').children('li').children('a');
-      _accordionItem.each(function() {
-        function accordion(e) {
-          $(this).parent('li').siblings().children('a').removeClass('active');
-          $(this).toggleClass('active');
-          $(this).parent('li').siblings().children('.accordion-content').slideUp();
-          $(this).next('.accordion-content').slideToggle();
-          e.preventDefault();
-        }
-        $(this).click(accordion);
-        $(this).keyup(accordion);
-      });
+		$(this).find('.accordion-content').hide();
+		var _accordionItem = $(this).children('ul').children('li').children('a');
+		_accordionItem.each(function() {
+			function accordion(e) {
+				$(this).parent('li').siblings().children('a').removeClass('active');
+				$(this).toggleClass('active');
+				$(this).parent('li').siblings().children('.accordion-content').slideUp();
+				$(this).next('.accordion-content').slideToggle();
+				e.preventDefault();
+			}
+			$(this).click(accordion);
+			$(this).keyup(accordion);
+		});
     });
     /*-----------------------------------*/
     /////////////fatfooter開關/////////////
     /*-----------------------------------*/
     $('.btn-fatfooter').click(function(e) {
-      $(this).next('.container').find('nav>ul>li>ul').stop(true, true).slideToggle(function() {
-        if ($(this).is(':visible')) {
-          $('.btn-fatfooter').html("收合/CLOSE");
-          $('.btn-fatfooter').attr('name', '收合選單/CLOSE');
-        } else {
-          $('.btn-fatfooter').html("展開/OPEN");
-          $('.btn-fatfooter').attr('name', '展開選單/OPEN');
-        }
-      });
-      $(this).stop(true, true).toggleClass('close');
+		$(this).next('.container').find('nav>ul>li>ul').stop(true, true).slideToggle(function() {
+			if ($(this).is(':visible')) {
+				$('.btn-fatfooter').html("收合/CLOSE");
+				$('.btn-fatfooter').attr('name', '收合選單/CLOSE');
+			}
+			else {
+				$('.btn-fatfooter').html("展開/OPEN");
+				$('.btn-fatfooter').attr('name', '展開選單/OPEN');
+			}
+		});
+		$(this).stop(true, true).toggleClass('close');
     });
     /*-----------------------------------*/
     ////////img objectfix cover////////////
     /*-----------------------------------*/
     function imgResize() {
-      $('.imgOuter').each(function(index, el) {
-        var _imgContainer = $(this),
-        cWidth = _imgContainer.width(),
-        cHeight = _imgContainer.height(),
-        ratioC = cWidth / cHeight,
-        _img = _imgContainer.find('img');
-        var iWidth = $(this).find('img').width(),
-        iHeight = $(this).find('img').height(),
-        ratioImg = iWidth / iHeight,
-        scaleRatio;
-        if (ratioC > ratioImg) {
-          scaleRatio = cWidth / iWidth;
-          _img.width(cWidth).height(iHeight * scaleRatio).css('top', -.5 * (iHeight * scaleRatio - cHeight));
-        } else {
-          scaleRatio = cHeight / iHeight;
-          _img.height(cHeight).width(iWidth * scaleRatio).css('left', -.5 * (iWidth * scaleRatio - cWidth));
-        }
-        $(this).find('img').removeClass('img-responsive');
-      });
+		$('.imgOuter').each(function(index, el) {
+			var _imgContainer = $(this),
+			cWidth = _imgContainer.width(),
+			cHeight = _imgContainer.height(),
+			ratioC = cWidth / cHeight,
+			_img = _imgContainer.find('img');
+			var iWidth = $(this).find('img').width(),
+			iHeight = $(this).find('img').height(),
+			ratioImg = iWidth / iHeight,
+			scaleRatio;
+			if (ratioC > ratioImg) {
+				scaleRatio = cWidth / iWidth;
+				_img.width(cWidth).height(iHeight * scaleRatio).css('top', -.5 * (iHeight * scaleRatio - cHeight));
+			} else {
+				scaleRatio = cHeight / iHeight;
+				_img.height(cHeight).width(iWidth * scaleRatio).css('left', -.5 * (iWidth * scaleRatio - cWidth));
+			}
+			$(this).find('img').removeClass('img-responsive');
+		});
     }
     $(window).bind('resize load', function(e) {
-      imgResize();
+		imgResize();
     });
     imgResize();
     /*-----------------------------------*/
