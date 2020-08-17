@@ -317,7 +317,7 @@ $(function(){
 
 $(function(){
   $(".mpvideo .close").click(function(e){
-    $('.mpvideo').hide();
+    $(this).parent(".mpvideo").hide();
     e.preventDefault();
   });
 })
@@ -330,9 +330,9 @@ $(function(){
 	$(document).on('keydown', function(e) {
         // alt+S 查詢
         if (e.altKey && e.keyCode == 83) {
-			$('.menu ul li').siblings(".hasChild").last().find('.megamenu').show();
-        }
-	});
+         $('.menu ul li').siblings(".hasChild").last().find('.megamenu').show();
+       }
+     });
 })
 
 // $('.centrespread').slickLightbox({

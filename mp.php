@@ -51,7 +51,15 @@
             </a>
           </div>
         </section>
-        <div class="mpvideo">
+        <!-- 影片只有一則時css不需要加 video1和 video2 -->
+        <div class="mpvideo video1">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e1-0l0of8h0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <a href="" class="close"></a>
+        </div>
+        <!-- 影片只有一則時css不需要加 video1和 video2 -->
+        <div class="mpvideo video2">
           <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/e1-0l0of8h0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
