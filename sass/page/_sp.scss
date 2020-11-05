@@ -375,7 +375,7 @@
 		padding:0 3.5em 0 1em;
 		letter-spacing: .05em;
 		display: block;
-		background: #09283b; 
+		background: $searchbtn; 
 		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 		&:after{
 			content: "";
@@ -886,7 +886,7 @@
 		padding:0 3.5em 0 1em;
 		letter-spacing: .05em;
 		display: block;
-		background: #09283b; 
+		background: $searchbtn; 
 		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 		&:after{
 			content: "";
@@ -1259,7 +1259,7 @@
 				padding:0 3.5em 0 1em;
 				letter-spacing: .05em;
 				display: block;
-				background: #09283b; 
+				background: $searchbtn; 
 				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 				&:after{
 					content: "";
@@ -2403,7 +2403,7 @@
 			padding:0 3.5em 0 1em;
 			letter-spacing: .05em;
 			display: block;
-			background: #09283b; 
+			background: $searchbtn; 
 			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 			&:after{
 				content: "";
