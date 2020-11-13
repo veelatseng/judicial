@@ -20,51 +20,46 @@
       // min-width: 10em;
       >a {
         display: block;
-        padding: 0 20px;
+        // padding: 0 20px;
+        padding: 0px 15px;
         min-height: 3em;
         line-height: 3em;
         color: #fff;
         position: relative;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-        @media all and (max-width: 1199px) {
-          padding: 0 19px;
-        }
-        @media all and (max-width: 1178px) {
-          padding: 0 18px;
-        }
-        @media all and (max-width: 1158px) {
-          padding: 0 17px;
-        }
-        @media all and (max-width: 1153px) {
-          padding: 0 16px;
-        }
-        @media all and (max-width: 1131px) {
-          padding: 0 15px;
-        }
-        @media all and (max-width: 1109px) {
+        @media all and (max-width: 1182px) {
           padding: 0 14px;
         }
-        @media all and (max-width: 1087px) {
+        @media all and (max-width: 1160px) {
           padding: 0 13px;
         }
-        @media all and (max-width: 1065px) {
+        @media all and (max-width: 1139px) {
           padding: 0 12px;
         }
-        @media all and (max-width: 1043px) {
+        @media all and (max-width: 1117px) {
           padding: 0 11px;
         }
-        @media all and (max-width: 1021px) {
+        @media all and (max-width: 1095px) {
           padding: 0 10px;
         }
-        @media all and (max-width: 999px) {
+        @media all and (max-width: 1074px) {
           padding: 0 9px;
         }
-        @media all and (max-width: 977px) {
+        @media all and (max-width: 1052px) {
           padding: 0 8px;
-        } 
-        @media all and (max-width: 955px) {
+        }
+        @media all and (max-width: 1030px) {
           padding: 0 7px;
+        }
+        @media all and (max-width: 1008px) {
+          padding: 0 6px;
+        }
+        @media all and (max-width: 986px) {
+          padding: 0 5px;
         } 
+        // @media all and (max-width: 964px) {
+        //   padding: 0 4px;
+        // } 
         // @media all and (max-width: 949px) {
         //   padding: 0 7px;
         // }

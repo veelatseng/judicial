@@ -13,8 +13,8 @@ $(function() {
     wh = _window.height(),
     _body = $('body'),
     wwNormal = 1400,
-    wwMedium = 992,
-    wwSmall = 948,
+    wwMedium = 1024,
+    wwSmall = 1024,
     wwxs = 576;
     /*-----------------------------------*/
     //////////// nojs 先移除////////////////
