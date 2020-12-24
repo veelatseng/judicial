@@ -2,48 +2,48 @@
   margin-bottom: 2em;
 }
 .menu>ul>li>a {
-  padding: 0 26px;
+  padding: 0 20px;
   @media all and (max-width: 1199px) {
-    padding: 0 26px;
-  }
-  @media all and (max-width: 1194px) {
-    padding: 0 25px;
-  }
-  @media all and (max-width: 1180px) {
-    padding: 0 24px;
-  }
-  @media all and (max-width: 1167px) {
-    padding: 0 23px;
-  }
-  @media all and (max-width: 1153px) {
-    padding: 0 22px;
-  }
-  @media all and (max-width: 1139px) {
-    padding: 0 21px;
-  }
-  @media all and (max-width: 1125px) {
     padding: 0 20px;
   }
-  @media all and (max-width: 1111px) {
+  @media all and (max-width: 1194px) {
     padding: 0 19px;
   }
-  @media all and (max-width: 1097px) {
+  @media all and (max-width: 1180px) {
     padding: 0 18px;
   }
-  @media all and (max-width: 1083px) {
+  @media all and (max-width: 1167px) {
     padding: 0 17px;
   }
-  @media all and (max-width: 1069px) {
+  @media all and (max-width: 1153px) {
     padding: 0 16px;
   }
-  @media all and (max-width: 1055px) {
+  @media all and (max-width: 1139px) {
     padding: 0 15px;
+  }
+  @media all and (max-width: 1125px) {
+    padding: 0 14px;
+  }
+  @media all and (max-width: 1111px) {
+    padding: 0 13px;
+  }
+  @media all and (max-width: 1097px) {
+    padding: 0 12px;
+  }
+  @media all and (max-width: 1083px) {
+    padding: 0 11px;
+  }
+  @media all and (max-width: 1069px) {
+    padding: 0 10px;
+  }
+  @media all and (max-width: 1055px) {
+    padding: 0 9px;
   } 
   @media all and (max-width: 1041px) {
-    padding: 0 14px;
+    padding: 0 8px;
   } 
   @media all and (max-width: 1027px) {
-    padding: 0 13px;
+    padding: 0 7px;
   } 
 }
 .menu li li {
@@ -52,17 +52,17 @@
 .menu>ul>li .megamenu .search .keywordHot:before {
   content: "Popular Keywords：";
 }
-.menu>ul>li:nth-last-child(2){
+.menu>ul>li:nth-last-child(2),.menu>ul>li:nth-last-child(3){
   background: none;
-}
-.menu>ul>li:nth-last-child(2)>a:hover, .menu>ul>li:nth-last-child(2)>a:focus {
-  background: none;
-  &:before{
-    display: block;
+  >a:hover,>a:focus{
+    background: none;
+    &:before{
+      display: block;
+    }
   }
-}
-.menu>ul>li:nth-last-child(2) .megamenu {
-  background: rgba(0,0,0,0.8);
+  .megamenu{
+    background: rgba(0,0,0,0.8);
+  }
 }
 .statistics_block {
   margin:2em 15em;
