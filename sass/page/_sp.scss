@@ -2386,6 +2386,7 @@
 		clear: both;
 		position: relative;
 		float: left;
+		margin-bottom: 8px;
 		@include screen('mobile') {
 			width: 100%;
 			position: relative;

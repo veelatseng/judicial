@@ -7,6 +7,7 @@
   .left_block,
   .function_panel,  
   .innerpage:before, 
+  .table_list_search_block .search_btn,.table_list_search_block .table_list_search
   .fatfooter,
   footer,
   .accesskey,
@@ -34,6 +35,9 @@
       }
       .innerpage {
         margin-top: 0 !important;
+        .table_list_search_block{
+          margin-top: 0;
+        }
       }
       .main,
       .content {
