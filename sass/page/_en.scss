@@ -2,49 +2,40 @@
   margin-bottom: 2em;
 }
 .menu>ul>li>a {
-  padding: 0 20px;
-  @media all and (max-width: 1199px) {
-    padding: 0 20px;
-  }
-  @media all and (max-width: 1194px) {
-    padding: 0 19px;
-  }
-  @media all and (max-width: 1180px) {
-    padding: 0 18px;
+  padding: 0 8px;
+  line-height: 3rem;
+  @media all and (max-width: 1183px) {
+    padding: 0 7px;
   }
   @media all and (max-width: 1167px) {
-    padding: 0 17px;
+    padding: 0 6px;
   }
-  @media all and (max-width: 1153px) {
-    padding: 0 16px;
-  }
-  @media all and (max-width: 1139px) {
-    padding: 0 15px;
-  }
-  @media all and (max-width: 1125px) {
-    padding: 0 14px;
-  }
-  @media all and (max-width: 1111px) {
-    padding: 0 13px;
-  }
-  @media all and (max-width: 1097px) {
-    padding: 0 12px;
-  }
-  @media all and (max-width: 1083px) {
-    padding: 0 11px;
-  }
-  @media all and (max-width: 1069px) {
-    padding: 0 10px;
-  }
-  @media all and (max-width: 1055px) {
-    padding: 0 9px;
-  } 
-  @media all and (max-width: 1041px) {
+  @media all and (max-width: 1151px) {
     padding: 0 8px;
-  } 
-  @media all and (max-width: 1027px) {
+    font-size: .9375em;
+  }
+  @media all and (max-width: 1124px) {
     padding: 0 7px;
-  } 
+  }
+  @media all and (max-width: 1108px) {
+    padding: 0 6px;
+  }
+  @media all and (max-width: 1092px) {
+    padding: 0 5px;
+  }
+  @media all and (max-width: 1075px) {
+    padding: 0 8px;
+    font-size: .875em;
+  }
+  @media all and (max-width: 1058px) {
+    padding: 0 7px;
+  }
+  @media all and (max-width: 1042px) {
+    padding: 0 6px;
+  }
+  @media all and (max-width: 1026px) {
+    padding: 0 5px;
+  }
 }
 .menu li li {
   width: 50%;
