@@ -1,4 +1,101 @@
 .lp {
+  .advanced_search{
+    display: flex;
+    background: #e5e5e5;
+    justify-content: center;
+    padding: .8em;
+    margin-bottom: 1rem;
+    input{
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    label{
+      margin-bottom: 0;
+    }
+    .btn_grp{
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+  .advanced_search_block{
+    display: block;
+    clear: both;
+    margin:-42px 0 10px 0;
+    overflow: hidden;
+    @include screen('mobile') {
+      margin:0 0 10px 0;
+    }
+    .search_btn{
+      display: block;
+      clear: both;
+      position: relative;
+      float: left;
+      @include screen('mobile') {
+        width: 100%;
+        position: relative;
+        bottom:auto;
+        right: auto;
+        margin: 0;
+        float: none;
+        display: block;
+      }
+      a{
+        line-height: 2.5em;
+        color: #fff;
+        padding:0 3.5em 0 1em;
+        letter-spacing: .05em;
+        display: block;
+        background: $searchbtn; 
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        &:after{
+          content: "";
+          background: $lightColor url(../images/icon_more_.png) no-repeat center center;
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 40px;
+          display: block;
+        }
+        &:hover,&:focus{
+          background: $linkColor;
+          box-shadow: none;
+        }
+      }
+    }
+    .advanced_search{
+      background: #e5e5e5;
+      padding: .8em;
+      box-sizing: border-box;
+      display: block;
+      clear: both;
+      position: relative;
+      .form_grid{
+        margin: 0;
+      }
+      .form_grp{
+        border-bottom: 0;
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+        @include screen('mobile') {
+          padding: 0;
+          .form_title,.form_content{
+            padding: 0;
+          }
+        }
+      }
+      .btn_grp{
+        padding: 0;
+        clear: both;
+        @include screen('mobile') {
+          text-align: left;
+        }
+      }
+    }
+  }
+
   table {
     td {
       word-break: normal;

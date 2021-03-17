@@ -40,6 +40,18 @@
           <?php require_once('include/function_panel.html'); ?>
           <!-- LP Start -->
           <section class="lp">
+            <!-- 進階搜尋 -->
+            <div class="advanced_search" style="">
+              <form action="" class="form_inline">
+                <div class="form_grp">
+                  <label for="" class="form_title">搜尋</label>
+                  <input name="" id="" type="text" placeholder="請輸入標題關鍵字">
+                </div>
+                <div class="btn_grp">
+                  <input name="" type="submit" title="查詢" value="查詢" />
+                </div>
+              </form>  
+            </div>
             <!-- category -->
             <?php require_once('include/category.html'); ?>
             <!-- 文字列表 -->

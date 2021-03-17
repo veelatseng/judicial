@@ -46,6 +46,46 @@
             </a>
           </div>
         </section>
+        <div class="course">
+          <h2 class="blkTitle">Important Activities</h2>
+          <ul>
+            <li>
+              <a href="">
+                <span class="course_date"><em>12</em>27</span>
+                <span class="course_title">從創新研究到臨床應用繼續教育</span>
+                <span class="course_pic"><img src="images/news1.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="course_date"><em>12</em>27</span>
+                <span class="course_title">從創新研究到臨床應用繼續教育從創新研究到臨床應用繼續教育從創新研究到臨床應用繼續教育從創新研究到臨床應用繼續教育</span>
+                <span class="course_pic"><img src="images/news1.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="course_date"><em>12</em>27</span>
+                <span class="course_title">從創新研究到臨床應用繼續教育</span>
+                <span class="course_pic"><img src="images/news1.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="course_date"><em>12</em>27</span>
+                <span class="course_title">從創新研究到臨床應用繼續教育</span>
+                <span class="course_pic"><img src="images/news1.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="course_date"><em>12</em>27</span>
+                <span class="course_title">從創新研究到臨床應用繼續教育</span>
+                <span class="course_pic"><img src="images/news1.jpg" alt=""></span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <!-- 司法改革 -->
         <section class="reform_block">
           <h2 class="blkTitle">Judicial Reform</h2>

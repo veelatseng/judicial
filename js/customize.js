@@ -299,7 +299,6 @@ $('nav.units_block>ul>li:last-child>ul>li:last-child a').focusout(function() {
   closeuni();
 });
 
-
 $('.units').click(function(event) {
  openuni();
 });
