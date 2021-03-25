@@ -17,7 +17,7 @@ $(function() {
       }]
     });
     $('.course>ul').slick({
-      centerMode: true,
+      centerMode: false,
       centerPadding: '60px',
       slidesToShow: 3,
       responsive: [
@@ -25,7 +25,7 @@ $(function() {
         breakpoint: 768,
         settings: {
           arrows: true,
-          centerMode: true,
+          centerMode: false,
           centerPadding: '40px',
           slidesToShow: 2
         }
@@ -34,7 +34,7 @@ $(function() {
         breakpoint: 480,
         settings: {
           arrows: true,
-          centerMode: true,
+          centerMode: false,
           centerPadding: '40px',
           slidesToShow: 1
         }
