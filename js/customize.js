@@ -8,6 +8,11 @@ $(function() {
       arrows: false,
       draggable: true, 
       infinite: true,
+      lazyLoaded: true,
+      lazyLoad: 'ondemand',
+      customPaging: function(slider, i) {
+        return $('<button type="button" />').text($(slider.$slides[i]).find('img').attr('alt').trim());
+      },
       responsive: [{
         breakpoint: 575,
         settings: {
@@ -82,7 +87,7 @@ $(function() {
     });
     //燈箱slick+lightBox組合
     $('.cp_slider').slick({
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 4,

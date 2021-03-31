@@ -358,9 +358,14 @@
             margin: 0 !important;
             width: 70%;
             float: left;
+            label{
+              line-height: 1;
+              font-size: 0;
+              display: block;
+            }
             input {
               margin: 0;
-              padding: 10px 35px 10px .5em;
+              padding: 9px 35px 9px .5em;
               border-radius: 0;
               width: 100%;
               border: 1px solid #000;

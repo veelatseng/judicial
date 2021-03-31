@@ -32,22 +32,22 @@
         <section class="mpSlider">
           <div class="img-container">
             <a href="#" title="">
-              <img src="images/indexbanner1.jpg" alt="" class="cover">
+              <img src="images/indexbanner1.jpg" alt="圖片說明1" class="cover">
             </a>
           </div>
           <div class="img-container">
             <a href="#" title="">
-              <img src="images/banner_newyear.jpg" alt="" class="cover">
+              <img src="images/banner_newyear.jpg" alt="圖片說明2" class="cover">
             </a>
           </div>
           <div class="img-container">
             <a href="#" title="">
-              <img src="images/banner_judicial.jpg" alt="" class="cover">
+              <img src="images/banner_judicial.jpg" alt="圖片說明3" class="cover">
             </a>
           </div>
           <div class="img-container">
             <a href="#" title="">
-              <img src="images/banner_draginboat.jpg" alt="" class="cover">
+              <img src="images/banner_draginboat.jpg" alt="圖片說明4" class="cover">
             </a>
           </div>
         </section>

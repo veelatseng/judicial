@@ -175,15 +175,18 @@ $(function() {
             /*-----------------------------------*/
             hideSidebar();
             _body.removeClass('noscroll');
-            _nav.prependTo('.header .container');         
-            _units_block.prependTo('.header .container');
-            _units.prependTo('.header .container');
-            _headershare.appendTo('.header .container');
-            _search.appendTo('.menu>ul>li:last-child .megamenu');
-            _menu.appendTo('.header .container');
-            _search.removeClass('m_search');
-            _search.show();
-            search_mode = false;
+            // _units.prependTo('.header .container');
+            _units.insertAfter('.header .container .accesskey');
+            // _units_block.prependTo('.header .container');
+            _units_block.insertAfter('.header .container .units');
+             // _nav.prependTo('.header .container');
+             _nav.insertAfter('.header .container .units_block');   
+             _headershare.appendTo('.header .container');
+             _search.appendTo('.menu>ul>li:last-child .megamenu');
+             _menu.appendTo('.header .container');
+             _search.removeClass('m_search');
+             _search.show();
+             search_mode = false;
             // $('.language').find('ul').hide();
             // 副選單滑出
             liHasChild.on({
