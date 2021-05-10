@@ -609,6 +609,9 @@
   overflow-y: auto;
   font-size: 1.066em !important;
   box-sizing: border-box;
+  @include screen('mobile') {
+    bottom: 0;
+  }
   .overlay {
     position: absolute;
     top: 0;
@@ -653,7 +656,7 @@
   }
   >ul {
     max-width: 1200px;
-    height: 85vh;
+    height: 75vh;
     margin: 0 auto;
     position: relative;
     z-index: 99999;
