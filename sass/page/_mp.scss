@@ -316,19 +316,19 @@
           position: relative;
           overflow: hidden;
           display: block;
-          &:before{
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 60px;
-            display: block;
-            @include gradient(rgba(0,0,0,0), rgba(0,0,0,1), vertical);
-            z-index: 98;
-            transition: all 1s;
-            opacity: 1;
-          }
+          // &:before{
+          //   content: "";
+          //   position: absolute;
+          //   left: 0;
+          //   bottom: 0;
+          //   width: 100%;
+          //   height: 60px;
+          //   display: block;
+          //   @include gradient(rgba(0,0,0,0), rgba(0,0,0,1), vertical);
+          //   z-index: 98;
+          //   transition: all 1s;
+          //   opacity: 1;
+          // }
           img{
             width: 100%;
             height: 100%;
@@ -354,6 +354,7 @@
           // -webkit-line-clamp: 2;
           // -webkit-box-orient: vertical;
           box-sizing: border-box;
+          @include gradient(rgba(0,0,0,0), rgba(0,0,0,1), vertical);
           @include screen('mobile') {
             text-align: center;
           }

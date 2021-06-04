@@ -94,35 +94,35 @@
               <a href="">
                 <span class="course_date"><em>12</em>27</span>
                 <span class="course_title">從創新研究到臨床應用繼續教育</span>
-                <span class="course_pic"><img src="images/news1.jpg" alt=""></span>
+                <span class="course_pic"><img src="https://via.placeholder.com/728x90.png" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
                 <span class="course_date"><em>12</em>27</span>
                 <span class="course_title">從創新研究到臨床應用繼續教育從創新研究到臨床應用繼續教育從創新研究到臨床應用繼續教育從創新研究到臨床應用繼續教育</span>
-                <span class="course_pic"><img src="images/news1.jpg" alt=""></span>
+                <span class="course_pic"><img src="https://via.placeholder.com/728x90.png" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
                 <span class="course_date"><em>12</em>27</span>
                 <span class="course_title">從創新研究到臨床應用繼續教育</span>
-                <span class="course_pic"><img src="images/news1.jpg" alt=""></span>
+                <span class="course_pic"><img src="https://via.placeholder.com/728x90.png" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
                 <span class="course_date"><em>12</em>27</span>
                 <span class="course_title">從創新研究到臨床應用繼續教育</span>
-                <span class="course_pic"><img src="images/news1.jpg" alt=""></span>
+                <span class="course_pic"><img src="https://via.placeholder.com/728x90.png" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
                 <span class="course_date"><em>12</em>27</span>
                 <span class="course_title">從創新研究到臨床應用繼續教育</span>
-                <span class="course_pic"><img src="images/news1.jpg" alt=""></span>
+                <span class="course_pic"><img src="https://via.placeholder.com/728x90.png" alt=""></span>
               </a>
             </li>
           </ul>
