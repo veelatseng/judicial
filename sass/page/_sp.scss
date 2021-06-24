@@ -2345,8 +2345,12 @@
 		th{
 			white-space: nowrap;
 		}
-		tr:first-child th{
+		caption{
 			background:$thColor;
+			margin-bottom: 0;
+			color: #fff;
+			text-align: center;
+			padding: .5em;
 			@include screen('mobile') {
 				text-align: left;
 			}

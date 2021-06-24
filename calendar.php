@@ -58,9 +58,7 @@
             </div>
             <div class="calendartable">
               <table>
-                <tr>
-                  <th colspan="4">108-11-11~108-11-15</th>
-                </tr>
+                <caption>108-11-11~108-11-15</caption>
                 <tr>
                   <th>舉辦日期</th>
                   <th>星期</th>
